@@ -1,0 +1,7 @@
+b-l072z-lrwan1.c:110:10:BSP_GetVersion	0	static
+b-l072z-lrwan1.c:122:6:BSP_LED_Init	48	static
+b-l072z-lrwan1.c:145:6:BSP_LED_On	8	static
+b-l072z-lrwan1.c:157:6:BSP_LED_Off	8	static
+b-l072z-lrwan1.c:169:6:BSP_LED_Toggle	8	static
+b-l072z-lrwan1.c:185:6:BSP_PB_Init	40	static
+b-l072z-lrwan1.c:223:10:BSP_PB_GetState	8	static

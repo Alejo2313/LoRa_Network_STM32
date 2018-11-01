@@ -1,0 +1,21 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_431c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_431c4.dir/build.make CMakeFiles/cmTC_431c4.dir/build
+make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_431c4.dir/testCCompiler.c.obj
+/usr/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_431c4.dir/testCCompiler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_431c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_431c4.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-gcc      CMakeFiles/cmTC_431c4.dir/testCCompiler.c.obj  -o cmTC_431c4 
+/usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_431c4.dir/build.make:97: recipe for target 'cmTC_431c4' failed
+make[1]: *** [cmTC_431c4] Error 1
+make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_431c4/fast' failed
+make: *** [cmTC_431c4/fast] Error 2
+
+

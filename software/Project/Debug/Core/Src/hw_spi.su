@@ -1,0 +1,5 @@
+hw_spi.c:138:6:HW_SPI_IoInit	40	static
+hw_spi.c:88:6:HW_SPI_Init	8	static
+hw_spi.c:160:6:HW_SPI_IoDeInit	48	static
+hw_spi.c:126:6:HW_SPI_DeInit	8	static
+hw_spi.c:189:10:HW_SPI_InOut	32	static

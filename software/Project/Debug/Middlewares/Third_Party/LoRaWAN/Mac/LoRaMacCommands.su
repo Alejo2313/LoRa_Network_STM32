@@ -1,0 +1,15 @@
+LoRaMacCommands.c:302:13:NvmCtxCallback	8	static
+LoRaMacCommands.c:92:6:isSlotFree	0	static
+LoRaMacCommands.c:111:15:mallocNewMacCommandSlot	16	static
+LoRaMacCommands.c:135:6:freeMacCommandSlot	8	static
+LoRaMacCommands.c:310:24:LoRaMacCommandsInit	16	static
+LoRaMacCommands.c:324:24:LoRaMacCommandsRestoreNvmCtx	8	static
+LoRaMacCommands.c:338:7:LoRaMacCommandsGetNvmCtx	0	static
+LoRaMacCommands.c:344:24:LoRaMacCommandsAddCmd	32	static
+LoRaMacCommands.c:379:24:LoRaMacCommandsRemoveCmd	8	static
+LoRaMacCommands.c:405:24:LoRaMacCommandsGetCmd	0	static
+LoRaMacCommands.c:429:24:LoRaMacCommandsRemoveNoneStickyCmds	16	static
+LoRaMacCommands.c:457:24:LoRaMacCommandsRemoveStickyAnsCmds	16	static
+LoRaMacCommands.c:474:24:LoRaMacCommandsGetSizeSerializedCmds	0	static
+LoRaMacCommands.c:485:24:LoRaMacCommandsSerializeCmds	24	static
+LoRaMacCommands.c:515:24:LoRaMacCommandsStickyCmdsPending	0	static

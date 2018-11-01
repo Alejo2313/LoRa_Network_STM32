@@ -1,0 +1,6 @@
+lora-test.c:120:13:certif_tx	40	static
+lora-test.c:366:13:OnCertifTxNextPacketTimerEvent	8	static
+lora-test.c:103:6:certif_running	0	static
+lora-test.c:108:6:certif_DownLinkIncrement	0	static
+lora-test.c:113:6:certif_linkCheck	0	static
+lora-test.c:188:6:certif_rx	64	static

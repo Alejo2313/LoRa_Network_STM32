@@ -1,0 +1,4 @@
+trace.c:149:13:Trace_TxCpltCallback	24	static
+trace.c:79:6:TraceInit	16	static
+trace.c:88:9:TraceSend	296	static
+trace.c:131:13:TraceGetFileName	8	static

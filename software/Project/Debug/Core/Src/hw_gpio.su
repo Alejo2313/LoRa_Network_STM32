@@ -1,0 +1,6 @@
+hw_gpio.c:183:16:HW_GPIO_GetBitPos	0	static
+hw_gpio.c:85:6:HW_GPIO_Init	40	static
+hw_gpio.c:106:6:HW_GPIO_SetIrq	16	static
+hw_gpio.c:136:6:HW_GPIO_IrqHandler	8	static
+hw_gpio.c:155:6:HW_GPIO_Write	8	static
+hw_gpio.c:169:10:HW_GPIO_Read	8	static
