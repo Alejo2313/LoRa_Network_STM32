@@ -123,32 +123,86 @@ LoRaNODE.elf/fast:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/build
 .PHONY : LoRaNODE.elf/fast
 
-Core/Src/bsp.obj: Core/Src/bsp.c.obj
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.obj: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
 
-.PHONY : Core/Src/bsp.obj
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.obj
 
 # target to build an object file
-Core/Src/bsp.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj
-.PHONY : Core/Src/bsp.c.obj
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
 
-Core/Src/bsp.i: Core/Src/bsp.c.i
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.i: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i
 
-.PHONY : Core/Src/bsp.i
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.i
 
 # target to preprocess a source file
-Core/Src/bsp.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.i
-.PHONY : Core/Src/bsp.c.i
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i
 
-Core/Src/bsp.s: Core/Src/bsp.c.s
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.s: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s
 
-.PHONY : Core/Src/bsp.s
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.s
 
 # target to generate assembly for a file
-Core/Src/bsp.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.s
-.PHONY : Core/Src/bsp.c.s
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.obj: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.obj
+
+# target to build an object file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.i: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.i
+
+# target to preprocess a source file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.s: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.s
+
+# target to generate assembly for a file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.obj: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.obj
+
+# target to build an object file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.i: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.i
+
+# target to preprocess a source file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i
+
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.s: Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
+
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.s
+
+# target to generate assembly for a file
+Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
+.PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
 
 Core/Src/debug.obj: Core/Src/debug.c.obj
 
@@ -312,114 +366,6 @@ Core/Src/main_2.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.s
 .PHONY : Core/Src/main_2.c.s
 
-Core/Src/mlm32l0xx_hal_msp.obj: Core/Src/mlm32l0xx_hal_msp.c.obj
-
-.PHONY : Core/Src/mlm32l0xx_hal_msp.obj
-
-# target to build an object file
-Core/Src/mlm32l0xx_hal_msp.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj
-.PHONY : Core/Src/mlm32l0xx_hal_msp.c.obj
-
-Core/Src/mlm32l0xx_hal_msp.i: Core/Src/mlm32l0xx_hal_msp.c.i
-
-.PHONY : Core/Src/mlm32l0xx_hal_msp.i
-
-# target to preprocess a source file
-Core/Src/mlm32l0xx_hal_msp.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.i
-.PHONY : Core/Src/mlm32l0xx_hal_msp.c.i
-
-Core/Src/mlm32l0xx_hal_msp.s: Core/Src/mlm32l0xx_hal_msp.c.s
-
-.PHONY : Core/Src/mlm32l0xx_hal_msp.s
-
-# target to generate assembly for a file
-Core/Src/mlm32l0xx_hal_msp.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.s
-.PHONY : Core/Src/mlm32l0xx_hal_msp.c.s
-
-Core/Src/mlm32l0xx_hw.obj: Core/Src/mlm32l0xx_hw.c.obj
-
-.PHONY : Core/Src/mlm32l0xx_hw.obj
-
-# target to build an object file
-Core/Src/mlm32l0xx_hw.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj
-.PHONY : Core/Src/mlm32l0xx_hw.c.obj
-
-Core/Src/mlm32l0xx_hw.i: Core/Src/mlm32l0xx_hw.c.i
-
-.PHONY : Core/Src/mlm32l0xx_hw.i
-
-# target to preprocess a source file
-Core/Src/mlm32l0xx_hw.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.i
-.PHONY : Core/Src/mlm32l0xx_hw.c.i
-
-Core/Src/mlm32l0xx_hw.s: Core/Src/mlm32l0xx_hw.c.s
-
-.PHONY : Core/Src/mlm32l0xx_hw.s
-
-# target to generate assembly for a file
-Core/Src/mlm32l0xx_hw.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.s
-.PHONY : Core/Src/mlm32l0xx_hw.c.s
-
-Core/Src/mlm32l0xx_it.obj: Core/Src/mlm32l0xx_it.c.obj
-
-.PHONY : Core/Src/mlm32l0xx_it.obj
-
-# target to build an object file
-Core/Src/mlm32l0xx_it.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj
-.PHONY : Core/Src/mlm32l0xx_it.c.obj
-
-Core/Src/mlm32l0xx_it.i: Core/Src/mlm32l0xx_it.c.i
-
-.PHONY : Core/Src/mlm32l0xx_it.i
-
-# target to preprocess a source file
-Core/Src/mlm32l0xx_it.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.i
-.PHONY : Core/Src/mlm32l0xx_it.c.i
-
-Core/Src/mlm32l0xx_it.s: Core/Src/mlm32l0xx_it.c.s
-
-.PHONY : Core/Src/mlm32l0xx_it.s
-
-# target to generate assembly for a file
-Core/Src/mlm32l0xx_it.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.s
-.PHONY : Core/Src/mlm32l0xx_it.c.s
-
-Core/Src/system_stm32l0xx.obj: Core/Src/system_stm32l0xx.c.obj
-
-.PHONY : Core/Src/system_stm32l0xx.obj
-
-# target to build an object file
-Core/Src/system_stm32l0xx.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj
-.PHONY : Core/Src/system_stm32l0xx.c.obj
-
-Core/Src/system_stm32l0xx.i: Core/Src/system_stm32l0xx.c.i
-
-.PHONY : Core/Src/system_stm32l0xx.i
-
-# target to preprocess a source file
-Core/Src/system_stm32l0xx.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.i
-.PHONY : Core/Src/system_stm32l0xx.c.i
-
-Core/Src/system_stm32l0xx.s: Core/Src/system_stm32l0xx.c.s
-
-.PHONY : Core/Src/system_stm32l0xx.s
-
-# target to generate assembly for a file
-Core/Src/system_stm32l0xx.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.s
-.PHONY : Core/Src/system_stm32l0xx.c.s
-
 Core/Src/vcom.obj: Core/Src/vcom.c.obj
 
 .PHONY : Core/Src/vcom.obj
@@ -527,6 +473,33 @@ Drivers/BSP/Components/sx1276/sx1276.s: Drivers/BSP/Components/sx1276/sx1276.c.s
 Drivers/BSP/Components/sx1276/sx1276.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.s
 .PHONY : Drivers/BSP/Components/sx1276/sx1276.c.s
+
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.obj: Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
+
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.obj
+
+# target to build an object file
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
+
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.i: Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i
+
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.i
+
+# target to preprocess a source file
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i
+
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.s: Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
+
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.s
+
+# target to generate assembly for a file
+Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
+.PHONY : Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
 
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj
 
@@ -1365,59 +1338,86 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.obj: Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.obj: Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj
 
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.obj
-
-# target to build an object file
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj
-
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.i: Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i
-
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.i
-
-# target to preprocess a source file
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i
-
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.s: Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s
-
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.s
-
-# target to generate assembly for a file
-Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s
-
-Middlewares/Third_Party/LoRaWAN/Core/lora.obj: Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj
-
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.obj
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.obj
 
 # target to build an object file
-Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj
 
-Middlewares/Third_Party/LoRaWAN/Core/lora.i: Middlewares/Third_Party/LoRaWAN/Core/lora.c.i
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.i: Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i
 
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.i
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.i
 
 # target to preprocess a source file
-Middlewares/Third_Party/LoRaWAN/Core/lora.c.i:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.i
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.c.i
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i
 
-Middlewares/Third_Party/LoRaWAN/Core/lora.s: Middlewares/Third_Party/LoRaWAN/Core/lora.c.s
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.s: Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s
 
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.s
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.s
 
 # target to generate assembly for a file
-Middlewares/Third_Party/LoRaWAN/Core/lora.c.s:
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.s
-.PHONY : Middlewares/Third_Party/LoRaWAN/Core/lora.c.s
+Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s
+
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.obj: Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.obj
+
+# target to build an object file
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj
+
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.i: Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i
+
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.s: Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s
+
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.obj: Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.obj
+
+# target to build an object file
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
+
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.i: Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i
+
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.s: Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s
+
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s
+.PHONY : Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s
 
 Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.obj: Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
 
@@ -2166,9 +2166,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LoRaNODE.elf"
 	@echo "... edit_cache"
-	@echo "... Core/Src/bsp.obj"
-	@echo "... Core/Src/bsp.i"
-	@echo "... Core/Src/bsp.s"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.obj"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.i"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.s"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.obj"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.i"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.s"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.obj"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.i"
+	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.s"
 	@echo "... Core/Src/debug.obj"
 	@echo "... Core/Src/debug.i"
 	@echo "... Core/Src/debug.s"
@@ -2187,18 +2193,6 @@ help:
 	@echo "... Core/Src/main_2.obj"
 	@echo "... Core/Src/main_2.i"
 	@echo "... Core/Src/main_2.s"
-	@echo "... Core/Src/mlm32l0xx_hal_msp.obj"
-	@echo "... Core/Src/mlm32l0xx_hal_msp.i"
-	@echo "... Core/Src/mlm32l0xx_hal_msp.s"
-	@echo "... Core/Src/mlm32l0xx_hw.obj"
-	@echo "... Core/Src/mlm32l0xx_hw.i"
-	@echo "... Core/Src/mlm32l0xx_hw.s"
-	@echo "... Core/Src/mlm32l0xx_it.obj"
-	@echo "... Core/Src/mlm32l0xx_it.i"
-	@echo "... Core/Src/mlm32l0xx_it.s"
-	@echo "... Core/Src/system_stm32l0xx.obj"
-	@echo "... Core/Src/system_stm32l0xx.i"
-	@echo "... Core/Src/system_stm32l0xx.s"
 	@echo "... Core/Src/vcom.obj"
 	@echo "... Core/Src/vcom.i"
 	@echo "... Core/Src/vcom.s"
@@ -2211,6 +2205,9 @@ help:
 	@echo "... Drivers/BSP/Components/sx1276/sx1276.obj"
 	@echo "... Drivers/BSP/Components/sx1276/sx1276.i"
 	@echo "... Drivers/BSP/Components/sx1276/sx1276.s"
+	@echo "... Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.obj"
+	@echo "... Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.i"
+	@echo "... Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.s"
@@ -2304,12 +2301,15 @@ help:
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.obj"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora-test.obj"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora-test.i"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora-test.s"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora.obj"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora.i"
-	@echo "... Middlewares/Third_Party/LoRaWAN/Core/lora.s"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/aes.obj"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/aes.i"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/aes.s"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/cmac.obj"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/cmac.i"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/cmac.s"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.obj"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.i"
+	@echo "... Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.s"
 	@echo "... Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.obj"
 	@echo "... Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.i"
 	@echo "... Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.s"

@@ -585,9 +585,33 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj: ../Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj: ../Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.i: cmake_force
@@ -609,9 +633,81 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj.prov
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c > CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c > CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c > CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj: ../Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.i: cmake_force
@@ -635,7 +731,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj.provide
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj: ../Drivers/BSP/Components/sx1276/sx1276.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/Components/sx1276/sx1276.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.i: cmake_force
@@ -659,7 +755,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj.provides.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -683,7 +779,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -707,7 +803,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -731,7 +827,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/list.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -755,7 +851,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj.p
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i: cmake_force
@@ -779,7 +875,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -803,7 +899,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/Mem
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -827,7 +923,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -851,7 +947,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -873,57 +969,81 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj: ../Middlewares/Third_Party/LoRaWAN/Core/lora-test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/aes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c > CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.i
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c > CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.s
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.s
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires:
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires:
 
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.provides
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.provides
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj
 
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj: ../Middlewares/Third_Party/LoRaWAN/Core/lora.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora.c
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora.c > CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.i
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c > CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Core/lora.c -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.s
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.s
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.requires:
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires:
 
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.requires
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.provides
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.provides
 
-CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c > CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
 
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.i: cmake_force
@@ -947,7 +1067,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.pr
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i: cmake_force
@@ -971,7 +1091,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i: cmake_force
@@ -995,7 +1115,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i: cmake_force
@@ -1019,7 +1139,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i: cmake_force
@@ -1043,7 +1163,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQu
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i: cmake_force
@@ -1067,7 +1187,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i: cmake_force
@@ -1091,7 +1211,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandl
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i: cmake_force
@@ -1115,7 +1235,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i: cmake_force
@@ -1139,7 +1259,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerialize
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.i: cmake_force
@@ -1163,7 +1283,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.i: cmake_force
@@ -1187,7 +1307,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.i: cmake_force
@@ -1211,7 +1331,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.i: cmake_force
@@ -1235,7 +1355,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN4
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.i: cmake_force
@@ -1259,7 +1379,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN7
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.i: cmake_force
@@ -1283,7 +1403,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCom
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.i: cmake_force
@@ -1307,7 +1427,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU4
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.i: cmake_force
@@ -1331,7 +1451,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.i: cmake_force
@@ -1355,7 +1475,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.i: cmake_force
@@ -1379,7 +1499,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.i: cmake_force
@@ -1403,7 +1523,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.i: cmake_force
@@ -1427,7 +1547,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.i: cmake_force
@@ -1451,7 +1571,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.i: cmake_force
@@ -1475,7 +1595,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.i: cmake_force
@@ -1499,7 +1619,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.i: cmake_force
@@ -1523,7 +1643,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.i: cmake_force
@@ -1547,7 +1667,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.ob
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.i: cmake_force
@@ -1569,33 +1689,9 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj
 
 
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj: ../Core/Src/bsp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/bsp.c
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/bsp.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.i
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/bsp.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.s
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.requires:
-
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.requires
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.provides
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj
-
-
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj: ../Core/Src/debug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/debug.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.i: cmake_force
@@ -1619,7 +1715,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj.provides.build: CMakeFiles/LoRa
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj: ../Core/Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/freertos.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.i: cmake_force
@@ -1643,7 +1739,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj.provides.build: CMakeFiles/L
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj: ../Core/Src/hw_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_gpio.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.i: cmake_force
@@ -1667,7 +1763,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj.provides.build: CMakeFiles/Lo
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj: ../Core/Src/hw_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_rtc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.i: cmake_force
@@ -1691,7 +1787,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj.provides.build: CMakeFiles/LoR
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj: ../Core/Src/hw_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_spi.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.i: cmake_force
@@ -1715,7 +1811,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj.provides.build: CMakeFiles/LoR
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj: ../Core/Src/main_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/main_2.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.i: cmake_force
@@ -1735,102 +1831,6 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj.provides: CMakeFiles/LoRaNODE.
 .PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj.provides
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj
-
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj: ../Core/Src/mlm32l0xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hal_msp.c
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hal_msp.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.i
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hal_msp.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.s
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.requires:
-
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.requires
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.provides
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj
-
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj: ../Core/Src/mlm32l0xx_hw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hw.c
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hw.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.i
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_hw.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.s
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.requires:
-
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.requires
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.provides
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj
-
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj: ../Core/Src/mlm32l0xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_it.c
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_it.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.i
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/mlm32l0xx_it.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.s
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.requires:
-
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.requires
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.provides
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj
-
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj: ../Core/Src/system_stm32l0xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/system_stm32l0xx.c
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/system_stm32l0xx.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.i
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/system_stm32l0xx.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.s
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.requires:
-
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.requires
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.requires
-	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.provides.build
-.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.provides
-
-CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj
 
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
@@ -1897,7 +1897,11 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" \
@@ -1909,8 +1913,9 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj" \
@@ -1938,17 +1943,12 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj" \
-"CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj"
 
@@ -1977,7 +1977,11 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
@@ -1989,8 +1993,9 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Sourc
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj
@@ -2018,17 +2023,12 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilit
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj
-LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/build.make
@@ -2067,7 +2067,11 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj.requires
@@ -2079,8 +2083,9 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Th
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Core/lora.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
@@ -2108,17 +2113,12 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Th
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/bsp.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hal_msp.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_hw.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/mlm32l0xx_it.c.obj.requires
-CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/system_stm32l0xx.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj.requires
 
