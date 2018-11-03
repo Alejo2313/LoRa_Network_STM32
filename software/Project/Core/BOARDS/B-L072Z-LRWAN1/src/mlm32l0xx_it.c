@@ -62,6 +62,7 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include "hw.h"
 #include "vcom.h"
 #include "mlm32l0xx_it.h"
+#include "cmsis_os.h"
 
 
 /** @addtogroup STM32L1xx_HAL_Examples
@@ -168,6 +169,7 @@ void DebugMon_Handler(void)
 void SysTick_Handler(void)
 {
   HAL_IncTick();
+  osSystickHandler();
 }
 
 /******************************************************************************/

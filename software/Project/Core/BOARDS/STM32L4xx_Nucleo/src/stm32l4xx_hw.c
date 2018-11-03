@@ -283,6 +283,9 @@ void SystemClock_Config( void )
     /* Initialization Error */
     while(1);
   }
+
+
+  
 }
 /**
   * @brief This function return a random seed

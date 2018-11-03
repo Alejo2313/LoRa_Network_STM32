@@ -93,27 +93,35 @@ void printRx();
 void fire();
 void parser(uint8_t* pData, uint16_t size);
 
-
+void ledBlinkTask();
 
 
 int main(){
 	// init haardware
+
+	 
 	HAL_Init();
+
+	
 	SystemClock_Config();
 	HW_Init();
 	radio_init();
-#ifdef DEBUG
-	DBG_Init();
-#endif
+
+	osThreadDef(BLINK, ledBlinkTask, osPriorityNormal,0,10);
+	osThreadCreate(osThread(BLINK), NULL);
+
 
 #ifdef NODE
-	while(1){
-		fire();
-	}
+	osThreadDef(FSM, fire, osPriorityNormal,0, 512);
+	osThreadCreate(osThread(FSM), NULL);
 #else
 	Radio.Rx( 0);
-	while(1){}
 #endif
+
+	osKernelStart();
+	while(1){
+	}
+
 }
 
 
@@ -149,39 +157,42 @@ void radio_init(){
  */
 
 void fire(){
-	switch(State){
-		case SLEEP_S:
-		#ifdef DEBUG
-			PRINTF("--> SLEEP STATE \r \n");
-		#endif
-			//HAL_Delay(1000);
-			State = MEASURE;
-			break;
-		case MEASURE:
-		#ifdef DEBUG
-			PRINTF("--> MEASURE STATE \r \n");
-		#endif
-			measure();
-			State = TX_S;
-			break;
-		case TX_S:
-			if(!exe){
-				sendPack();
-				exe = true;
-			}
-			break;
-		case RX_S:
-			if(!exe){
-				Radio.Rx(1000);
-				exe = true;
-			}
-			break;
-		default:
-		#ifdef DEBUG
-			PRINTF("erro?! \r \n");
-		#endif
-			State = SLEEP_S;
-			break;
+	while(1);
+	while(1){
+		switch(State){
+			case SLEEP_S:
+			#ifdef DEBUG
+				PRINTF("--> SLEEP STATE \r \n");
+			#endif
+				osDelay(1000);
+				State = MEASURE;
+				break;
+			case MEASURE:
+			#ifdef DEBUG
+				PRINTF("--> MEASURE STATE \r \n");
+			#endif
+				measure();
+				State = TX_S;
+				break;
+			case TX_S:
+				if(!exe){
+					sendPack();
+					exe = true;
+				}
+				break;
+			case RX_S:
+				if(!exe){
+					Radio.Rx(1000);
+					exe = true;
+				}
+				break;
+			default:
+			#ifdef DEBUG
+				PRINTF("erro?! \r \n");
+			#endif
+				State = SLEEP_S;
+				break;
+		}
 	}
 }
 
@@ -389,3 +400,15 @@ void onRxError(){
 
 void onFhssChangeChannel(uint8_t currentChannel){};	//HSS Change Channel callback prototype;
 void onCadDone(bool channelActivityDetected){}
+
+
+//more shit
+void ledBlinkTask(){
+	BSP_LED_Init(LED_GREEN);
+	while(1){
+		BSP_LED_Toggle(LED_GREEN);
+		osDelay(500);
+	}
+	osThreadTerminate(NULL);
+	
+}

@@ -861,6 +861,8 @@ vcom.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/vcom.h
 mlm32l0xx_it.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.h
+cmsis_os.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/cmsis_os.h
 
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/debug.c
 hw.h
