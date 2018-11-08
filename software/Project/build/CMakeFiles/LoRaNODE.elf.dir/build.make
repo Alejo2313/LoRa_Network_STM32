@@ -129,9 +129,57 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_e
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.i: cmake_force
@@ -153,9 +201,153 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_corte
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.i: cmake_force
@@ -177,9 +369,33 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.i: cmake_force
@@ -203,7 +419,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.i: cmake_force
@@ -227,7 +443,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.i: cmake_force
@@ -251,7 +467,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.i: cmake_force
@@ -275,7 +491,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.i: cmake_force
@@ -299,7 +515,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.i: cmake_force
@@ -321,9 +537,177 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_e
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.i: cmake_force
@@ -347,7 +731,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.i: cmake_force
@@ -371,7 +755,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_e
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.i: cmake_force
@@ -395,7 +779,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.i: cmake_force
@@ -417,9 +801,33 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_e
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.i: cmake_force
@@ -443,7 +851,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.i: cmake_force
@@ -465,9 +873,81 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_e
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.i: cmake_force
@@ -491,7 +971,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.i: cmake_force
@@ -515,7 +995,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.i: cmake_force
@@ -537,9 +1017,33 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_e
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.i: cmake_force
@@ -563,7 +1067,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.i: cmake_force
@@ -585,9 +1089,513 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_
 CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c > CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c -o CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj: ../Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.i: cmake_force
@@ -611,7 +1619,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/s
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj: ../Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.i: cmake_force
@@ -635,7 +1643,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj.prov
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.i: cmake_force
@@ -659,7 +1667,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.o
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.i: cmake_force
@@ -683,7 +1691,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hw.c.obj.pr
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj: ../Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.i: cmake_force
@@ -707,7 +1715,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.obj.pr
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj: ../Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.i: cmake_force
@@ -731,7 +1739,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/CMWX1ZZABZ-0xx/mlm32l07x01.c.obj.provide
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj: ../Drivers/BSP/Components/sx1276/sx1276.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Drivers/BSP/Components/sx1276/sx1276.c
 
 CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.i: cmake_force
@@ -755,7 +1763,7 @@ CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/Components/sx1276/sx1276.c.obj.provides.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -779,7 +1787,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -803,7 +1811,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -827,7 +1835,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/list.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -851,7 +1859,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj.p
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i: cmake_force
@@ -875,7 +1883,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -899,7 +1907,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/Mem
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -923,7 +1931,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -947,7 +1955,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -971,7 +1979,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.i: cmake_force
@@ -995,7 +2003,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/aes.c.obj.pro
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.i: cmake_force
@@ -1019,7 +2027,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/cmac.c.obj.pr
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj: ../Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.i: cmake_force
@@ -1043,7 +2051,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.i: cmake_force
@@ -1067,7 +2075,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.pr
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i: cmake_force
@@ -1091,7 +2099,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i: cmake_force
@@ -1115,7 +2123,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i: cmake_force
@@ -1139,7 +2147,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i: cmake_force
@@ -1163,7 +2171,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQu
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i: cmake_force
@@ -1187,7 +2195,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i: cmake_force
@@ -1211,7 +2219,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandl
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i: cmake_force
@@ -1235,7 +2243,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i: cmake_force
@@ -1259,7 +2267,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerialize
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.i: cmake_force
@@ -1283,7 +2291,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.i: cmake_force
@@ -1307,7 +2315,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.i: cmake_force
@@ -1331,7 +2339,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.i: cmake_force
@@ -1355,7 +2363,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN4
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.i: cmake_force
@@ -1379,7 +2387,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN7
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.i: cmake_force
@@ -1403,7 +2411,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCom
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.i: cmake_force
@@ -1427,7 +2435,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU4
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.i: cmake_force
@@ -1451,7 +2459,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.i: cmake_force
@@ -1475,7 +2483,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.i: cmake_force
@@ -1499,7 +2507,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.i: cmake_force
@@ -1523,7 +2531,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU8
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.i: cmake_force
@@ -1547,7 +2555,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS9
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c.i: cmake_force
@@ -1571,7 +2579,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.i: cmake_force
@@ -1595,7 +2603,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/queue_l.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.i: cmake_force
@@ -1619,7 +2627,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c.
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.i: cmake_force
@@ -1643,7 +2651,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.i: cmake_force
@@ -1667,7 +2675,7 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.ob
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
 
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.i: cmake_force
@@ -1689,9 +2697,33 @@ CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.
 CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj: ../Core/Src/LowPower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/LowPower.c
+
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/LowPower.c > CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/LowPower.c -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj: ../Core/Src/debug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/debug.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.i: cmake_force
@@ -1715,7 +2747,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj.provides.build: CMakeFiles/LoRa
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj: ../Core/Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/freertos.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.i: cmake_force
@@ -1739,7 +2771,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj.provides.build: CMakeFiles/L
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj: ../Core/Src/hw_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_gpio.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.i: cmake_force
@@ -1763,7 +2795,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj.provides.build: CMakeFiles/Lo
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj: ../Core/Src/hw_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_rtc.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.i: cmake_force
@@ -1787,7 +2819,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_rtc.c.obj.provides.build: CMakeFiles/LoR
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj: ../Core/Src/hw_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/hw_spi.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.i: cmake_force
@@ -1811,7 +2843,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_spi.c.obj.provides.build: CMakeFiles/LoR
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj: ../Core/Src/main_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/main_2.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.i: cmake_force
@@ -1835,7 +2867,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/main_2.c.obj.provides.build: CMakeFiles/LoR
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj: ../Core/Src/vcom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Core/Src/vcom.c
 
 CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.i: cmake_force
@@ -1859,7 +2891,7 @@ CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj.provides.build: CMakeFiles/LoRaN
 
 CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj: ../startup/startup_stm32l072xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building ASM object CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building ASM object CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj -c /home/alejo/Documents/LoRa_Project_v1/software/Project/startup/startup_stm32l072xx.s
 
 CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj.requires:
@@ -1878,25 +2910,67 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj" \
@@ -1943,6 +3017,7 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj" \
@@ -1958,25 +3033,67 @@ LoRaNODE_elf_EXTERNAL_OBJECTS =
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj
@@ -2023,6 +3140,7 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilit
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj
@@ -2033,7 +3151,7 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Core/Src/vcom.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/startup/startup_stm32l072xx.s.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/build.make
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking C executable LoRaNODE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Linking C executable LoRaNODE.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LoRaNODE.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/alejo/Documents/LoRa_Project_v1/software/Project/build/LoRaNODE.hex "
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/alejo/Documents/LoRa_Project_v1/software/Project/build/LoRaNODE.bin"
@@ -2048,25 +3166,67 @@ CMakeFiles/LoRaNODE.elf.dir/build: LoRaNODE.elf
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c.obj.requires
@@ -2113,6 +3273,7 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Th
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/debug.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/freertos.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Core/Src/hw_gpio.c.obj.requires

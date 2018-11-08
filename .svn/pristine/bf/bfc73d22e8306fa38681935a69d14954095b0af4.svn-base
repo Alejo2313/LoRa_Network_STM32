@@ -1,0 +1,10 @@
+LoRaMacFCntHandler.c:98:13:NvmCtxChanged	8	static
+LoRaMacFCntHandler.c:118:28:LoRaMacFCntHandlerRestoreNvmCtx	8	static
+LoRaMacFCntHandler.c:132:7:LoRaMacFCntHandlerGetNvmCtx	0	static
+LoRaMacFCntHandler.c:138:28:LoRaMacGetFCntDown	32	static
+LoRaMacFCntHandler.c:229:28:LoRaMacSetFCntDown	8	static
+LoRaMacFCntHandler.c:265:28:LoRaMacGetFCntUp	0	static
+LoRaMacFCntHandler.c:277:28:LoRaMacSetFCntUp	8	static
+LoRaMacFCntHandler.c:286:28:LoRaMacResetFCnts	8	static
+LoRaMacFCntHandler.c:107:28:LoRaMacFCntHandlerInit	8	static
+LoRaMacFCntHandler.c:304:28:LoRaMacFCntHandlerSetMulticastReference	0	static

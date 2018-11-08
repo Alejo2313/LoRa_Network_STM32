@@ -1,0 +1,10 @@
+low_power_manager.c:60:6:LPM_SetOffMode	8	static
+low_power_manager.c:88:6:LPM_SetStopMode	8	static
+low_power_manager.c:148:15:LPM_GetMode	0	static
+low_power_manager.c:177:13:LPM_EnterSleepMode	0	static
+low_power_manager.c:178:13:LPM_ExitSleepMode	0	static
+low_power_manager.c:179:13:LPM_EnterStopMode	0	static
+low_power_manager.c:180:13:LPM_ExitStopMode	0	static
+low_power_manager.c:181:13:LPM_EnterOffMode	0	static
+low_power_manager.c:182:13:LPM_ExitOffMode	0	static
+low_power_manager.c:115:6:LPM_EnterLowPower	8	static

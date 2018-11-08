@@ -1,0 +1,7 @@
+utilities.c:30:9:rand1	8	static
+utilities.c:35:6:srand1	0	static
+utilities.c:41:9:randr	16	static
+utilities.c:46:6:memcpy1	8	static
+utilities.c:54:6:memcpyr	12	static
+utilities.c:63:6:memset1	0	static
+utilities.c:71:8:Nibble2HexChar	0	static

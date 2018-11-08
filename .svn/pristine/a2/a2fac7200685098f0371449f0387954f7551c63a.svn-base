@@ -1,0 +1,4 @@
+LoRaMacSerializer.c:24:27:LoRaMacSerializerJoinRequest	8	static
+LoRaMacSerializer.c:60:27:LoRaMacSerializerReJoinType1	8	static
+LoRaMacSerializer.c:91:27:LoRaMacSerializerReJoinType0or2	8	static
+LoRaMacSerializer.c:122:27:LoRaMacSerializerData	16	static

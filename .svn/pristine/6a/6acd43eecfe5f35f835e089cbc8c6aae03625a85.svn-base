@@ -1,0 +1,13 @@
+lora.c:708:24:LORA_BeaconReq	24	static
+lora.c:724:24:LORA_PingSlotReq	24	static
+lora.c:675:24:LORA_DeviceTimeReq	24	static
+lora.c:407:13:MlmeIndication	32	static
+lora.c:225:13:McpsIndication	16	static
+lora.c:184:13:McpsConfirm	56	static
+lora.c:453:6:LORA_Init	80	static
+lora.c:550:6:LORA_Join	24	static
+lora.c:305:13:MlmeConfirm	32	static
+lora.c:608:16:LORA_JoinStatus	32	static
+lora.c:628:6:LORA_send	40	static
+lora.c:746:17:LORA_RequestClass	40	static
+lora.c:813:6:LORA_GetCurrentClass	32	static

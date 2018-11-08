@@ -204,6 +204,33 @@ Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
 .PHONY : Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.c.s
 
+Core/Src/LowPower.obj: Core/Src/LowPower.c.obj
+
+.PHONY : Core/Src/LowPower.obj
+
+# target to build an object file
+Core/Src/LowPower.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.obj
+.PHONY : Core/Src/LowPower.c.obj
+
+Core/Src/LowPower.i: Core/Src/LowPower.c.i
+
+.PHONY : Core/Src/LowPower.i
+
+# target to preprocess a source file
+Core/Src/LowPower.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.i
+.PHONY : Core/Src/LowPower.c.i
+
+Core/Src/LowPower.s: Core/Src/LowPower.c.s
+
+.PHONY : Core/Src/LowPower.s
+
+# target to generate assembly for a file
+Core/Src/LowPower.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Core/Src/LowPower.c.s
+.PHONY : Core/Src/LowPower.c.s
+
 Core/Src/debug.obj: Core/Src/debug.c.obj
 
 .PHONY : Core/Src/debug.obj
@@ -582,6 +609,60 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c.s
 
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.c.s
+
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj
 
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.obj
@@ -609,6 +690,168 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.s
 
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.c.s
+
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.obj
 
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.obj
@@ -635,6 +878,33 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.s: Drivers/STM32L0xx_HAL_Driv
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.c.s
 
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c.obj
 
@@ -798,6 +1068,195 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.s
 
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.c.s
+
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c.obj
 
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.obj
@@ -906,6 +1365,33 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.s
 
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.c.s
+
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.c.obj
 
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.obj
@@ -959,6 +1445,87 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.s: Drivers/STM32L0xx_HAL_D
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.c.s
 
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c.obj
 
@@ -1041,6 +1608,33 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c.s
 
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.c.s
+
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj
 
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.obj
@@ -1094,6 +1688,573 @@ Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.s: Drivers/STM32L0xx_HAL_
 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.s
 .PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c.s
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.obj: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.obj
+
+# target to build an object file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.obj
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.i: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.i
+
+# target to preprocess a source file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.i
+
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.s: Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s
+
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.s
+
+# target to generate assembly for a file
+Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s
+.PHONY : Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 
@@ -2175,6 +3336,9 @@ help:
 	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.obj"
 	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.i"
 	@echo "... Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_it.s"
+	@echo "... Core/Src/LowPower.obj"
+	@echo "... Core/Src/LowPower.i"
+	@echo "... Core/Src/LowPower.s"
 	@echo "... Core/Src/debug.obj"
 	@echo "... Core/Src/debug.i"
 	@echo "... Core/Src/debug.s"
@@ -2217,12 +3381,39 @@ help:
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_comp_ex.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_crc_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cryp_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dac_ex.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_firewall.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.s"
@@ -2241,6 +3432,27 @@ help:
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2s.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_irda.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lcd.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_lptim.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pcd_ex.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.s"
@@ -2253,12 +3465,24 @@ help:
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rng.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smartcard_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_smbus.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.s"
@@ -2268,12 +3492,78 @@ help:
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tsc.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.s"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.obj"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.i"
 	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_usart.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_wwdg.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_comp.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crs.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dac.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lptim.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_lpuart.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rng.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rtc.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.s"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.obj"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.i"
+	@echo "... Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.s"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s"

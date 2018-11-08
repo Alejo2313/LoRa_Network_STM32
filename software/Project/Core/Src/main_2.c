@@ -6,54 +6,15 @@
  */
 
 
-#define NODE 
-
-
-#define DEBUG
-/*Includes*/
+#include "main.h"
 #include "cmsis_os.h"
-#include "hw.h"						//Hardware configuration
-#include "radio.h"					//phy mac implementation
-#include "timeServer.h"				//Timer driver implementation
-#include "low_power_manager.h"		//Power manager
+#include "hw.h"									//Hardware configuration
+#include "radio.h"								//phy mac implementation
 #include "types.h"
-
-//#define NODE
-
-#define RF_FREQUENCY		868000000		//Europe band
-#define TX_OUTPUT_POWER_DF		14				//dNm
-
-#define RX_TIMEOUT_VALUE                            1000
-
-/*Lora settings */
-
-#define LORA_BANDWIDTH_DF                           0         // [0: 125 kHz,
-                                                              //  1: 250 kHz,
-                                                              //  2: 500 kHz,
-                                                              //  3: Reserved]
-#define LORA_SPREADING_FACTOR_DF                       7         // [SF7..SF12]
-#define LORA_CODINGRATE                             1         // [1: 4/5,
-                                                              //  2: 4/6,
-                                                              //  3: 4/7,
-                                                              //  4: 4/8]
-#define LORA_PREAMBLE_LENGTH                        8         // Same for Tx and Rx
-#define LORA_SYMBOL_TIMEOUT                         0         // Symbols
-#define LORA_FIX_LENGTH_PAYLOAD_ON                  false
-#define LORA_IQ_INVERSION_ON                        false
+#include "LowPower.h"
 
 
-
-
-/* MPU settings */
-
-#define RX_WINDOW			100
-#define BUFFER_SIZE			64   		//128, 256
-
-#define USE_ACK				false
-#define DEV_ADDR			0x1A2B
-
-
-/* Variables */
+/************ PRIVATE VARIABLES ********************************/
 
 Packet_t* RxData;
 Packet_t* TxData;
@@ -64,58 +25,72 @@ int8_t Rssi = 0;								//RX power
 int8_t Snr = 0;									//Signal/Noise ratio
 int8_t	SfRx = LORA_SPREADING_FACTOR_DF;		//Actual Spreading factor
 int8_t	SfTx = LORA_SPREADING_FACTOR_DF;		//Actual Spreading factor
-uint16_t Bw = LORA_BANDWIDTH_DF;
+uint16_t Bw = LORA_BANDWIDTH_DF;			
 uint8_t	TxPower = TX_OUTPUT_POWER_DF;
 
-bool exe = false;
-static int cont = 0;
-static Error_t ErroType = NO_ERROR;
 
-/* radio */
+
+bool exe = false;								//Flag -> used on TX and RX state
+static Error_t ErroType = NO_ERROR;				//Needed for ErrorHandleer
+Error_t	LastError = NO_ERROR;
+config_t  Configuration;						// Main configuration 
+
+
+
+/***************** RADIO ********************************/
+//Variables
 static RadioEvents_t RadioEvents;
 
-void onTxDone();			//Tx Done callback
-void onTxTimeout();			//Tx Timeout callback prototype
+void onTxDone();																	//Tx Done callback
+void onTxTimeout();																	//Tx Timeout callback prototype
 void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr );			// Rx Done callback prototype
-void onRxTimeout();			//Rx Timeout callback prototype.
-void onRxError();			//Rx Error callback prototype.
-void onFhssChangeChannel(uint8_t currentChannel);	//HSS Change Channel callback prototype;
+void onRxTimeout();																	//Rx Timeout callback prototype.
+void onRxError();																	//Rx Error callback prototype.
+void onFhssChangeChannel(uint8_t currentChannel);									//HSS Change Channel callback prototype;
 void onCadDone(bool channelActivityDetected);
 
 
-/* private prototypes */
-
+/******************** private prototypes **************/
 void radio_init();
 void loadInfo();
+void configure();
+void errorHandle();
 void measure();
 void sendPack();
-void printRx();
+void print();
 void fire();
+void sendAck();
+void Config_Load();
 void parser(uint8_t* pData, uint16_t size);
+void Join();
 
-void ledBlinkTask();
 
+
+/***********************************/
 
 int main(){
-	// init haardware
 
 	 
 	HAL_Init();
 
-	
+	BSP_LED_Init(LED_BLUE);
+	BSP_LED_Init(LED_GREEN);
+	BSP_LED_Init(LED_RED1);
+
 	SystemClock_Config();
 	HW_Init();
 	radio_init();
-
-	osThreadDef(BLINK, ledBlinkTask, osPriorityNormal,0,10);
-	osThreadCreate(osThread(BLINK), NULL);
+	Config_Load();
 
 
 #ifdef NODE
-	osThreadDef(FSM, fire, osPriorityNormal,0, 512);
+	osThreadDef(FSM, fire, osPriorityRealtime,0, 512);
 	osThreadCreate(osThread(FSM), NULL);
+	BSP_LED_On(LED_BLUE);
+
 #else
 	Radio.Rx( 0);
+	BSP_LED_On(LED_RED1);
 #endif
 
 	osKernelStart();
@@ -157,39 +132,54 @@ void radio_init(){
  */
 
 void fire(){
-	while(1);
 	while(1){
 		switch(State){
+
+			case JOIN_S:
+				Join();
+				State = SLEEP_S;
+			break;
+
 			case SLEEP_S:
-			#ifdef DEBUG
-				PRINTF("--> SLEEP STATE \r \n");
-			#endif
-				osDelay(1000);
-				State = MEASURE;
+				PrintIfDebug(">Sleep state \r \n");
+				GoBed(Configuration.SleepTime);
+				if(Configuration.Joined)
+					State = MEASURE;
+				else
+					State = JOIN;
 				break;
+
 			case MEASURE:
-			#ifdef DEBUG
-				PRINTF("--> MEASURE STATE \r \n");
-			#endif
+				PrintIfDebug(">Measure state \r \n");
 				measure();
 				State = TX_S;
 				break;
+
 			case TX_S:
 				if(!exe){
 					sendPack();
 					exe = true;
 				}
 				break;
+
 			case RX_S:
 				if(!exe){
 					Radio.Rx(1000);
 					exe = true;
 				}
 				break;
+
+			case CONFIG_S:
+				configure();
+				State = SLEEP_S;
+			break;
+
+			case ERROR_HANDLE:
+				errorHandle();
+			break;
+
 			default:
-			#ifdef DEBUG
-				PRINTF("erro?! \r \n");
-			#endif
+				PrintIfDebug("> Unknow erro \r \r");
 				State = SLEEP_S;
 				break;
 		}
@@ -197,39 +187,75 @@ void fire(){
 }
 
 
-/*
- *
+
+
+/**
+ * @brief	Join into a network
+ * @param	none
+ * @retval	none
+ * 
+ */ 
+
+//TODO  -> send empty pack
+
+void Join(){
+	TxData->devAddr 	= Configuration.DevAddr;
+	TxData->devDest 	= Configuration.GateAddr;
+	TxData->MacType 	= JOIN;
+	TxData->NettAddr	= Configuration.NetAddr;
+
+	//TODO -> Complete this
+
+	sendPack();
+}
+
+
+/**
+ * 	@brief	Tx done callback
+ * 	@param	none
+ * 	@retval	none
  */
 
 void onTxDone(){
-#ifdef DEBUG
-	PRINTF("Transmition done! \r \n");
-#endif
-#ifdef NODE
-	Radio.Sleep( );
-#endif
 
+	PrintIfDebug("-->TX done! \r \t");
+
+#ifdef NODE
+
+	Radio.Sleep( );
 	State = RX_S;
 	exe = false;
 
-}
-/*
- *
- */
-void onTxTimeout(){
-#ifdef DEBUG
-	PRINTF("Transmition fail! -> timeout \r \n");
-#endif
-#ifdef NODE
-	Radio.Sleep( );
+#else
+	Radio.Rx(0);
 #endif
 
+}
+
+/**
+ *	@brief 		RX timeout callback
+ * 	@param		none
+ * 	@pretval	none
+ * 
+ */
+void onTxTimeout(){
+
+
+	PrintIfDebug("-->TX error: Timeout \t \n");
 	State = ERROR_HANDLE;
 	ErroType = TX_TIMEOUT;
 	exe = false;
+
+#ifdef NODE
+	Radio.Sleep( );
+#endif
 }
-/*
- *
+
+
+
+/**
+ *	@brief	RX data callback
+ *	@param	RX
  */
 
 void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
@@ -238,69 +264,50 @@ void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
 	Radio.Sleep( );
 #endif
 
-	if(size < 4)
+	if(size < HEAD_SIZE)
 		return;
 
+
 	exe = false;
-	parser(payload, size);
-	printRx();
+	parser(payload, size);					
+	print(RxData);
+
+
+
+	//TODO -> YOU MUST BE JOIN
+
 	switch(RxData->MacType){
 		case ACK:
 			State = SLEEP_S;
-		#ifdef DEBUG
-			PRINTF("RX ok! -> ACK \r \n");
-		#endif
+			PrintIfDebug("-->ACK ok \n \r");
 			break;
 
 
 		case NACK:
 			State = ERROR_HANDLE;
 			ErroType = RX_NACK;
-		#ifdef DEBUG
-			PRINTF("RX ERROR! -> NACK \r \n");
-		#endif
+			PrintIfDebug("--> ERROR: NACK \r \n");
 			break;
 
-/*
-		case ACK_CONFIG:
-			State = CONFIG_S;
-		#ifdef DEBUG
-			PRINTF("RX ok! -> ACK+CONFIG \r \n");
-		#endif
-			break;
-
-		case NACK_CONFIG:
-			State = CONFIG_S;
-		#ifdef DEBUG
-			PRINTF("RX ERROR! -> NACK+CONFIG \r \n");
-		#endif
-			break;
-
-		case REQ_NFO:
-			loadInfo();
-			State = TX_S;
-		#ifdef DEBUG
-			PRINTF("RX OK! -> REQ_NFO \r \n");
-		#endif
-			break;
-
-*/
 		case TX_T:
-		#ifdef DEBUG
 			switch(RxData->type){
-				case DATA:
-					printRx();
-					break;
+		#ifdef NODE
 				case CONFIG:
-					//set config
+					State = CONFIG;
+					break;	
+		#else
+				case DATA:
+					//print(RxData);
 					break;
+		#endif
 				case REQ_INFO:
-					//load info
+					loadInfo();
 					State = TX_T;
 					break;
 			}
-		//	sendAck();
-		#endif
+			if(USE_ACK){
+				sendAck();
+			}
 			break;
 
 		default:
@@ -309,16 +316,22 @@ void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
 	}
 }
 
-
+/**
+ * 	@brief	TimeOut Callback 
+ * 	@param	none
+ * 	@retval	none
+ */
 
 void onRxTimeout(){
 
 #ifdef DEBUG
-	PRINTF("RX TIMEOUT \r \n");
+	PRINTF("Error: Timeout \r \n");
 #endif
+
 #ifdef NODE
 	Radio.Sleep( );
 #endif
+
 	exe = false;
 	if(USE_ACK){
 		State = ERROR_HANDLE;
@@ -328,66 +341,112 @@ void onRxTimeout(){
 		State = SLEEP_S;
 	}
 }
+/**
+ * 	@brief	Convert RAW payload to Packet_t type
+ * 	@param	[pData]	pointer to recived data
+ * 	@para	[size]	pData size (in bytes)
+ * 	@retval	none 
+ */
+
 
 void parser(uint8_t* pData, uint16_t size){
 
-	RxData= (Packet_t*)malloc(sizeof(Packet_t));
-	RxData->devAddr = (*pData << 8)|(*(pData+1)&0xFF);
-	RxData->MacType = *(pData+2);
-	RxData->pSize = *(pData+3);
-	RxData->pData = (uint8_t*)malloc(RxData->pSize);
-	memcpy(RxData->pData, pData + 4,RxData->pSize );
+	if(RxData == NULL)
+		RxData= (Packet_t*)malloc(sizeof(Packet_t));
+
+	RxData->NettAddr	= *(pData++);
+	RxData->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
+	RxData->devDest 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
+	RxData->MacType 	= (*(pData)>>4)&0xF;
+	RxData->flags 		= *(pData++)&0xF;
+	RxData->pSize 		= *(pData++);
+	RxData->type 		= *(pData++);
+
+	free(RxData->pData);
+	RxData->pData = (uint8_t*)malloc(RxData->pSize - 1); 
+	memcpy(RxData->pData, pData ,RxData->pSize  - 1);
+}
+
+/**
+ * @brief 	Send TxData payload
+ * @param	none
+ * @retval	none
+ */
+ 
+void sendPack(){
+	static uint8_t* sendData = NULL;
+
+	PRINTF("Sending data: \r\n");
+	print(TxData);
+
+	if(sendData !=  NULL)
+		free(sendData);
+
+	uint8_t totalSize = TxData->pSize + HEAD_SIZE;
+	sendData = (uint8_t*)malloc(totalSize);
+	*(sendData++) = (TxData->NettAddr);
+	*(sendData++) = (TxData->devAddr>>8)&0xFF;
+	*(sendData++) = (TxData->devAddr)&0xFF;
+	*(sendData++) = (TxData->devDest >> 8)&0xFF;
+	*(sendData++) = (TxData->devDest)&0xFF;
+	*(sendData++) = (TxData->MacType << 4)| TxData->flags;
+	*(sendData++) = (TxData->pSize);
+	*(sendData++) = (TxData->type);
+	memcpy(sendData, TxData->pData, TxData->pSize -1);
+	
+	Radio.Send(sendData - HEAD_SIZE -1, totalSize);
 
 }
 
+
+/**
+ * 	@brief	Read sensor load the data
+ * 	@param	none
+ * 	@retval	none
+ */
 
 void measure(){
 	if(TxData == 0){
 		TxData = (Packet_t*)malloc(sizeof(Packet_t));
 	}
 	uint8_t* mess = "01234";
+	TxData->NettAddr = 0xFF;
 	TxData->devAddr = DEV_ADDR;
-	TxData->MacType = TX_T;
+	TxData->devDest = 0xFFFF;
+	TxData->MacType = 0;
+	TxData->flags = 0;
 	TxData->pData = mess;
+	TxData->type = DATA;
 	TxData->pSize = 5;
 }
 
 
-void sendPack(){
+/**
+ * 	@brief	DEBUG FUNCTION -> print a package
+ * 	@param	[data]	pointer to data struct
+ * 	@retval	none
+ * 
+ */
 
-	uint8_t totalSize = TxData->pSize + 4;
-	uint8_t* sendData = (uint8_t*)malloc(totalSize);
-	sendData[0] = (TxData->devAddr &0xFF00)>>8;
-	sendData[1] = (TxData->devAddr & 0xFF);
-	sendData[2] = TxData->MacType;
-	sendData[3] = TxData->pSize;
-	memcpy(sendData + 4, TxData->pData, TxData->pSize);
-#ifdef DEBUG
-	char str[256];
-	sprintf(str, "DevAddr= 0x%X%X \n\r MacType = %u \n\r pZise = %u \n \r pData =0x%X 0x%X 0x%X 0x%X 0x%X ",sendData[0],sendData[1],sendData[2],sendData[3],sendData[4], sendData[5],sendData[6],sendData[7],sendData[8] );
-	PRINTF(str);
-#endif
-	Radio.Send(sendData, totalSize);
 
-}
-void printRx(){
-
-	char str[256];
-	if(RxData == 0){
-		PRINTF("ERROR DATA NULL");
+void print(Packet_t *data){
+	if(data == NULL){
+		PRINTF("Error printing: DATA NULL \r \n");
 		return;
 	}
-	PRINTF("\t pData -> \n\r");
-	sprintf(str, "CONT = %d \n DevAddr= %X \n\r MacType = %u \n\r pZise = %u \n \r pData = 0x%X 0x%X 0x%X 0x%X 0x%X ",cont,RxData->devAddr,RxData->MacType,RxData->pSize,RxData->pData[0],RxData->pData[1],RxData->pData[2],RxData->pData[3],RxData->pData[4] );
+	char str[512];
+	sprintf(str, "\t  Net Address: %X \r\n\t device Address: %X \r\n\t Source Address: %X \r\n\t mac type: %X \r\n\t Size: %X \r\n", 
+			data->NettAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
+
 	PRINTF(str);
-	PRINTF("\r \n");
-	cont++;
 }
 
+/**
+ * 	@brief	Rx Error handle
+ * 	@param 	none
+ * 	@retval	none
+ */
 
-void loadInfo(){
-
-};
 void onRxError(){
 	exe = false;
 
@@ -398,17 +457,123 @@ void onRxError(){
 	State = SLEEP_S;
 }
 
+
+/**
+ * 
+ */
+
+
+
+
+void errorHandle(){
+	switch(ErroType){
+
+		case RX_ERROR:
+			State = SLEEP_S;
+		break;
+
+
+		case RX_TIMEOUT:
+			if(LastError == RX_TIMEOUT){
+				State = SLEEP_S;
+				return;
+			}
+				
+			if(USE_ACK){
+				State = TX_S;
+				LastError = RX_TIMEOUT;
+				Configuration.SleepTime = (Configuration.SleepTime*(100+SLEEP_FACTOR))/100;
+				Configuration.RXWIndow	= (Configuration.RXWIndow*(100 + RX_TIMEOUT_FACTOR))/100;
+			}
+		break;
+
+		case RX_NACK:				//ToDo   -> REJOIN
+			if(LastError == RX_NACK){
+				State = TX_S;
+				LastError = RX_REJOIN;
+				return;
+			}
+			if(LastError == RX_REJOIN){
+				State = JOIN;
+				return;
+			}
+			
+			State = TX_S;
+			LastError = RX_NACK;
+
+		break;
+
+		case TX_TIMEOUT:
+			State = SLEEP_S;
+		break;
+
+		default:
+			State = SLEEP_S;
+			return;
+		break;
+	}
+}
+
+
+
+void PrintIfDebug(uint8_t* srt){
+	#ifdef DEBUG
+	PRINTF(srt);
+	#endif;
+
+}
+
+
+
+/**
+ * 	@brief	Send ACK
+ * 
+ * 
+ */ 
+
+
+void sendAck(){
+	if(TxData == 0){
+		TxData = (Packet_t*)malloc(sizeof(Packet_t));
+	}
+	uint8_t* mess = "01234";
+	TxData->NettAddr	= Configuration.NetAddr;
+	TxData->devAddr 	= DEV_ADDR;
+	TxData->devDest 	= RxData->devAddr;
+	TxData->MacType 	= ACK;
+	TxData->flags 		= 0;
+	TxData->pData 		= mess;
+	TxData->type 		= DATA;
+	TxData->pSize 		= 5;
+	sendPack();
+} 
+
+
+/**
+ * @brief Load default values to config structure
+ * 
+ */
+
+void Config_Load(){
+
+	Configuration.DevAddr 	= DEV_ADDR;
+	Configuration.GateAddr	= CONFIG_ADDR;
+	Configuration.RXWIndow	= RX_TIMEOUT_VALUE;
+	Configuration.SleepTime	= SLEEP_TIME;
+	Configuration.Joined	= false;
+}
+
+
+//TODO -> Complete this function
+void configure(){
+
+
+};
+
+void loadInfo(){
+
+};
 void onFhssChangeChannel(uint8_t currentChannel){};	//HSS Change Channel callback prototype;
 void onCadDone(bool channelActivityDetected){}
 
 
-//more shit
-void ledBlinkTask(){
-	BSP_LED_Init(LED_GREEN);
-	while(1){
-		BSP_LED_Toggle(LED_GREEN);
-		osDelay(500);
-	}
-	osThreadTerminate(NULL);
-	
-}

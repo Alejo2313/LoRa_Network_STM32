@@ -1,0 +1,2 @@
+bsp.c:91:6:BSP_sensor_Read	0	static
+bsp.c:112:7:BSP_sensor_Init	0	static

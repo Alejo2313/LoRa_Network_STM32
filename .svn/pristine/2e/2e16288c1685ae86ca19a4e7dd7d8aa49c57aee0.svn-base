@@ -1,0 +1,5 @@
+aes.c:349:13:xor_block	0	static
+aes.c:376:13:copy_and_key	8	static
+aes.c:513:13:aes_set_key	48	static
+aes.c:568:13:aes_encrypt	112	static
+aes.c:597:13:aes_cbc_encrypt	24	static
