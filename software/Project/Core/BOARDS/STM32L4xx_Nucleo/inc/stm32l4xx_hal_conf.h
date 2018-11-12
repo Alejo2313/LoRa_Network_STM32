@@ -1,53 +1,8 @@
-/**
-  ******************************************************************************
-  * @file    stm32l4xx_hal_conf.h
-  * @author  MCD Application Team
-  * @version V1.2.0
-  * @date    10-July-2018
-  * @brief   HAL configuration file.
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics International N.V. 
-  * All rights reserved.</center></h2>
-  *
-  * Redistribution and use in source and binary forms, with or without 
-  * modification, are permitted, provided that the following conditions are met:
-  *
-  * 1. Redistribution of source code must retain the above copyright notice, 
-  *    this list of conditions and the following disclaimer.
-  * 2. Redistributions in binary form must reproduce the above copyright notice,
-  *    this list of conditions and the following disclaimer in the documentation
-  *    and/or other materials provided with the distribution.
-  * 3. Neither the name of STMicroelectronics nor the names of other 
-  *    contributors to this software may be used to endorse or promote products 
-  *    derived from this software without specific written permission.
-  * 4. This software, including modifications and/or derivative works of this 
-  *    software, must execute solely and exclusively on microcontroller or
-  *    microprocessor devices manufactured by or for STMicroelectronics.
-  * 5. Redistribution and use of this software other than as permitted under 
-  *    this license is void and will automatically terminate your rights under 
-  *    this license. 
-  *
-  * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
-  * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
-  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
-  * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
-  * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
-  * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-  * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
-  * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
-  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
-  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  *
-  ******************************************************************************
-  */
+
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __STM32L4xx_HAL_CONF_H
-#define __STM32L4xx_HAL_CONF_H
+#ifndef _HAL_CONF_H
+#define _HAL_CONF_H
 
 #ifdef __cplusplus
  extern "C" {
@@ -119,9 +74,21 @@
   * @brief Internal Multiple Speed oscillator (MSI) default value.
   *        This value is the default MSI range value after Reset.
   */
+
+
+#ifdef stm32l4xx
 #if !defined  (MSI_VALUE)
+  #define MSI_VALUE    ((uint32_t)2097000U) /*!< Value of the Internal oscillator in Hz*/
+#endif /* MSI_VALUE */
+#endif
+
+
+#if !defined  (MSI_VALUE) 
   #define MSI_VALUE    ((uint32_t)4000000) /*!< Value of the Internal oscillator in Hz*/
 #endif /* MSI_VALUE */
+
+
+
 
 /**
   * @brief Internal High Speed oscillator (HSI) value.
@@ -132,14 +99,24 @@
   #define HSI_VALUE    ((uint32_t)16000000) /*!< Value of the Internal oscillator in Hz*/
 #endif /* HSI_VALUE */
 
+#if !defined  (HSI48_VALUE) 
+#define HSI48_VALUE ((uint32_t)48000000U)
+#endif
 /**
   * @brief Internal Low Speed oscillator (LSI) value.
   */
+
+
+#ifdef stm32l4xx
 #if !defined  (LSI_VALUE) 
- #define LSI_VALUE  ((uint32_t)32000)       /*!< LSI Typical Value in Hz*/
-#endif /* LSI_VALUE */                      /*!< Value of the Internal Low Speed oscillator in Hz
-                                             The real value may vary depending on the variations
-                                             in voltage and temperature.*/
+ #define LSI_VALUE  ((uint32_t)32000)       
+#endif
+#endif
+
+#if !defined  (LSI_VALUE) 
+ #define LSI_VALUE  ((uint32_t)37000U)       /*!< LSI Typical Value in Hz*/
+#endif /* LSI_VALUE */   
+
 /**
   * @brief External Low Speed oscillator (LSE) value.
   *        This value is used by the UART, RTC HAL module to compute the system frequency
@@ -152,6 +129,8 @@
   #define LSE_STARTUP_TIMEOUT    ((uint32_t)5000)   /*!< Time out for LSE start up, in ms */
 #endif /* HSE_STARTUP_TIMEOUT */
 
+
+#ifdef stm32l4xx
 /**
   * @brief External clock source for SAI1 peripheral
   *        This value is used by the RCC HAL module to compute the SAI1 & SAI2 clock source 
@@ -169,6 +148,10 @@
 #if !defined  (EXTERNAL_SAI2_CLOCK_VALUE)
   #define EXTERNAL_SAI2_CLOCK_VALUE    ((uint32_t)48000) /*!< Value of the SAI2 External clock source in Hz*/
 #endif /* EXTERNAL_SAI2_CLOCK_VALUE */
+
+
+#endif
+
 
 /* Tip: To avoid modifying this file each time you need to use different HSE,
    ===  you can define the HSE value in your toolchain compiler preprocessor. */
