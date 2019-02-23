@@ -1,0 +1,128 @@
+/******************** (C) COPYRIGHT 2007 RBZ Robot Design S.L.******************
+* File Name          : serie.h
+* Author             : Jesus Donate Fernandez
+* Date First Issued  : 18/12/2007
+* Description        : Cabezeras de funciones de serie.c
+********************************************************************************
+* History:
+* 18/12/2007 : Created
+********************************************************************************
+* THE PRESENT SOFTWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+* WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME.
+* AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT,
+* INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE
+* CONTENT OF SUCH SOFTWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING
+* INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+*******************************************************************************/
+
+#ifndef _SERIE_H_
+#define _SERIE_H_
+
+/* Includes ------------------------------------------------------------------*/
+#include "common.h"
+/* Scheduler includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+/* Typedef -----------------------------------------------------------*/
+
+/* Defines ------------------------------------------------------------*/
+
+//*********************************************************
+//***************      UART CONFIG      *******************
+//*********************************************************
+#define	UART_NUM					2
+#define UART_SPEED              9600
+#define UART_DEFAULT_TIMEOUT    100
+
+#define SERIE_ISR_PRIORITY        6
+
+#if UART_NUM == 2
+	#define	USART							USART2
+	#define	UART_TXD_PIN			GPIO_PIN_2
+	#define	UART_TXD_PORT			GPIOA
+	#define	UART_RXD_PIN			GPIO_PIN_3
+	#define	UART_RXD_PORT			GPIOA
+  #define UART_AF           GPIO_AF7_USART2
+	#define USART_IRQn      	USART2_IRQn
+#endif
+
+#define	SERIE_TAM_TX_BUFFER			128		//Longitud de cada uno de los buffers, su valor debe ser como el de la mayor trama
+#define SERIE_TAM_RX_BUFFER			128		//Longitud del buffer de recepcion
+
+#define MODBUS_TIMER_ISR_PRIORITY 7
+#define MODBUS_ADDRESS            0x34
+#define MODBUS_BAUDRATE           9600
+#define MODBUS_PARITY             MB_PAR_NONE
+
+#define TEST_MODBUS_TASK_PRIORITY     2
+#define TEST_MODBUS_TASK_STACK        512
+
+#define TEST_MODBUS_2_TASK_PRIORITY     2
+#define TEST_MODBUS_2_TASK_STACK        512
+
+#define TEST_SERIAL_TASK_PRIORITY     1
+#define TEST_SERIAL_TASK_STACK        128 
+
+#ifndef TRUE
+#define TRUE	1
+#endif
+#ifndef FALSE
+#define FALSE	0
+#endif
+
+
+/* Variables ---------------------------------------------------------*/
+
+/* Function prototypes -----------------------------------------------*/
+/*******************************************************************************
+* Function Name  : SERIE_Init
+* Description    : Inicializa el hardware para las comunicaciones serie
+* Input          : speed : Conexion speed in Bauds
+* Output         : None
+* Return         : None
+*******************************************************************************/
+extern void SERIE_Init(int speed);
+
+/*******************************************************************************
+* Function Name  : SERIE_Write
+* Description    : Envía por el puerto serie una trama
+* Input          :
+*	-data	: uint8_t*	datos a enviar
+*	-len  : uint16_t numero de datos a enviar
+* 	-timeout: uint16_t maximo tiempo de espera en ticks del sistema, para el envio
+* Output         : None
+* Return         : Numero de datos enviados
+*******************************************************************************/
+extern uint16_t SERIE_Write(uint8_t *data, uint16_t len, uint16_t timeout);
+
+/*******************************************************************************
+* Function Name  : SERIE_Read
+* Description    : Recibe por el puerto serie una trama de longitud definida
+* Input          :
+*	-len  : int numero de datos a recivir
+* Output         :
+*	-Data: uint8_t * Puntero al buffer donde se copiaran los datos recibidos
+* Return         : Numero de datos recibidos
+*******************************************************************************/
+extern uint16_t SERIE_Read(uint8_t *data, uint16_t len, uint16_t timeout);
+
+extern uint8_t SERIE_WaitingRxElements();
+
+extern uint8_t SERIE_SetModbus();
+extern uint8_t SERIE_ReseetModbus();
+
+extern void SERIE_EnableIT(uint16_t uart_it_arg);
+extern void SERIE_DisableIT(uint16_t uart_it_arg);
+extern HAL_StatusTypeDef SERIE_Transmit(uint8_t *pData, uint16_t Size, uint32_t Timeout);
+extern HAL_StatusTypeDef SERIE_Receive(uint8_t *pData, uint16_t Size, uint32_t Timeout);
+
+
+//Errores de compilacion
+#if SERIE_ISR_PRIORITY < (configMAX_SYSCALL_INTERRUPT_PRIORITY >> 5)
+	#error "SERIE_ISR_PRIORITY no puede tener mas prioridad que configMAX_SYSCALL_INTERRUPT_PRIORITY al usar funciones del SO"
+#endif
+#endif //_SERIE_H_
+

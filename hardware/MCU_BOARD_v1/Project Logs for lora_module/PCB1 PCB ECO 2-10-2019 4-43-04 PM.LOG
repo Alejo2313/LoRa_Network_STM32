@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=PA11 Pin=-1
+Removed Pin From Net: NetName=PA12 Pin=-2
+Removed Pin From Net: NetName=PA14 Pin=P4-2
+Removed Pin From Net: NetName=PA13 Pin=P4-3
+Removed Pin From Net: NetName=GND Pin=S1-2_2
+Removed Pin From Net: NetName=GND Pin=S1-GND
+Change Component Designator: OldDesignator= NewDesignator=C2
+Change Component Designator: OldDesignator= NewDesignator=C3
+Change Component Designator: OldDesignator= NewDesignator=C4
+Change Component Designator: OldDesignator= NewDesignator=C5
+Change Component Designator: OldDesignator= NewDesignator=C8
+Change Component Designator: OldDesignator= NewDesignator=P3
+Change Component Designator: OldDesignator= NewDesignator=R1
+Change Component Designator: OldDesignator= NewDesignator=R2
+Change Component Designator: OldDesignator= NewDesignator=SB1
+Change Component Designator: OldDesignator= NewDesignator=VR1
+Added Pin To Net: NetName=PA12 Pin=P3-1
+Added Pin To Net: NetName=PA11 Pin=P3-2
+Added Pin To Net: NetName=PA13 Pin=P4-2
+Added Pin To Net: NetName=PA14 Pin=P4-3
+Added Member To Class: ClassName=mcu Member=Component C3 Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1uF 0603 10% 16V MLCC
+Added Member To Class: ClassName=mcu Member=Component C4 Multilayer Ceramic Capacitors MLCC - SMD/SMT 25V 0.1uF 0603 X7R 0.05
+Added Member To Class: ClassName=mcu Member=Component C5 Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1uF 0603 10% 16V MLCC
+Added Member To Class: ClassName=mcu Member=Component C8 Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1uF 0603 10% 16V MLCC
+Added Member To Class: ClassName=mcu Member=Component P3 bottom
+Added Member To Class: ClassName=mcu Member=Component R1 Res1
+Added Member To Class: ClassName=mcu Member=Component R2 Thick Film Resistors - SMD 10K OHM 1%
+Added Member To Class: ClassName=mcu Member=Component SB1 TCXO selection
+Added Member To Class: ClassName=mcu Member=Component VR1 TLV755P

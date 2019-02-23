@@ -1,0 +1,184 @@
+/**
+  ******************************************************************************
+  * @file    FSM_LP_Slave/source/application.c
+  * @author  Daniel Gala Montes
+  * @brief   Implementation of a FSM that performs the configuration and use 
+  *          of a LoRa module to work as a slave in a multipoint network,
+  *          waking up every minute to transmit sensed data before going back
+  *          into a low power mode.
+  ******************************************************************************
+**/
+
+/* Includes ------------------------------------------------------------------*/
+#include "project_config.h"
+#include "extADC.h"
+/* Scheduler includes */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+/* Private typedef -----------------------------------------------------------*/
+/* Private define ------------------------------------------------------------*/
+/* Private macro -------------------------------------------------------------*/
+/* Private variables ---------------------------------------------------------*/
+
+xTaskHandle sense_Task_Handle;
+
+float voltage[6] = {-1,-1,-1,-1,-1,-1};
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+
+/* FreeRTOS tasks */
+void sense_Task();
+
+/* Private functions ---------------------------------------------------------*/
+
+void sense_Task()
+{
+  TickType_t ticks_sample_period = 1 * 1000 / portTICK_PERIOD_MS;    //Ticks equivalentes al periodo de muestreo
+  TickType_t xNextTickCount_Sense = xTaskGetTickCount();           
+  uint8_t channel = 2;
+  uint8_t i = 0;
+  ExtADC_Init();
+  ExtADC_Reset();
+
+  while(1)
+  {
+    while(i < 6)
+    {
+      voltage[i++]=ExtADC_ReadVoltageInput(channel);
+      //channel = (channel + 1) % 6;
+
+      vTaskDelayUntil(&xNextTickCount_Sense, ticks_sample_period);
+    }
+    for(i=0; i<6; i++)
+      voltage[i] = 0;
+    i = 0;
+  }
+}
+
+/**
+ * @brief  Main program
+ * @param  None
+ * @retval None
+ */
+int main(void)
+{
+  /* STM32L4xx HAL library initialization:
+     - Configure the Flash prefetch
+     - Systick timer is configured by default as source of time base, but user 
+     can eventually implement his proper time base source (a general purpose 
+     timer for example or other time source), keeping in mind that Time base 
+     duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and 
+     handled in milliseconds basis.
+     - Set NVIC Group Priority to 4
+     - Low Level Initialization
+     */
+  HAL_Init();
+
+  /* Configure the system clock to 80 MHz */
+  SystemClock_Config();
+
+  xTaskCreate(sense_Task, "sense_Task", 128, NULL, 2, &sense_Task_Handle);
+  vTaskStartScheduler();
+}
+
+
+/**
+  * @brief  System Clock Configuration
+  *         The system Clock is configured as follows :
+  *            System Clock source            = PLL (MSI)
+  *            SYSCLK(Hz)                     = 80000000
+  *            HCLK(Hz)                       = 80000000
+  *            AHB Prescaler                  = 1
+  *            APB1 Prescaler                 = 1
+  *            APB2 Prescaler                 = 1
+  *            MSI Frequency(Hz)              = 4000000
+  *            PLL_M                          = 1
+  *            PLL_N                          = 40
+  *            PLL_R                          = 2
+  *            PLL_P                          = 7
+  *            PLL_Q                          = 4
+  *            Flash Latency(WS)              = 4
+  * @param  None
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+
+  /* MSI is enabled after System reset, activate PLL with MSI as source */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
+  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
+  RCC_OscInitStruct.PLL.PLLM = 1;
+  RCC_OscInitStruct.PLL.PLLN = 40;
+  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.PLL.PLLP = 7;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
+  if(HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+  
+  /* Select PLL as system clock source and configure the HCLK, PCLK1 and PCLK2 
+     clocks dividers */
+  RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2);
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;  
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;  
+  if(HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+}
+
+
+void PreSleepProcessing(uint32_t ulExpectedIdleTime)
+{
+}
+
+void PostSleepProcessing(uint32_t ulExpectedIdleTime)
+{
+}
+
+
+#ifdef  USE_FULL_ASSERT
+
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(char *file, uint32_t line)
+{
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+
+  /* Infinite loop */
+  while (1)
+  {
+  }
+}
+#endif
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

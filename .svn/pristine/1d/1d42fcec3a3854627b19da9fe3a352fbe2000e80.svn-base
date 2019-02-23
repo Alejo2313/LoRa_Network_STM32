@@ -1,0 +1,344 @@
+/**
+  ******************************************************************************
+  * @file    loRa_NUCLEO_FreeRTOS/source/main.c
+  * @author  Daniel Gala Montes
+  * @brief   This example describes how to configure and use a LoRa module through
+  *          the STM32L4xx HAL API.
+  ******************************************************************************
+**/
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "halLora.h"
+#include "radio.h"
+
+/* Private typedef -----------------------------------------------------------*/
+/* Private define ------------------------------------------------------------*/
+/* Private macro -------------------------------------------------------------*/
+/* Private variables ---------------------------------------------------------*/
+static GPIO_InitTypeDef  GPIO_InitStruct;
+xTaskHandle testLoraTask_Handle;
+xTaskHandle testLoraTimerTask_Handle;
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+void TestLora_Task();
+void TestLoraTimer_Task();
+
+/* Private functions ---------------------------------------------------------*/
+
+// ************************************************************
+// TestLoraTimer_Task
+// Corresponde a un timer para cada un segundo
+// ************************************************************
+void TestLoraTimer_Task()
+{
+	contadorSeg_TX = 0;
+	contadorSeg_RX = 0;
+
+	while(1)
+	{
+		if(RADIO.statusRXTX == RADIO_TX)
+		{
+			contadorSeg_TX++;
+		}
+		else if(RADIO.statusRXTX == RADIO_RX)
+		{
+			contadorSeg_RX++;
+		}
+
+		vTaskDelay(1000);
+	}
+
+}
+
+/*// *************************************************************/
+/********************************************************************************
+ TestLora_Task
+ Prueba para puesta en funcionamiento de LORA PRUEBA FUNCIONAMIENTO 1a1 Maestro 
+********************************************************************************/
+void TestLora_Task()
+{
+
+  //Inicialización de variables de aplicación general
+  char envioSolicitud[3];
+  u1_t flagEnvio           = 0;
+  u1_t segundosEsperaTX    = 2;
+  u1_t segundosEsperaRX    = 5;
+  u2_t contadorBytesRX     = 0;
+
+  uint8_t pruebaRx         = 0;
+  uint8_t pruebaTx         = 0;
+
+  uint8_t contadorSeg_TX           = 0;
+  uint8_t contadorSeg_RX           = 0;
+
+
+  //Inicialización de variables del driver
+  RADIO.flagTx             = 0;      
+  RADIO.flagRx             = 0;
+  RADIO.crc                = 0;
+
+  //Intervalo de frecuencia de 433.050 MHz to 434.790 MHz: BW: 1.74 MHz
+  //Configuración de frecuencia
+  RADIO.freq = 433800000;             //Frecuencias ISM para SX1278
+  //RADIO.freq = 869525000;           //Frecuencias ISM para SX1272
+
+  //Configuración de potencia
+  RADIO.txpow = 17;                   //Maxima TX power
+  RADIO.imax = 100;                   //Por defecto 100mA   45mA <=Imax <= 240mA
+
+
+  /*
+     Aumento máximo de ganancia. LNA máx. corriente 150%  LNA_RX_GAIN
+     Máxima capacidad del Payload 64
+     LORARegSymbTimeoutLsb tiempo Timeout de símbolos es 0
+     Palabra reservada para Lora networks LORARegSyncWord 0x34
+     Configuración de Pines DIO0=RXDONE DIO3=PAYLOADCRCERROR
+     Configura LoRa modem (RegModemConfig1, RegModemConfig2) valores de RADIO.sf RADIO.bw RADIO.cr
+     Configura el Canal de acuerdo con la frecuencia de RADIO.freq en 3 registros
+     Configura la potencia a Max potencia RADIO.txpow. Potencia limitada hasta 20dBm
+     RADIO.sf = SF_6, SF_7, SF_8, SF_9, SF_10, SF_11, SF_12
+     RADIO.cr = CR_4_5, CR_4_6, CR_4_7, CR_4_8
+     RADIO.bw = BW7_8, BW10_4, BW15_6, BW20_8, BW31_25, BW41_7, BW62_5, BW125, BW250, BW500, BWrfu
+     */
+
+  //Variables de configuración de la comunicación LoRa
+  RADIO.sf = SF_9;                //Configuración del Spread factor
+  RADIO.bw = BW500;               //Configuración del ancho de canal
+  RADIO.cr = CR_4_5;              //Configuracion de Coding rate
+
+
+  RADIO.statusRXTX = RADIO_RST;  //Se incorpora para modificar en el main*loop
+
+
+  hal_init();                     //Configuración de puertos de SDIN
+  radio_init();                   //Configuración de inicio para los LoRa
+
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn); //Activación de las interrupciones por DIO0
+
+  envioSolicitud[0] = 'T';
+  envioSolicitud[1] = 'x';
+  envioSolicitud[2] = 'Y';
+
+  while(1)
+  {
+
+    if((flagEnvio == 0) && (RADIO.statusRXTX == RADIO_RST))        // RADIO.flags != 0
+    {
+      flagEnvio = 1;
+      RADIO.statusRXTX = RADIO_TX;                         //Flag para determinar donde esta el LORA-> esto se puede hacer desde dentro las librerias
+
+      radio_buffer_to_frameTX (envioSolicitud,3);            //Carga datos a RADIO.frameTx y a RADIO.dataLen
+      radio_mode(RADIO_TX);                                 //Configura la TX
+
+      contadorSeg_TX=0;                         //Inicializa contador de seg TX
+      contadorSeg_RX=0;                         //Inicializa contador de seg RX
+
+      /*Timer1.initialize(1000000);               // Dispara cada 1000 ms*/
+      /*Timer1.attachInterrupt(ISR_RETARDO);      //->Retardo*/
+
+    }
+
+    if((flagEnvio == 1)  && (RADIO.flagTx == 1))         //Ha recibido la confirmacion del modem por TX correcta
+    {
+      flagEnvio = 0;
+      RADIO.flagTx = 0;
+      /*Serial.println("Confirma TX \n");*/
+      /*Timer1.initialize(1000000);             // Dispara cada 1000 ms*/
+      RADIO.statusRXTX = RADIO_RX;             // Utilizado como flag coloca la variable de modo en RX
+      radio_mode(RADIO_RX);                     //Pasa a MODO RX
+      contadorSeg_RX=0;                         //Inicializa contador de seg RX
+      contadorSeg_TX=0;                         //Inicializa contador de seg TX
+      envioSolicitud[2] = 'N';                  //Nuevo dato
+      //continua esperando
+    }
+
+    if ((contadorSeg_TX >= segundosEsperaTX) && (RADIO.statusRXTX == RADIO_TX))
+    {
+      /*Serial.println("Superado el tiempo de TX. Vuelve a TX \n");*/
+      flagEnvio = 0;
+      /*Timer1.initialize(1000000);             // Dispara cada 1000 ms*/
+      RADIO.statusRXTX = RADIO_RST;           //<- RST
+      contadorSeg_TX=0;
+      contadorSeg_RX=0;
+    }
+
+    if(RADIO.statusRXTX == RADIO_RX)             //-> Configurado para recibir
+    {
+      if(RADIO.flagRx == 0)                   //Nota ha recibido los datos
+      {
+        if (contadorSeg_RX >= segundosEsperaRX)
+        {
+          /*Serial.println("Superado el tiempo de RX. Vuelve para Solicitar ... \n");*/
+          envioSolicitud[2] = 'F';        //DATO ERRADO o NO RECIBIDO
+          flagEnvio = 0;
+          contadorSeg_RX = 0;                         //Inicializa contador de seg RX
+          contadorSeg_TX = 0;                         //Inicializa contador de seg TX
+          RADIO.statusRXTX = RADIO_RST;
+          /*Timer1.initialize(1000000);             // Dispara cada 1000 ms*/
+        }
+      }
+      else                                   // RADIO.flagRx == 1  -> recibio los datos
+      {
+        RADIO.flagRx = 0;                              //Apaga flag RX
+        /*Serial.print("Recibio ");*/
+        /*Serial.print(RADIO.dataLen);*/
+        /*Serial.println(" bytes: ");*/
+        /*Serial.write(RADIO.frame, RADIO.dataLen);*/
+        /*Serial.println();*/
+
+        /*Serial.println("_____Calidad de seÃ±al_____");*/
+        /*Serial.println("SNR= ");*/
+        //Serial.print(RADIO.snr);
+        // Serial.println(" ");
+        /*Serial.print(RADIO.snr*4);*/
+        //Serial.println(" ");
+
+        /*Serial.println("\n RSSI= ");*/
+        /*Serial.print(RADIO.rssi);*/
+        /*Serial.println(" ");*/
+        //    RADIO.snr  = readReg(LORARegPktSnrValue); // SNR [dB] * 4
+        //    RADIO.rssi = readReg(LORARegPktRssiValue) - 125 + 64; // RSSI [dBm] (-196...+63)
+
+
+
+        envioSolicitud[2] = 'N';        //NUEVO DATO
+        if(RADIO.crc == 1)                             //ERROR
+        {
+          /*Serial.print("Datos Errados!!!\n");*/
+          /*Serial.print("Solicita nuevamente !!!\n"); */
+          //HW_PinWrite(LED_H1, (BitAction)(1 - HW_PinRead(LED_H1)));
+          RADIO.crc = 0;
+          envioSolicitud[2] = 'F';        //DATO ERRADO o NO RECIBIDO
+        }
+        else
+        {
+          contadorBytesRX = contadorBytesRX + RADIO.dataLenRX;
+          /*Serial.print("TOTAL ");*/
+          /*Serial.print(contadorBytesRX);*/
+          /*Serial.println(" Datos\n");*/
+        }
+
+        flagEnvio =0;
+        RADIO.statusRXTX = RADIO_RST;
+      }
+    }
+
+    vTaskDelay(1);
+  }
+}
+/**
+  * @brief  Main program
+  * @param  None
+  * @retval None
+  */
+int main(void)
+{
+  /* STM32L4xx HAL library initialization:
+       - Configure the Flash prefetch
+       - Systick timer is configured by default as source of time base, but user 
+         can eventually implement his proper time base source (a general purpose 
+         timer for example or other time source), keeping in mind that Time base 
+         duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and 
+         handled in milliseconds basis.
+       - Set NVIC Group Priority to 4
+       - Low Level Initialization
+     */
+  HAL_Init();
+
+  /* Configure the system clock to 80 MHz */
+  SystemClock_Config();
+  
+  xTaskCreate(TestLora_Task, "TestLora_Task", TEST_LORA_TASK_STACK, NULL, TEST_LORA_TASK_PRIORITY, &testLoraTask_Handle);
+	xTaskCreate(TestLoraTimer_Task, "TestLoraTimer_Task", 70, NULL, TEST_LORA_TASK_PRIORITY, &testLoraTimerTask_Handle);
+  vTaskStartScheduler();
+}
+
+
+/**
+  * @brief  System Clock Configuration
+  *         The system Clock is configured as follows :
+  *            System Clock source            = PLL (MSI)
+  *            SYSCLK(Hz)                     = 80000000
+  *            HCLK(Hz)                       = 80000000
+  *            AHB Prescaler                  = 1
+  *            APB1 Prescaler                 = 1
+  *            APB2 Prescaler                 = 1
+  *            MSI Frequency(Hz)              = 4000000
+  *            PLL_M                          = 1
+  *            PLL_N                          = 40
+  *            PLL_R                          = 2
+  *            PLL_P                          = 7
+  *            PLL_Q                          = 4
+  *            Flash Latency(WS)              = 4
+  * @param  None
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+
+  /* MSI is enabled after System reset, activate PLL with MSI as source */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
+  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
+  RCC_OscInitStruct.PLL.PLLM = 1;
+  RCC_OscInitStruct.PLL.PLLN = 40;
+  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.PLL.PLLP = 7;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
+  if(HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+  
+  /* Select PLL as system clock source and configure the HCLK, PCLK1 and PCLK2 
+     clocks dividers */
+  RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2);
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;  
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;  
+  if(HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+}
+
+#ifdef  USE_FULL_ASSERT
+
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(char *file, uint32_t line)
+{
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+
+  /* Infinite loop */
+  while (1)
+  {
+  }
+}
+#endif
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

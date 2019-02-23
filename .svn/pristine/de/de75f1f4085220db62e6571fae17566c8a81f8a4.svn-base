@@ -1,0 +1,47 @@
+/* 
+ *	@file i2c.h
+
+		@brief Functions for initializate I2C 
+
+		@author Marina Calvo
+		@author Robolabo
+		@author www.robolabo.etsit.upm.es
+		@date 2013/07/11 
+
+    CREATIVE COMMONS PUBLIC LICENSE:
+		
+		THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). 
+		THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. 
+		ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+
+		BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. 
+		TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, 
+		THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+*/
+
+#ifndef I2C_H_
+#define I2C_H_
+
+//*****************************************************************
+// Includes
+//*****************************************************************
+#include "project_config.h"
+#include "stm32l4xx_hal.h"
+#include "stm32l4xx_nucleo_32.h"
+
+//*****************************************************************
+// Defines
+//*****************************************************************
+#define I2C_TIMING      0x30420F13
+#define I2C_ADDRESS     0x30F
+
+//*****************************************************************
+// Variables
+//*****************************************************************
+extern I2C_HandleTypeDef I2cHandle;
+
+//*****************************************************************
+// Functions
+//*****************************************************************
+void I2C_Config ( void );
+#endif

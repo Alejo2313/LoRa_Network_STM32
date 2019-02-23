@@ -1,0 +1,380 @@
+/******************** (C) COPYRIGHT 2007 RBZ Robot Design S.L.******************
+* File Name          : serie.c
+* Author             : Jesus Donate Fernandez
+* Date First Issued  : 18/12/2007
+* Description        : Funciones de interface para el puerto Serie
+********************************************************************************
+* History:
+* 18/12/2007 : Created
+********************************************************************************
+* THE PRESENT SOFTWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+* WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME.
+* AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT,
+* INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE
+* CONTENT OF SUCH SOFTWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING
+* INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+*******************************************************************************/
+
+/* Includes ------------------------------------------------------------------*/
+/* Standard includes. */
+#include <stdio.h>
+
+/* Scheduler includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+/* Library includes. */
+#include "stm32l432xx.h"
+#include "stm32l4xx_it.h"
+
+#include "serie.h"
+#include "mbport.h"
+#include "port.h"
+
+/* Private typedef -----------------------------------------------------------*/
+
+/* Private define ------------------------------------------------------------*/
+
+/* Private variables ---------------------------------------------------------*/
+volatile xQueueHandle		RXQueue,TXQueue;
+volatile xSemaphoreHandle  	TXSem, RXSem;
+volatile bool				SERIE_Inicializado =  FALSE;
+volatile unsigned char uModbusFlag = FALSE;
+
+/* UART handler declaration */
+UART_HandleTypeDef UartHandle;
+
+static unsigned int uiCnt = 0;
+/* Private function prototypes -----------------------------------------------*/
+
+/* Private functions ---------------------------------------------------------*/
+
+
+/*******************************************************************************
+* Function Name  : SERIE_Init
+* Description    : Inicializa el hardware para las comunicaciones serie
+* Input          : speed : Conexion speed in Bauds
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void SERIE_Init(int speed)
+{
+  /* GPIO Configuration Structure declaration */
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	if( !SERIE_Inicializado )
+	{
+		/* Enable UART Clocks */
+		#if UART_NUM == 2
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_USART2_CLK_ENABLE();
+		#endif
+
+		/* Config GPIO´s */ 
+		GPIO_InitStructure.Pin = UART_TXD_PIN | UART_RXD_PIN;
+		GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+		GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStructure.Pull = GPIO_PULLUP;
+    GPIO_InitStructure.Alternate = UART_AF;
+		HAL_GPIO_Init(UART_TXD_PORT, &GPIO_InitStructure);
+
+		/*GPIO_InitStructure.GPIO_Pin = UART_CTS_PIN;*/
+		/*GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;*/
+		/*GPIO_Init(UART_CTS_PORT, &GPIO_InitStructure);*/
+
+		/*GPIO_InitStructure.GPIO_Pin = UART_RTS_PIN;*/
+		/*GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;*/
+		/*GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;*/
+		/*GPIO_Init(UART_RTS_PORT, &GPIO_InitStructure);*/
+
+
+		/* UART configured as follow:
+        	- Word Length = 8 Bits
+        	- One Stop Bit
+        	- No parity
+        	- Hardware flow control Disable
+		 */
+    UartHandle.Instance          = USART;
+    UartHandle.Init.BaudRate     = speed;
+    UartHandle.Init.WordLength   = UART_WORDLENGTH_8B;
+    UartHandle.Init.StopBits     = UART_STOPBITS_1;
+    UartHandle.Init.Parity       = UART_PARITY_NONE;
+    UartHandle.Init.HwFlowCtl    = UART_HWCONTROL_NONE;
+    UartHandle.Init.Mode         = UART_MODE_TX_RX;
+
+    HAL_UART_Init(&UartHandle); 
+
+		//Creamos las colas
+		if ( uModbusFlag == FALSE )
+		{
+			RXQueue = xQueueCreate( SERIE_TAM_RX_BUFFER, sizeof( uint8_t ) );
+			TXQueue = xQueueCreate( SERIE_TAM_TX_BUFFER, sizeof( uint8_t ) );
+			TXSem = xSemaphoreCreateMutex();
+			RXSem = xSemaphoreCreateMutex();
+      xSemaphoreGive(TXSem);
+      xSemaphoreGive(RXSem);
+		}
+
+		//Configuramos la recepcion y transmision mediante Interrupciones
+    HAL_NVIC_SetPriority(USART_IRQn, SERIE_ISR_PRIORITY, 0);
+    HAL_NVIC_EnableIRQ(USART_IRQn);
+
+		SERIE_Inicializado = TRUE;
+	}
+}
+
+uint8_t SERIE_WaitingRxElements(){
+	uint8_t num_elems;
+
+	/*if (!SERIE_Inicializado)*/
+	return 0;
+
+	/*num_elems=uxQueueMessagesWaiting(RXQueue);*/
+
+	/*return (num_elems);*/
+}
+
+/*******************************************************************************
+* Function Name  : SERIE_Write
+* Description    : Envía por el puerto serie una trama
+* Input          :
+*	-data	: uint8_t*	datos a enviar
+*	-len  : uint16_t numero de datos a enviar
+* 	-timeout: uint16_t maximo tiempo de espera en ticks del sistema, para el envio
+* Output         : None
+* Return         : Numero de datos enviados
+*******************************************************************************/
+uint16_t SERIE_Write(uint8_t *data, uint16_t len, uint16_t timeout)
+{
+	//Metemos los datos en la cola y habilitamos las interrupciones
+	uint8_t error;
+	uint16_t ilen = 0;
+	portTickType xLastWakeTime = xTaskGetTickCount();
+
+	if( !SERIE_Inicializado )
+		return 0;
+
+	if( xSemaphoreTake(TXSem,timeout) != pdTRUE )
+		return 0;
+	do{
+		if( xQueueSend( TXQueue, &data[ilen],  ( portTickType ) 10 ) == pdPASS )
+			ilen++;
+		else
+			USART->CR1 |= USART_FLAG_TXE; //Habilitamos las interrupciones
+
+		//Comprobamos que no nos hemos excedido del timeout
+		if( (xTaskGetTickCount() - xLastWakeTime) > timeout )
+			break;
+	}while( ilen<len );
+
+	//Si hemos metido todos los datos en la cola pero no se han enviado y las interrupciones estan deshabilitadas
+	taskENTER_CRITICAL();
+	if( !(USART->CR1 & USART_FLAG_TXE) && uxQueueMessagesWaiting(TXQueue)>0 )
+    __HAL_USART_ENABLE_IT(&UartHandle, USART_IT_TXE);
+	taskEXIT_CRITICAL();
+
+	xSemaphoreGive(TXSem);
+	return ilen;
+}
+
+/*******************************************************************************
+* Function Name  : SERIE_Read
+* Description    : Recibe por el puerto serie una trama de longitud definida
+* Input          :
+*	-len  : int numero de datos a recibir
+* Output         :
+*	-Data: uint8_t * Puntero al buffer donde se copiaran los datos recibidos
+* Return         : Numero de datos recibidos
+*******************************************************************************/
+uint16_t SERIE_Read(uint8_t *data, uint16_t len, uint16_t timeout)
+{
+	uint16_t ilen = len;
+	//uint16_t tempTimeout = timeout/2;
+
+	portTickType xLastWakeTime = xTaskGetTickCount();
+
+	if( !SERIE_Inicializado )
+		return 0;
+	if( xSemaphoreTake(RXSem,timeout) != pdTRUE )
+		return 0;
+
+	while(len)
+	{
+		if( xQueueReceive( RXQueue, data, timeout ) == pdTRUE )
+		{
+			len--;
+			data++;
+		}
+		else if( (xTaskGetTickCount() - xLastWakeTime) > timeout )
+			break;
+		/*if( (xTaskGetTickCount() - xLastWakeTime) > tempTimeout )*/
+		/*{*/
+		/*if (len == ilen)*/
+		/*{*/
+		/*xSemaphoreGive(RXSem);*/
+		/*return 0;*/
+		/*}*/
+		/*else*/
+		/*{*/
+		/*if (tempTimeout == timeout)*/
+		/*{*/
+		/*xSemaphoreGive(RXSem);*/
+		/*return ilen-len;*/
+		/*}*/
+		/*else*/
+		/*tempTimeout = timeout;*/
+		/*}*/
+		/*}*/
+	}
+	xSemaphoreGive(RXSem);
+	return ilen-len;
+}
+
+/** SERIE_Test
+ * 	Testing function to test the uart functionality
+ * 	*/
+void SERIE_Test(void)
+{
+	SERIE_Write("AAAA", 4, UART_DEFAULT_TIMEOUT);
+}
+
+/*******************************************************************************
+* Function Name  : UART_IRQHandler
+* Description    : This function handles UART global interrupt request.
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+#if UART_NUM == 0
+void USART0_IRQHandler(void)
+#elif UART_NUM == 1
+void USART1_IRQHandler(void)
+#elif UART_NUM == 2
+void USART2_IRQHandler(void)
+#elif UART_NUM == 3
+void USART3_IRQHandler(void)
+#endif
+{
+	uint8_t dummy;
+	portBASE_TYPE xTaskWoken = pdFALSE;
+
+	if ( uModbusFlag == FALSE )
+	{
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_ERR) != RESET);
+		else if(__HAL_UART_GET_IT(&UartHandle, UART_IT_RXNE) != RESET)
+		{
+      HAL_UART_Receive(&UartHandle, &dummy, 1U, 10);
+			xQueueSendFromISR( RXQueue, &dummy, &xTaskWoken );
+		}
+
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_TXE) != RESET)
+		{
+			if( xQueueReceiveFromISR( TXQueue, (void *) &dummy, &xTaskWoken) )
+//        HAL_UART_Transmit(&UartHandle, &dummy, 1U, 10);
+        UartHandle.Instance->TDR = (uint16_t)(dummy & 0x01FF);
+			else
+        __HAL_USART_DISABLE_IT(&UartHandle, USART_IT_TXE);
+		}
+
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_ERR) != RESET);
+		
+		if( xTaskWoken )
+			portYIELD();
+	}	
+	
+	else
+	{
+		/*if(USART_GetITStatus(USART, USART_IT_ERR) != RESET)*/
+		/*USART_ReceiveData(USART);*/
+		/*else if(USART_GetITStatus(USART, USART_IT_RXNE) != RESET)*/
+		/*{*/
+		/**//*dummy = USART_ReceiveData(USART);*/
+		/**//*pxMBFrameCBByteReceived(  );*/
+		/*( void )xMBPortSerialGetByte( &dummy );*/
+		/**//*USART_ClearITPendingBit(USART1, USART_IT_RXNE);*/
+		/*}*/
+
+		/*if(USART_GetITStatus(USART, USART_IT_TXE) != RESET)*/
+		/*{*/
+
+		/**//*USART_ClearITPendingBit(USART1, USART_IT_TXE);*/
+		/*vMBPortSetWithinException( TRUE );*/
+		/*pxMBFrameCBTransmitterEmpty(  );*/
+		/*vMBPortSetWithinException( FALSE );*/
+		/*}*/
+
+		/*if(USART_GetITStatus(USART, USART_IT_ERR) != RESET)*/
+		/*USART_ReceiveData(USART);*/
+		/**//* Because there is a switch from ISR */
+		/**//*vPortYieldFromISR();*/
+		/*if( xTaskWoken )*/
+		/*portYIELD();*/
+		
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_ERR) != RESET);
+		else if(__HAL_UART_GET_IT(&UartHandle, UART_IT_RXNE) != RESET)
+		{
+			/* Test */
+			/*( void )xMBPortSerialGetByte( &dummy );*/
+			/* End Test */
+			
+			pxMBFrameCBByteReceived(  );
+		}
+
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_TXE) != RESET)
+		{
+			/* Test */  
+			/*if( uiCnt++ < 10 )*/
+			/*{*/
+			/*vMBPortSetWithinException( TRUE );*/
+			/*( void )xMBPortSerialPutByte( 'a' );*/
+			/*vMBPortSetWithinException( FALSE );*/
+			/*}*/
+			/*else*/
+			/*USART_ITConfig(USART, USART_IT_TXE, DISABLE);*/
+			/* End Test */
+			
+			vMBPortSetWithinException( TRUE );
+			pxMBFrameCBTransmitterEmpty(  );
+			vMBPortSetWithinException( FALSE );
+		}
+
+		if(__HAL_UART_GET_IT(&UartHandle, UART_IT_ERR) != RESET);
+		
+		/*vPortYieldFromISR();*/
+		if( xTaskWoken )
+			portYIELD();
+	}
+}
+
+uint8_t SERIE_SetModbus()
+{
+	uModbusFlag = TRUE;
+}
+uint8_t SERIE_ResetModbus()
+{
+	uModbusFlag = FALSE;
+}
+
+void SERIE_EnableIT(uint16_t uart_it_arg)
+{
+  __HAL_UART_ENABLE_IT(&UartHandle, uart_it_arg);
+}
+
+void SERIE_DisableIT(uint16_t uart_it_arg)
+{
+  __HAL_UART_DISABLE_IT(&UartHandle, uart_it_arg);
+}
+
+HAL_StatusTypeDef SERIE_Transmit(uint8_t *pData, uint16_t Size, uint32_t Timeout)
+{
+  return HAL_UART_Transmit(&UartHandle, pData, Size, Timeout);
+}
+
+HAL_StatusTypeDef SERIE_Receive(uint8_t *pData, uint16_t Size, uint32_t Timeout)
+{
+  return HAL_UART_Receive(&UartHandle, pData, Size, Timeout);
+}
+/******************* (C) COPYRIGHT 2007 RBZ Robot Design S.L. *****END OF FILE****/
+

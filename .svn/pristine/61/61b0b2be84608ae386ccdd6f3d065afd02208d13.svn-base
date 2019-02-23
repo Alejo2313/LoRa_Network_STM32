@@ -1,0 +1,456 @@
+/**
+  ******************************************************************************
+  * @file    Slave/source/application.c
+  * @author  Daniel Gala Montes
+  * @brief   This example describes how to configure and use a LoRa module through
+  *          the STM32L4xx HAL API to work as a slave in a multipoint network.
+  ******************************************************************************
+**/
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "halLora.h"
+#include "radio.h"
+#include "fsm.h"
+/* Scheduler includes */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+/* Private typedef -----------------------------------------------------------*/
+/* Private define ------------------------------------------------------------*/
+/* Private macro -------------------------------------------------------------*/
+/* Private variables ---------------------------------------------------------*/
+xTaskHandle lora_Task_Handle;
+xTaskHandle sense_Task_Handle;
+
+TickType_t xLastTickCount_RX;
+TickType_t xLastTickCount_TX;
+
+TickType_t ticks_timeout_RX;
+TickType_t ticks_timeout_TX;
+
+TickType_t xLastTickCount_200ms;
+TickType_t ticks_desfase_tx;
+
+u1_t NumeroMaestro;            //Define el numero del maestro
+u1_t NumeroEsclavo;            //Define el numero del esclavo
+u1_t VariableEsclavo;            //Define la variable enviada por el esclavo
+
+u1_t flagEnvio;
+u2_t contadorBytesRX;
+
+//Tramas utilizadas para enviar o recibir
+u1_t envioSensor[8];              //los ultimos 4 bytes funcionan como dato tomado del sensor
+//envioSensor 0_NumeroMaestro{0}   1_NumeroEsclavo{1-3}   2_VariableEsclavo{0-255}   3-> Numero random de la trama      4-7-> Dato
+
+u1_t recibidoConfirmacion[4];
+//recibidoConfirmacion   0->Destino  1-> Fuente  2-> tipo sensor  3->Numero random de la trama
+
+//Almacenamiento TRAMAS
+u1_t tramaPendienteTX[200];
+u1_t cantidadPendienteTX;
+u1_t NumeroRandomTrama;
+
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+
+/* FreeRTOS tasks */
+void lora_Task();
+void sense_Task();
+
+/* Private functions ---------------------------------------------------------*/
+
+/* FSM functions */
+/* Guard functions */
+static int tx_ready(fsm_t* this);
+static int tx_done(fsm_t* this);
+static int tx_timeout(fsm_t* this);
+static int rx_done(fsm_t* this);
+static int rx_timeout(fsm_t* this);
+/* Output functions */
+static void transmit(fsm_t* this);
+static void receive(fsm_t* this);
+static void process(fsm_t* this);
+static void reset_tx(fsm_t* this);
+static void reset_rx(fsm_t* this);
+
+enum lora_state
+{
+  RST,
+  TX,
+  RX
+};
+
+static fsm_trans_t lora_tt[] = {
+  { RST,  tx_ready,   TX,   transmit    },
+  { TX,   tx_done,    RX,   receive     },
+  { TX,   tx_timeout, RST,  reset_tx    },
+  { RX,   rx_done,    RST,  process     },
+  { RX,   rx_timeout, RST,  reset_rx    },
+  { -1,   NULL,       -1,   NULL        },
+};
+
+/********************************************************************************
+ lora_Task
+ Prueba para puesta en funcionamiento de LORA: demo Multipunto - Esclavo
+********************************************************************************/
+void lora_Task()
+{
+  ticks_timeout_TX = 3*1000 / portTICK_PERIOD_MS;
+  ticks_timeout_RX = 5*1000 / portTICK_PERIOD_MS;
+
+  NumeroMaestro = 0;            //Define el numero del maestro
+  NumeroEsclavo = 1;            //Define el numero del esclavo
+  VariableEsclavo = 0;            //Define la variable enviada por el esclavo
+
+  flagEnvio             = 0;
+  contadorBytesRX = 0x0000;
+
+  //Tramas utilizadas para enviar o recibir
+  envioSensor[0] = NumeroMaestro;
+  envioSensor[1] = NumeroEsclavo;
+  envioSensor[2] = VariableEsclavo;
+  envioSensor[3] = 0;
+  envioSensor[4] = 0;
+  envioSensor[5] = 0;
+  envioSensor[6] = 0;
+  envioSensor[7] = 0;
+  //envioSensor 0_NumeroMaestro{0}   1_NumeroEsclavo{1-3}   2_VariableEsclavo{0-255}   3-> Numero random de la trama      4-7-> Dato
+
+  //Inicializacion variable globales
+  xLastTickCount_TX = xTaskGetTickCount();
+  xLastTickCount_RX = xTaskGetTickCount();
+
+  //Configuracion de parametros
+  RADIO.flagTx = 0;      //Inicializacion de variables
+  RADIO.flagRx = 0;
+  RADIO.crc 	 = 0;
+  RADIO.statusRXTX = RADIO_RST;  //Se incorpora para modificar en el main*loop
+  
+  int k;
+  for(k=0; k<200; k++){
+    tramaPendienteTX[k] = 0;
+  }
+  cantidadPendienteTX = 0;
+
+  //SX1278
+  RADIO.freq = 433800000;   // Use a frequency in the g3 which allows 10% duty cycling.
+  RADIO.txpow = 17;      // Maximum TX power
+  RADIO.imax = 100;          //Por defecto 100mA   45mA <=Imax <= 240mA
+
+  //{ CR_4_5, CR_4_6, CR_4_7, CR_4_8 };					//Usado para CR
+  //{ SF_6, SF_7, SF_8, SF_9, SF_10, SF_11, SF_12 };		//Usado para SF
+  //{ BW7_8, BW10_4, BW15_6, BW20_8, BW31_25, BW41_7, BW62_5, BW125, BW250, BW500, BWrfu };
+
+  RADIO.sf = SF_9;              //Configuracion del Modem SF a baja velocidad
+  RADIO.bw = BW500;              //Configuracion del ancho de banda reducido
+  RADIO.cr = CR_4_5;              //Configuracion de Coding rate
+
+  hal_init();						//inicia el hardware
+  radio_init();					//inicia el radio
+
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn); //Activación de las interrupciones por DIO0
+
+  srand( (unsigned int) ( xTaskGetTickCount() ) );
+  ticks_desfase_tx = (rand() % 50) * 200 / portTICK_PERIOD_MS;  //Establece un valor random de desfase entre 0-50 (0-10s)
+
+  fsm_t* lora_fsm = fsm_new(lora_tt);
+
+  while(1)
+  {
+    fsm_fire(lora_fsm);
+    vTaskDelay(1);
+  }
+}
+
+void sense_Task()
+{
+  u2_t CONTADOR = 1000*NumeroEsclavo;
+  u2_t mult;						//Uso general
+
+  TickType_t ticks_sample_period = 3 * 1000 / portTICK_PERIOD_MS;    //Ticks equivalentes al periodo de muestreo
+  TickType_t xLastTickCount_Sense = ticks_sample_period;              //Fuerza a que se entre a la parte final cargarSensor_TramaPendienteTX
+
+  while(1)
+  {
+    if(xTaskGetTickCount() >= xLastTickCount_Sense)     //Se cumplio el tiempo de tomar la muestra...se debe tomar la muestra del sensor
+    {
+      xLastTickCount_Sense = xTaskGetTickCount();
+      //Finaliza Emular tomar dato de un sensor sensor
+      cantidadPendienteTX++;
+
+      if((cantidadPendienteTX > 0) && (cantidadPendienteTX < 31))
+      {
+        int i,j;
+        j=(cantidadPendienteTX -1)*5;                 //Solamente almacena el Byte Random y los 4 bytes de informacion
+        tramaPendienteTX[j] = rand() % 255;           //establece el numero RANDOM de la Trama, como comprobacion
+
+        //Emula tomar dato de un sensor sensor
+        for(i=0; i<4; i++)        //Funcion Unidades, decenas, centenas miles....
+        {
+          switch(i)
+          {
+            case 0:
+              mult = 1000;
+              break;
+            case 1:
+              mult = 100;
+              break;
+            case 2:
+              mult = 10;
+              break;
+            case 3:
+              mult = 1;
+              break;
+          }
+          /*mult = pow(10,(3-i));     //1000   100  10 1*/
+          j++;                                       //ajuste, lo hace antes ajustes
+          tramaPendienteTX[j] = (uint8_t) CONTADOR / mult;    //
+          mult = CONTADOR % mult;
+        }
+        //finaliza Emular tomar dato de un sensor sensor
+        CONTADOR++;
+      }
+    }
+    vTaskDelay(5000);
+  }
+}
+
+/**
+  * @brief  Main program
+  * @param  None
+  * @retval None
+  */
+int main(void)
+{
+  /* STM32L4xx HAL library initialization:
+       - Configure the Flash prefetch
+       - Systick timer is configured by default as source of time base, but user 
+         can eventually implement his proper time base source (a general purpose 
+         timer for example or other time source), keeping in mind that Time base 
+         duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and 
+         handled in milliseconds basis.
+       - Set NVIC Group Priority to 4
+       - Low Level Initialization
+     */
+  HAL_Init();
+
+  /* Configure the system clock to 80 MHz */
+  SystemClock_Config();
+  
+  xTaskCreate(lora_Task, "lora_Task", TEST_LORA_TASK_STACK, NULL, 1, &lora_Task_Handle);
+  xTaskCreate(sense_Task, "sense_Task", 35, NULL, 2, &sense_Task_Handle);
+  vTaskStartScheduler();
+}
+
+
+/**
+  * @brief  System Clock Configuration
+  *         The system Clock is configured as follows :
+  *            System Clock source            = PLL (MSI)
+  *            SYSCLK(Hz)                     = 80000000
+  *            HCLK(Hz)                       = 80000000
+  *            AHB Prescaler                  = 1
+  *            APB1 Prescaler                 = 1
+  *            APB2 Prescaler                 = 1
+  *            MSI Frequency(Hz)              = 4000000
+  *            PLL_M                          = 1
+  *            PLL_N                          = 40
+  *            PLL_R                          = 2
+  *            PLL_P                          = 7
+  *            PLL_Q                          = 4
+  *            Flash Latency(WS)              = 4
+  * @param  None
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+
+  /* MSI is enabled after System reset, activate PLL with MSI as source */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
+  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
+  RCC_OscInitStruct.PLL.PLLM = 1;
+  RCC_OscInitStruct.PLL.PLLN = 40;
+  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.PLL.PLLP = 7;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
+  if(HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+  
+  /* Select PLL as system clock source and configure the HCLK, PCLK1 and PCLK2 
+     clocks dividers */
+  RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2);
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;  
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;  
+  if(HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
+    /* Initialization Error */
+    while(1);
+  }
+}
+
+/* FSM functions */
+/* Guard functions */
+static int tx_ready(fsm_t* this)
+{
+  return ((cantidadPendienteTX>0) && ((xTaskGetTickCount() - xLastTickCount_200ms) >= ticks_desfase_tx) && (flagEnvio == 0));
+}
+
+static int tx_done(fsm_t* this)
+{
+  return ((flagEnvio == 1)  && (RADIO.flagTx == 1));
+}
+
+static int tx_timeout(fsm_t* this)
+{
+  return ((xTaskGetTickCount() - xLastTickCount_TX) >= ticks_timeout_TX);
+}
+
+static int rx_done(fsm_t* this)
+{
+  return RADIO.flagRx;
+}
+
+static int rx_timeout(fsm_t* this)
+{
+  return ((xTaskGetTickCount() - xLastTickCount_RX) >= ticks_timeout_RX);
+}
+
+/* Output functions */
+static void transmit(fsm_t* this)
+{
+  radio_mode(RADIO_RST);                                  //Detiene la RX antes
+  flagEnvio = 1;
+  xLastTickCount_200ms = xTaskGetTickCount();
+  RADIO.flagTx = 0;
+  RADIO.statusRXTX = RADIO_TX;                         //Flag para determinar donde esta el LORA-> esto se puede hacer desde dentro las librerias
+
+  NumeroRandomTrama = tramaPendienteTX[0];
+  envioSensor[3] = NumeroRandomTrama;               //Este numero se utilizara para comprobar que se TX
+
+  radio_buffer_to_frameTX(envioSensor, 8);                  //Carga 8 bytes a la FIFO de LORa-> Activa TX
+  radio_mode(RADIO_TX);     //Configura la TX
+
+  xLastTickCount_TX = xTaskGetTickCount();    //Inicializa contador de segundos TX
+  xLastTickCount_RX = xTaskGetTickCount();    //Inicializa contador de segundos RX
+}
+
+static void receive(fsm_t* this)
+{
+  flagEnvio = 0;
+  RADIO.flagTx = 0;
+  RADIO.flagRx = 0;
+
+  radio_mode(RADIO_RX);                     //Pasa a MODO RX
+  RADIO.statusRXTX = RADIO_RX;             // Utilizado como flag coloca la variable de modo en RX
+  xLastTickCount_RX = xTaskGetTickCount();    //Inicializa contador de segundos RX
+  xLastTickCount_TX = xTaskGetTickCount();    //Inicializa contador de segundos TX
+}
+
+static void process(fsm_t* this)
+{
+  flagEnvio = 0;                          //Fuerza al estado de TX siempre y cuando se cumplan las condiciones
+  RADIO.statusRXTX = RADIO_RST;                   //Forza al estado de TX siempre y cuando se cumplan las condiciones
+
+  if(RADIO.crc == 1)                      //ERROR (posible estado extra de tratamiento del error)
+  {
+    RADIO.crc = 0;
+  }
+
+  if(RADIO.dataLenRX == 4)       //Nota, son 4 bytes de confirmacion
+  {
+    int i;
+    for (i=0; i< 4; i++)                        //Extrae los datos del  los datos de SENSOR a la TRAMA
+    {
+      recibidoConfirmacion[i] = RADIO.frameRX[i];
+    }
+    if( (recibidoConfirmacion[0] == NumeroEsclavo) && (recibidoConfirmacion[1] == NumeroMaestro) )
+    {
+      if(recibidoConfirmacion[3] == NumeroRandomTrama)         //Se confirma que la ultima trama, la recibio el maestro
+      {
+        radio_mode(RADIO_RST);          //Coloca el dispositivo a Dormir
+        if(cantidadPendienteTX > 1)          //Tiene pendiente la TX de antiguas tramas?
+        {//Es necesario desplazar/rotar tramaPendienteTX[]  5 posiciones
+          cantidadPendienteTX--;
+          //rotarTramaPendienteTX(); ->//Tarea de rotar vector de almacenamiento de tramas pendientes
+          for (i=0; i<(cantidadPendienteTX*5);i++)
+          {
+            tramaPendienteTX[i]=tramaPendienteTX[i+5];
+          }
+        }
+        else
+        {
+          cantidadPendienteTX = 0;      //No tiene tramas pendientes por enviar
+        }
+      }
+    }
+  }
+  srand( (unsigned int) ( xTaskGetTickCount() ) );
+  ticks_desfase_tx = (rand() % 50) * 200 / portTICK_PERIOD_MS;  //Establece un valor random de desfase entre 0-50 (0-10s)
+  xLastTickCount_200ms = xTaskGetTickCount();
+}
+
+static void reset_tx(fsm_t* this)
+{
+  flagEnvio = 0;
+  RADIO.statusRXTX = RADIO_RST;           //<- RST
+  xLastTickCount_RX = xTaskGetTickCount();    //Inicializa contador de segundos RX
+  xLastTickCount_TX = xTaskGetTickCount();    //Inicializa contador de segundos TX
+  xLastTickCount_200ms = xTaskGetTickCount() - ticks_desfase_tx;  //Fuerza a que no exista desfase
+}
+
+static void reset_rx(fsm_t* this)
+{
+  flagEnvio = 0;
+  xLastTickCount_RX = xTaskGetTickCount();    //Inicializa contador de segundos RX
+  xLastTickCount_TX = xTaskGetTickCount();    //Inicializa contador de segundos TX
+  RADIO.statusRXTX = RADIO_RST;
+  srand( (unsigned int) ( xTaskGetTickCount() ) );
+  ticks_desfase_tx = (rand() % 50) * 200 / portTICK_PERIOD_MS;  //Establece un valor random de desfase entre 0-50 (0-10s)
+  xLastTickCount_200ms = xTaskGetTickCount();
+}
+
+#ifdef  USE_FULL_ASSERT
+
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(char *file, uint32_t line)
+{
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+
+  /* Infinite loop */
+  while (1)
+  {
+  }
+}
+#endif
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

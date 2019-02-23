@@ -1,0 +1,73 @@
+/** @file application.c
+
+	@author Alvaro Gutierrez
+	@author Robolabo
+	@date 2013/07/11 - Edición base.
+
+	Implementation of functions defined in application.h file
+
+    COPYRIGHT NOTICE:
+    This software is property of Robolabo. Its reproduction,  total or  par-
+    tial, by any means, in any form, permanent or temporary, is forbidden
+    unless explicitly authorised by Robolabo.
+    Any adaptation, amendment, translation or transformation, as well as
+    the decompiling or disassembly of this software  product, shall only
+    be performed with the explicit authorization of Robolabo.
+    The user of the present software product shall be allowed  to make a
+    backup copy  as long as it is necessary  for the utilization  of the
+    same.
+    The terms stated above shall be understood  affecting that stated in
+    applicable Laws. */
+		
+// ************************************************************
+// Includes
+// ************************************************************
+#include "application.h"
+#include "main.h"
+#include "serie.h"
+
+// ************************************************************
+// MODBUS_Task
+// Configure and starts the MODBUS transmission/reception            
+// ************************************************************
+void MODBUS_Task()                                                                                       
+{
+	uint8_t slave_address;
+
+	/*Read switches*/
+	slave_address = 0x01; 
+	/*Init MODBUS*/
+	SERIE_SetModbus();
+	eMBInit(MB_RTU, slave_address, 1, 9600, MB_PAR_NONE);        
+	eMBEnable();
+  //SERIE_Write(&slave_address, 1U, 100);
+	while(1)
+	{
+		eMBPoll();                                                             
+	}
+}
+
+// ************************************************************
+// ToggleLed_Task
+// Change Led status every 100 miliseconds
+// ************************************************************
+void ToggleLed_Task()
+{
+	
+	// Test LEDs at start turning on and off all of them
+	while(1)
+	{
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+		vTaskDelay(100);
+	}
+}
+
+// ************************************************************
+// Application_Start
+// Configure the application and starts tasks
+// ************************************************************
+void Application_Start()
+{
+//	xTaskCreate(ToggleLed_Task, "Toggle_Led_Task", TOGGLE_LED_TASK_STACK, NULL, TOGGLE_LED_TASK_PRIORITY, &ToggleLedTask_Handle);
+	xTaskCreate(MODBUS_Task, "MODBUS_Task", MODBUS_TASK_STACK, NULL, MODBUS_TASK_PRIORITY, &MODBUSTask_Handle);
+}

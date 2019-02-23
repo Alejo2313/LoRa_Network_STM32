@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "timeserver.h": "c",
-        "radio.h": "c"
-    }
-}
