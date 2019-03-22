@@ -13,13 +13,12 @@
 /* Types */
 
 typedef struct{
-	bool Joined;
 	uint16_t DevAddr;
 	uint16_t GateAddr;
 	uint32_t SleepTime;
 	//ohters.....
 
-	uint8_t RXWIndow;
+	uint16_t RXWIndow;
 	uint8_t NetAddr;
 	
 } config_t;
@@ -27,26 +26,20 @@ typedef struct{
 
 
 typedef enum {
+	JOIN,
+	START,
+	WAIT,
 	SLEEP_S,
 	MEASURE,
 	TX_S,
 	RX_S,
-	ERROR_HANDLE,
+	ER_HANDLE,
 	CONFIG_S,
-	JOIN_S
+	JOIN_S,
+	TX_REQ,
+	PROCESS
 } State_t;
 
-
-
-typedef enum {
-	RX_ERROR,
-	RX_TIMEOUT,
-	RX_NACK,
-	TX_TIMEOUT,
-	NO_ERROR,
-	RX_REJOIN
-
-}Error_t;
 
 
 
@@ -66,7 +59,7 @@ typedef enum {
 	TX_T,
 	ACK,
 	NACK,
-	JOIN
+	JOIN_T
  }Mac_t;
 
 typedef enum{

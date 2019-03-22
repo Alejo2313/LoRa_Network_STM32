@@ -43,6 +43,7 @@ void errorHandle(fsm_t* fsm);
 void config(fsm_t* fsm);
 void measure(fsm_t* fsm);
 void restart(fsm_t* fsm);
+void retryoin(fsm_t* fsm);
 
 //Task
 void main_task(void* param);

@@ -3,6 +3,15 @@
 
 /*varibles*/
 
+static item_t items[] ={
+						{LIGTH			,1},
+						{TEMPERATURE	,2},
+						{HUMIDITY		,1},
+						{RSSI			,1},
+						{255, 255}
+					   };
+
+
 //buffers
 
 Packet_t* RxData;
@@ -48,8 +57,12 @@ enum {
 //                          ORIGIN      BITCHECK    NEXT        OUTFUNC
 fsm_trans_t trans_table[] = {
                             {START,     STARTED,    JOIN,       join },
+							{JOIN, 		TX_OK,		JOIN,		receive},
+							{JOIN, 		RX_TIMEOUT,	START,		retryoin},
+							{JOIN, 		RX_ERROR,	START,		retryoin},
+							{JOIN, 		RX_CONFIG,	JOIN,		config},
                             {JOIN,      JOIN_OK,    SLEEP_S,    goSleep},
-                            {JOIN,      JOIN_ERROR, JOIN,       join},
+							{JOIN,      CONF_ERROR, START,    	retryoin},
                             {SLEEP_S,   JOIN_OK,    MEASURE,    measure},
 							{SLEEP_S,   JOIN_ERROR, START,    	restart},
                             {MEASURE,   MEASURE_OK, TX_S,       send},
@@ -133,7 +146,7 @@ void onTxDone(){
 
 
 #ifdef debug
-	Trace_send("-->TX done! \r \n");
+	Trace_send("-->TX done! \r \n\r");
 #endif
 
 }
@@ -149,7 +162,7 @@ void onTxTimeout(){
 	Radio.Sleep( );
 
 #ifdef debug
-    Trace_send("-->TX error: Timeout \t \n");
+    Trace_send("-->TX error: Timeout \n\r");
 #endif
 }
 
@@ -164,7 +177,7 @@ void onRxTimeout(){
 	Radio.Sleep( );
 
 #ifdef debug
-    Trace_send("Error: Timeout \r \n");
+    Trace_send("Error: Timeout \n\r");
 #endif
 
 }
@@ -181,13 +194,20 @@ void onRxError(){
     Radio.Sleep( );
 
 #ifdef debug
-	Trace_send("RX ERROR \r \n");	
+	Trace_send("RX ERROR \r \n\r");	
 #endif
 }
 
 void onFhssChangeChannel(uint8_t currentChannel){};
 void onCadDone(bool channelActivityDetected){};
-
+/**
+ * @brief 
+ * 
+ * @param payload 
+ * @param size 
+ * @param rssi 
+ * @param snr 
+ */
 
 
 void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
@@ -203,44 +223,53 @@ void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
 	print(RxData);
 #endif
 
+	if(RxData->devDest == Configuration.devAddr && RxData->NetAddr == Configuration.netAddr)
 
-	//TODO -> YOU MUST BE JOIN
-
-	switch(RxData->MacType){
-		case ACK:
-			bitSet(&state_flags, RX_OK);
-			break;
-
-		case NACK:
-			bitSet(&state_flags, RX_NACK);
-			break;
-
-		case TX_T:
-			switch(RxData->type){
-				case CONFIG:
-					bitSet(&state_flags, RX_CONFIG);
-					break;	
-
-				case REQ_INFO:
-					bitSet(&state_flags, RX_REQ);
+		switch(RxData->MacType){
+			case ACK:
+				if(RxData->flags & (1 << REQ_DATA)){
+					bitSet(&state_flags, RX_REQ);		
 					loadInfo();
 					break;
-			}
+				}
+				bitSet(&state_flags, RX_OK);
+				break;
 
-		default:
-			bitSet(&state_flags, RX_OK);
-			break;
+			case NACK:
+				bitSet(&state_flags, RX_NACK);
+				break;
+
+			case CONFIG:
+				bitSet(&state_flags, RX_CONFIG);
+				break;
+							
+			default:
+				bitSet(&state_flags, RX_OK);
+				break;
+		}
+	else{
+		if(RxData->MacType == CONFIG){
+			if(((*(RxData->pData) << 8) | (*(RxData->pData+1)&0xFF)) == UUID){
+				bitSet(&state_flags, RX_CONFIG);			
+			}
+		}
+		else
+		{
+			bitSet(&state_flags, RX_ERROR);
+			return;
+		}
+		
 	}
 
 #ifdef debug
     if( state_flags & RX_OK)
-        Trace_send("-->ACK OK \n");
+        Trace_send("-->ACK OK \n\r");
     if( state_flags & RX_NACK)
-        Trace_send("--> ERROR: NACK \n");
+        Trace_send("--> ERROR: NACK \n\r");
     if( state_flags & RX_CONFIG)
-        Trace_send("--> CONFIG MODE\n");
+        Trace_send("--> CONFIG MODE\n\r");
     if( state_flags & RX_REQ)
-        Trace_send("--> DATA REQUEST \n");
+        Trace_send("--> DATA REQUEST \n\r");
 #endif
 
 }
@@ -267,22 +296,21 @@ void wakeUpSystem(){
 void parser(uint8_t* pData, uint16_t size){
 
 	if(RxData == NULL){
-		RxData= (Packet_t*)malloc(sizeof(Packet_t));
+		RxData= (Packet_t*)pvPortMalloc(sizeof(Packet_t));
 		RxData->pData	= NULL;
 	}
-	RxData->NettAddr	= *(pData++);
+	RxData->NetAddr	= *(pData++);
 	RxData->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
 	RxData->devDest 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
 	RxData->MacType 	= (*(pData)>>4)&0xF;
 	RxData->flags 		= *(pData++)&0xF;
 	RxData->pSize 		= *(pData++);
-	RxData->type 		= *(pData++);
 
 	if(RxData->pData != NULL)
-		free(RxData->pData);
+		vPortFree(RxData->pData);
 
-	RxData->pData = (uint8_t*)malloc(RxData->pSize - 1); 
-	memcpy(RxData->pData, pData ,RxData->pSize  - 1);
+	RxData->pData = (uint8_t*)pvPortMalloc(RxData->pSize); 
+	memcpy(RxData->pData, pData ,RxData->pSize);
 }
 
 /**
@@ -294,19 +322,21 @@ void parser(uint8_t* pData, uint16_t size){
 //TODO -> REPAIR THIS FUNCTION ->OK
 void print(Packet_t *data){
 	if(data == NULL){
-		Trace_send("Error printing: DATA NULL \r \n");
+		Trace_send("Error printing: DATA NULL \r \n\r");
 		return;
 	}
 
 	uint8_t cnt = 0;
 
-	Trace_send("\t  Net Address: %X\n \t device Address: %X \n \t Source Address: %X \n \t mac type: %X  \n \t Size: %X  \n \t RAW data  ->", 
-			data->NettAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
+	Trace_send("\t  Net Address: %X\n\r \t device Address: %X \n\r \t Source Address: %X \n\r \t mac type: %X  \n\r \t Size: %X  \n\r \t RAW data  ->", 
+			data->NetAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
 
 	while(cnt < data->pSize){
 		Trace_send("%X ", *(data->pData + cnt++));
+
+
 	}
-	Trace_send("\n");
+	Trace_send("\n\r");
 
 }
 
@@ -316,11 +346,11 @@ void print(Packet_t *data){
  */
 
 void Config_Load(){
-	Configuration.DevAddr 	= DEV_ADDR;
-	Configuration.GateAddr	= CONFIG_ADDR;
+	Configuration.devAddr 	= DEV_ADDR;
+	Configuration.gateAddr	= CONFIG_ADDR;
 	Configuration.RXWIndow	= RX_TIMEOUT_VALUE;
-	Configuration.SleepTime	= SLEEP_TIME;
-	Configuration.NetAddr	= 0;
+	Configuration.sleepTime	= SLEEP_TIME;
+	Configuration.netAddr	= 0;
 	bitClear(&state_flags, JOIN_OK);
 }
 
@@ -329,7 +359,7 @@ void Config_Load(){
  * 
  */
 void loadInfo(){
-
+	//Todo -> complete this
 };
 
 /**
@@ -348,7 +378,11 @@ void bitClear(uint32_t* flag, uint8_t bit){
  * @param bit bit to set
  */
 void bitSet(uint32_t* flags, uint8_t bit){
-	*flags |= bit;
+	*flags |= (1 << bit);
+}
+
+int bitTest(uint32_t* flags, uint8_t bit){
+	return *flags&(1 << bit);
 }
 
 void clearFlags(uint32_t* flags){
@@ -360,15 +394,49 @@ void clearFlags(uint32_t* flags){
 //--------------> begin fsm functions <--------------//
 /**
  * 
- * @brief	join protocolo
+ * @brief	join protocol
  * @param	[fsm] pointer to state machine structure
  * @retval	none
  * 
  * */
 void join(fsm_t* fsm){
+	if(TxData == 0){
+		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
+	}
+
+	item_t* it;
+	uint8_t cnt;
+
 	bitClear(fsm->flags, JOIN_OK) ;
 	bitClear(fsm->flags, JOIN_ERROR);
-	//TODO -> create this function!
+
+	TxData->NetAddr = Configuration.netAddr;
+	TxData->devAddr = Configuration.devAddr;
+	TxData->devDest = Configuration.masterAddr;
+	TxData->MacType = JOIN_T;
+	TxData->flags 	= 0;
+	TxData->pSize 	= 0;
+
+	//Paylaod size calculation
+	for(it = items; it->size != 255; it++){
+		TxData->pSize++;
+	}
+	// allocating payload memory
+	TxData->pData = (uint8_t*)pvPortMalloc(RxData->pSize*sizeof(uint8_t));
+
+	size_t size = xPortGetFreeHeapSize() ;
+	cnt = 0;
+	for(it = items; it->size != 255; it++){
+		*(TxData->pData+ cnt++) = ((it->item&0xF) << 2) | (it->size & 0x3);
+	}
+	TxData->pData -= TxData->pSize;
+
+	send(fsm);
+	//TODO -> check this
+
+#ifdef debug
+	Trace_send("-> Join state \n\r");
+#endif
 }
 
 /**
@@ -384,10 +452,10 @@ void goSleep(fsm_t* fsm){
 	bitClear(fsm->flags, CONFIG_OK);
 
 #ifdef debug
-	Trace_send("-> Sleep state \n");
-	HAL_Delay(Configuration.SleepTime);
+	Trace_send("-> Sleep state \n\r");
+	vTaskDelay(Configuration.sleepTime/portTICK_RATE_MS);
 #else
-	GoBed(Configuration.SleepTime);
+	GoBed(Configuration.sleepTime);
 	wakeUpSystem();		//TODO -> MAKE THIS FUNCTION!
 #endif
 }
@@ -400,17 +468,26 @@ void goSleep(fsm_t* fsm){
  */
 void measure(fsm_t* fsm){
 	if(TxData == 0){
-		TxData = (Packet_t*)malloc(sizeof(Packet_t));
+		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
 	}
-	uint8_t* mess = "01234";
-	TxData->NettAddr = 0xFF;
+
+//TODO -> DELETE THIIIIIS!!!!!
+	uint16_t cnt = 16;
+	uint8_t* mess = "0123456789ABCDE";
+	
+	TxData->NetAddr = 0xFF;
 	TxData->devAddr = DEV_ADDR;
 	TxData->devDest = 0xFFFF;
-	TxData->MacType = 0;
+	TxData->MacType = TX_T;
 	TxData->flags = 0;
 	TxData->pData = mess;
-	TxData->type = DATA;
-	TxData->pSize = 5;
+	TxData->pSize = 16; 
+
+	bitSet(fsm->flags, MEASURE_OK);
+
+#ifdef debug
+	Trace_send("->Measure state \n\r");
+#endif
 }
 
 /**
@@ -428,24 +505,24 @@ void send(fsm_t* fsm){
 
 	//Alloc memory
 	totalSize = TxData->pSize + HEAD_SIZE;
-	sendData  = (uint8_t*)malloc(totalSize);
+	sendData  = (uint8_t*)pvPortMalloc(totalSize);
 
 	//Load data
-	*(sendData++) = (TxData->NettAddr);
+	*(sendData++) = (TxData->NetAddr);
 	*(sendData++) = (TxData->devAddr>>8)&0xFF;
 	*(sendData++) = (TxData->devAddr)&0xFF;
 	*(sendData++) = (TxData->devDest >> 8)&0xFF;
 	*(sendData++) = (TxData->devDest)&0xFF;
 	*(sendData++) = (TxData->MacType << 4)| TxData->flags;
 	*(sendData++) = (TxData->pSize);
-	*(sendData++) = (TxData->type);
-	memcpy(sendData, TxData->pData, TxData->pSize -1);
+
+	memcpy(sendData, TxData->pData, TxData->pSize);
 	//send data
-	Radio.Send(sendData - HEAD_SIZE -1, totalSize);
-	free(sendData - HEAD_SIZE -1);
+	Radio.Send(sendData - HEAD_SIZE , totalSize);
+	vPortFree(sendData - HEAD_SIZE);
 
 #ifdef debug
-	Trace_send("Sending data: \r\n");
+	Trace_send("Sending data: \n\r");
 	print(TxData);
 #endif
 
@@ -456,6 +533,7 @@ void send(fsm_t* fsm){
  * @param fsm pointer to state machine structure
  */
 void receive(fsm_t* fsm){
+	//Todo -> set offset 
 	bitClear(fsm->flags, TX_OK);
 	Radio.Rx(Configuration.RXWIndow);
 }
@@ -467,23 +545,23 @@ void receive(fsm_t* fsm){
 //TODO -> complete this function
 void errorHandle(fsm_t* fsm){
 
-	if(*(fsm->flags)&TX_TIMEOUT){
+	if(bitTest(fsm->flags, TX_TIMEOUT)){
 
 		bitClear(fsm->flags, TX_TIMEOUT);
 	}
-	if(*(fsm->flags)&RX_TIMEOUT){
+	if(bitTest(fsm->flags, RX_TIMEOUT)){
 
 		bitClear(fsm->flags, RX_TIMEOUT);
 	}
-	if(*(fsm->flags)&RX_ERROR){
+	if(bitTest(fsm->flags, RX_ERROR)){
 
 		bitClear(fsm->flags, RX_ERROR);
 	}
-	if(*(fsm->flags)&RX_NACK){
+	if(bitTest(fsm->flags, RX_NACK)){
 
 		bitClear(fsm->flags, RX_NACK);
 	}
-	if(*(fsm->flags)&CONF_ERROR){
+	if(bitTest(fsm->flags, CONF_ERROR)){
 		Config_Load();
 		bitSet(fsm->flags, JOIN_ERROR);
 		bitClear(fsm->flags, CONF_ERROR);
@@ -498,9 +576,44 @@ void errorHandle(fsm_t* fsm){
  * @param fsm pointer to state machine structure
  */
 void config(fsm_t* fsm){
-	//TODO -> complete this function
-	bitClear(fsm->flags, RX_CONFIG);
+	uint16_t aux = 0;
 	
+	aux = (*(RxData->pData++) << 8) | (*(RxData->pData++)&0xFF);
+
+	if(aux != UUID){
+		bitSet(fsm->flags, CONF_ERROR);
+		return;
+	}
+
+	aux = (*(RxData->pData++) << 8) | (*(RxData->pData++)&0xFF);
+	if(aux != 0)
+		Configuration.sleepTime = aux;
+	
+	aux =(*(RxData->pData++)&0xFF);
+	if(aux != 0 && aux <= MAX_POWER)
+		Configuration.power = aux;
+
+	aux =(*(RxData->pData)>>4)&0XF;
+	if(aux != 0 && aux <= 3){
+		Configuration.bw = aux - 1;
+	}
+	aux =(*(RxData->pData++))&0XF;
+	if(aux != 0 && aux <=6){
+		Configuration.sf = aux + 6;
+	}
+	aux =(*(RxData->pData++)&0xFF);
+	if(aux != 0){
+		Configuration.RXWIndow = aux;
+	}
+
+	Configuration.devAddr = RxData->devDest;
+	Configuration.masterAddr = RxData->devAddr;
+	Configuration.netAddr = RxData->NetAddr;
+
+
+	bitSet(fsm->flags, CONFIG_OK);
+	bitSet(fsm->flags, JOIN_OK);
+	bitClear(fsm->flags, RX_CONFIG);	
 }
 /**
  * @brief 
@@ -511,6 +624,21 @@ void restart(fsm_t* fsm){
 	clearFlags(fsm->flags);
 	bitSet(fsm->flags, STARTED);
 }
+
+void retryoin(fsm_t* fsm){
+	
+	bitClear(fsm->flags, RX_TIMEOUT);
+	bitClear(fsm->flags, RX_ERROR);
+	bitClear(fsm->flags, CONF_ERROR);
+
+#ifdef debug
+	vTaskDelay(JOIN_RETRY/portTICK_RATE_MS);
+
+#else
+	GoBed(JOIN_RETRY);
+	wakeUpSystem();
+#endif
+};
 //--------------> end fsm functions <--------------//
 
 //--------------> begin System task functions <--------------//

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../global/Core/utils/inc/queue_c.h
+stdint.h
+-
+stddef.h
+-
+stdlib.h
+-
+
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c
+queue_c.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.h
+stdio.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/stdio.h
+

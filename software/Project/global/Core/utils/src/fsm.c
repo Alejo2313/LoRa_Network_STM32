@@ -40,7 +40,7 @@ void
 fsm_fire (fsm_t* this)
 {
   fsm_trans_t* t;
-  for (t = this->tt; t->orig_state >= 0; ++t) {
+  for (t = this->tt; t->orig_state >= 0; t++) {
     if ((this->current_state == t->orig_state) && (*(this->flags)&(1 << t->bit_test))) {
       this->current_state = t->dest_state;
       if (t->out)

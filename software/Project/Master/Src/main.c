@@ -1,10 +1,37 @@
+/**                             _____________
+ *              /\      /\     /             \
+ *             //\\____//\\   |   MAUUUU!!    |
+ *            /     '      \   \  ___________/
+ *           /   /\ '  /\    \ /_/			      / /  ___    / __\ |__   __ _| |_ 
+ *          |    == o ==     |        /|	     / /  / _ \  / /  | '_ \ / _` | __|
+ *           \      '        /       | |	    / /__|  __/ / /___| | | | (_| | |_ 
+ *             \           /         \ \	    \____/\___| \____/|_| |_|\__,_|\__|
+ *             /****<o>**** \         / /
+ *             |            ' \       \ \
+ *             |    |    | '   '\      \ \
+ *  _________  | ´´ |  ' |     '  \    / /
+ *  |  MAYA  | |  ' |    | '       |__/ /
+ *   \______/   \__/ \__/ \_______/____/
+ * 
+ * @file main.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-02-26
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
+
+
 #include "main.h"
 #include "stm32l0xx_hal.h"
+#include "queue_c.h"
 
 /*varibles*/
 
 //buffers
-
+queue_c RxRAW;
 Packet_t* RxData;
 Packet_t* TxData;
 
@@ -41,35 +68,46 @@ enum {
     RX_NACK,
     RX_REQ,
     CONF_ERROR,
+	RX_DATA,
+	PR_ERROR,
+	PR_OK
 
 } flags;
 
 
-//                          ORIGIN      BITCHECK    NEXT        OUTFUNC
-fsm_trans_t trans_table[] = {
-                            {START,     STARTED,    JOIN,       join },
-                            {JOIN,      JOIN_OK,    SLEEP_S,    goSleep},
-                            {JOIN,      JOIN_ERROR, JOIN,       join},
-                            {SLEEP_S,   JOIN_OK,    MEASURE,    measure},
-							{SLEEP_S,   JOIN_ERROR, START,    	restart},
-                            {MEASURE,   MEASURE_OK, TX_S,       send},
-                            {TX_S,      TX_OK,      RX_S,       receive},
-                            {TX_S,      TX_TIMEOUT, ER_HANDLE,  errorHandle},
-                            {RX_S,      RX_OK,      SLEEP_S,    goSleep},
-                            {RX_S,      RX_ERROR,   ER_HANDLE,  errorHandle},
-                            {RX_S,      RX_NACK,    ER_HANDLE,  errorHandle},
-                            {RX_S,      RX_TIMEOUT, ER_HANDLE,  errorHandle},
-                            {RX_S,      RX_REQ,     TX_REQ,     send},
-                            {RX_S,      RX_CONFIG,  CONFIG,     config},
-                            {TX_REQ,    TX_OK,      SLEEP_S,    goSleep},
-							{TX_REQ,    TX_TIMEOUT, SLEEP_S,    goSleep},
-                            {ER_HANDLE, ERROR_OK,   SLEEP_S,    goSleep},
-                            {CONFIG,    CONFIG_OK,  SLEEP_S,    goSleep},
-                            {CONFIG,    CONF_ERROR, ER_HANDLE,  errorHandle},
+void second_task(void* param);
 
+void listen(fsm_t* fsm);
+void errorHandle(fsm_t* fsm);
+void send(fsm_t* fsm);
+
+void nop(fsm_t* fsm);
+void process(fsm_t* fsm);
+void prErrorHandle(fsm_t* fsm);
+
+
+
+//                          ORIGIN      BITCHECK    NEXT        OUTFUNC
+fsm_trans_t table_radio[] = {
+                            {START,     STARTED,	RX_S,       listen },
+							{RX_S,     	RX_ERROR,   ER_HANDLE,  errorHandle}, 
+							{RX_S,     	TX_REQ,   	TX_S,   	send},
+							{TX_S,     	TX_OK,   	RX_S,   	listen},
+							{TX_S,     	TX_TIMEOUT, ER_HANDLE,  errorHandle},
+							{ER_HANDLE, ERROR_OK, 	RX_S,  		listen},
+      
                             {-1, NULL, -1, NULL}
                             };
 
+
+fsm_trans_t table_process[] = 	{
+							  	{START, 	STARTED, 	WAIT, 		nop},
+								{WAIT, 		RX_DATA, 	PROCESS, 	process},
+								{PROCESS, 	PR_ERROR, 	WAIT, 		prErrorHandle},
+								{PROCESS, 	PR_OK, 		WAIT, 		nop},
+
+								{-1, NULL, -1, NULL}	
+								};
 
 
 //--------------> begin main function <--------------//
@@ -79,8 +117,12 @@ int main(void){
 	HAL_Init();
 	wakeUpSystem();
 
-	xTaskCreate(main_task, "PWM", 256, NULL, osPriorityNormal, NULL);
-	xTaskCreate(led_blink, "LED", 128, NULL, osPriorityNormal, NULL);
+
+	create_queue(&RxRAW, 10);
+
+	xTaskCreate(main_task, "PWM", 128, NULL, osPriorityNormal, NULL);
+	xTaskCreate(second_task, "SECOND", 256, NULL, osPriorityNormal, NULL);
+	xTaskCreate(led_blink, "LED", 64, NULL, osPriorityNormal, NULL);
 	vTaskStartScheduler();
 	while(1){
 	}
@@ -129,11 +171,9 @@ void radio_init(){
 
 void onTxDone(){
 	bitSet(&state_flags, TX_OK);
-	Radio.Sleep( );
-
 
 #ifdef debug
-	Trace_send("-->TX done! \r \n");
+	Trace_send("-->TX done! \r \n\r");
 #endif
 
 }
@@ -149,7 +189,7 @@ void onTxTimeout(){
 	Radio.Sleep( );
 
 #ifdef debug
-    Trace_send("-->TX error: Timeout \t \n");
+    Trace_send("-->TX error: Timeout \n\r");
 #endif
 }
 
@@ -161,10 +201,8 @@ void onTxTimeout(){
 
 void onRxTimeout(){
 	bitSet(&state_flags, RX_TIMEOUT);
-	Radio.Sleep( );
-
 #ifdef debug
-    Trace_send("Error: Timeout \r \n");
+    Trace_send("Error: Timeout \n\r");
 #endif
 
 }
@@ -177,11 +215,8 @@ void onRxTimeout(){
 
 void onRxError(){
 	bitSet(&state_flags, RX_ERROR);
-    state_flags |= RX_ERROR;
-    Radio.Sleep( );
-
 #ifdef debug
-	Trace_send("RX ERROR \r \n");	
+	Trace_send("RX ERROR \r \n\r");	
 #endif
 }
 
@@ -192,57 +227,14 @@ void onCadDone(bool channelActivityDetected){};
 
 void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
 
-	Radio.Sleep( );
-
 	if(size < HEAD_SIZE)
 		return;
+	
 
-	parser(payload, size);
+	bitSet(&state_flags, RX_DATA);
+	push(&RxRAW, parser(payload, size));
 
-#ifdef debug					
-	print(RxData);
-#endif
-
-
-	//TODO -> YOU MUST BE JOIN
-
-	switch(RxData->MacType){
-		case ACK:
-			bitSet(&state_flags, RX_OK);
-			break;
-
-		case NACK:
-			bitSet(&state_flags, RX_NACK);
-			break;
-
-		case TX_T:
-			switch(RxData->type){
-				case CONFIG:
-					bitSet(&state_flags, RX_CONFIG);
-					break;	
-
-				case REQ_INFO:
-					bitSet(&state_flags, RX_REQ);
-					loadInfo();
-					break;
-			}
-
-		default:
-			bitSet(&state_flags, RX_OK);
-			break;
-	}
-
-#ifdef debug
-    if( state_flags & RX_OK)
-        Trace_send("-->ACK OK \n");
-    if( state_flags & RX_NACK)
-        Trace_send("--> ERROR: NACK \n");
-    if( state_flags & RX_CONFIG)
-        Trace_send("--> CONFIG MODE\n");
-    if( state_flags & RX_REQ)
-        Trace_send("--> DATA REQUEST \n");
-#endif
-
+	return;
 }
 
 //--------------> end radio functions <--------------//
@@ -264,25 +256,23 @@ void wakeUpSystem(){
  * 	@retval	none 
  */
 
-void parser(uint8_t* pData, uint16_t size){
+Packet_t* parser(uint8_t* pData, uint16_t size){
 
-	if(RxData == NULL){
-		RxData= (Packet_t*)malloc(sizeof(Packet_t));
-		RxData->pData	= NULL;
-	}
-	RxData->NettAddr	= *(pData++);
-	RxData->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
-	RxData->devDest 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
-	RxData->MacType 	= (*(pData)>>4)&0xF;
-	RxData->flags 		= *(pData++)&0xF;
-	RxData->pSize 		= *(pData++);
-	RxData->type 		= *(pData++);
+	Packet_t* inPack = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
+	RxData->pData	= NULL;
+	
+	inPack->NettAddr	= *(pData++);
+	inPack->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
+	inPack->devDest 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
+	inPack->MacType 	= (*(pData)>>4)&0xF;
+	inPack->flags 		= *(pData++)&0xF;
+	inPack->pSize 		= *(pData++);
+	inPack->type 		= *(pData++);
 
-	if(RxData->pData != NULL)
-		free(RxData->pData);
+	inPack->pData = (uint8_t*)pvPortMalloc(inPack->pSize*sizeof(uint8_t)); 
+	memcpy(inPack->pData, pData ,inPack->pSize);
 
-	RxData->pData = (uint8_t*)malloc(RxData->pSize - 1); 
-	memcpy(RxData->pData, pData ,RxData->pSize  - 1);
+	return inPack;
 }
 
 /**
@@ -294,19 +284,19 @@ void parser(uint8_t* pData, uint16_t size){
 //TODO -> REPAIR THIS FUNCTION ->OK
 void print(Packet_t *data){
 	if(data == NULL){
-		Trace_send("Error printing: DATA NULL \r \n");
+		Trace_send("Error printing: DATA NULL \r \n\r");
 		return;
 	}
 
 	uint8_t cnt = 0;
 
-	Trace_send("\t  Net Address: %X\n \t device Address: %X \n \t Source Address: %X \n \t mac type: %X  \n \t Size: %X  \n \t RAW data  ->", 
+	Trace_send("\t  Net Address: %X\n\r \t device Address: %X \n\r \t Source Address: %X \n\r \t mac type: %X  \n\r \t Size: %X  \n\r \t RAW data  ->", 
 			data->NettAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
 
 	while(cnt < data->pSize){
 		Trace_send("%X ", *(data->pData + cnt++));
 	}
-	Trace_send("\n");
+	Trace_send("\n\r");
 
 }
 
@@ -348,7 +338,11 @@ void bitClear(uint32_t* flag, uint8_t bit){
  * @param bit bit to set
  */
 void bitSet(uint32_t* flags, uint8_t bit){
-	*flags |= bit;
+	*flags |= (1 << bit);
+}
+
+int bitTest(uint32_t* flags, uint8_t bit){
+	return *flags&(1 << bit);
 }
 
 void clearFlags(uint32_t* flags){
@@ -358,66 +352,71 @@ void clearFlags(uint32_t* flags){
 //--------------> end private functions <--------------//
 
 //--------------> begin fsm functions <--------------//
-/**
- * 
- * @brief	join protocolo
- * @param	[fsm] pointer to state machine structure
- * @retval	none
- * 
- * */
-void join(fsm_t* fsm){
-	bitClear(fsm->flags, JOIN_OK) ;
-	bitClear(fsm->flags, JOIN_ERROR);
-	//TODO -> create this function!
+
+void listen(fsm_t* fsm){
+	bitClear(fsm->flags, TX_OK);
+	bitClear(fsm->flags, ERROR_OK);
+
+	Radio.Rx(0);
 }
 
-/**
- * @brief  Sleep the system
- * 
- * @param fsm pointer to state machine structure
- */
-void goSleep(fsm_t* fsm){
-	//Clear flags
-	bitClear(fsm->flags, TX_OK);
-	bitClear(fsm->flags, RX_OK);
-	bitClear(fsm->flags, ERROR_OK);
-	bitClear(fsm->flags, CONFIG_OK);
+void process(fsm_t* fsm){
+
+	Packet_t* raw = (Packet_t*)pop(&RxRAW);
+
+
+#ifdef debug					
+	print(raw);
+#endif
+	//TODO -> complete this
+	switch(raw->MacType){
+		case ACK:
+			bitSet(&state_flags, RX_OK);
+			break;
+
+		case NACK:
+			bitSet(&state_flags, RX_NACK);
+			break;
+
+		case TX_T:
+			switch(raw->type){
+				case CONFIG:
+					bitSet(&state_flags, RX_CONFIG);
+					break;	
+
+				case REQ_INFO:
+					bitSet(&state_flags, RX_REQ);
+					loadInfo();
+					break;
+				default:
+					bitSet(fsm->flags, PR_OK);
+					break;
+			}
+
+		default:
+			bitSet(&state_flags, PR_OK);
+			break;
+	}
+
+
+	if(empty(&RxRAW))
+		bitClear(fsm->flags, RX_DATA);
+
+	vPortFree(raw);
+
 
 #ifdef debug
-	Trace_send("-> Sleep state \n");
-	HAL_Delay(Configuration.SleepTime);
-#else
-	GoBed(Configuration.SleepTime);
-	wakeUpSystem();		//TODO -> MAKE THIS FUNCTION!
+    if( bitTest(fsm->flags, RX_OK)) //TODO -> puede no recibir ACK
+        Trace_send("-->ACK OK \n\r");
+    if( bitTest(fsm->flags, RX_NACK))
+        Trace_send("--> ERROR: NACK \n\r");
+    if( bitTest(fsm->flags, RX_CONFIG))
+        Trace_send("--> CONFIG MODE\n\r");
+    if( bitTest(fsm->flags, RX_REQ))
+        Trace_send("--> DATA REQUEST \n\r");
 #endif
 }
 
-
-/**
- * @brief capture sensor data
- * 
- * @param fsm pointer to state machine structure
- */
-void measure(fsm_t* fsm){
-	if(TxData == 0){
-		TxData = (Packet_t*)malloc(sizeof(Packet_t));
-	}
-	uint8_t* mess = "01234";
-	TxData->NettAddr = 0xFF;
-	TxData->devAddr = DEV_ADDR;
-	TxData->devDest = 0xFFFF;
-	TxData->MacType = 0;
-	TxData->flags = 0;
-	TxData->pData = mess;
-	TxData->type = DATA;
-	TxData->pSize = 5;
-}
-
-/**
- * @brief 
- * 
- * @param fsm pointer to state machine structure
- */
 void send(fsm_t* fsm){
 	static uint8_t totalSize;
 	static uint8_t* sendData;
@@ -428,7 +427,7 @@ void send(fsm_t* fsm){
 
 	//Alloc memory
 	totalSize = TxData->pSize + HEAD_SIZE;
-	sendData  = (uint8_t*)malloc(totalSize);
+	sendData  = (uint8_t*)pvPortMalloc(totalSize);
 
 	//Load data
 	*(sendData++) = (TxData->NettAddr);
@@ -442,74 +441,36 @@ void send(fsm_t* fsm){
 	memcpy(sendData, TxData->pData, TxData->pSize -1);
 	//send data
 	Radio.Send(sendData - HEAD_SIZE -1, totalSize);
-	free(sendData - HEAD_SIZE -1);
+	vPortFree(sendData - HEAD_SIZE -1);
 
 #ifdef debug
-	Trace_send("Sending data: \r\n");
+	Trace_send("Sending data: \n\r");
 	print(TxData);
 #endif
 
 }
-/**
- * @brief 
- * 
- * @param fsm pointer to state machine structure
- */
-void receive(fsm_t* fsm){
-	bitClear(fsm->flags, TX_OK);
-	Radio.Rx(Configuration.RXWIndow);
+
+void prErrorHandle(fsm_t* fsm){
+	//TODO -> complete this
+
+	bitClear(fsm->flags, PR_ERROR);
 }
-/**
- * @brief 
- * 
- * @param fsm pointer to state machine structure
- */
-//TODO -> complete this function
+
 void errorHandle(fsm_t* fsm){
-
-	if(*(fsm->flags)&TX_TIMEOUT){
-
-		bitClear(fsm->flags, TX_TIMEOUT);
-	}
-	if(*(fsm->flags)&RX_TIMEOUT){
-
-		bitClear(fsm->flags, RX_TIMEOUT);
-	}
-	if(*(fsm->flags)&RX_ERROR){
-
+	if(bitTest(fsm->flags, RX_ERROR)){
 		bitClear(fsm->flags, RX_ERROR);
 	}
-	if(*(fsm->flags)&RX_NACK){
-
-		bitClear(fsm->flags, RX_NACK);
-	}
-	if(*(fsm->flags)&CONF_ERROR){
-		Config_Load();
-		bitSet(fsm->flags, JOIN_ERROR);
-		bitClear(fsm->flags, CONF_ERROR);
+	if(bitTest(fsm->flags, TX_TIMEOUT)){
+		bitClear(fsm->flags, TX_TIMEOUT);
 	}
 
 	bitSet(fsm->flags, ERROR_OK);
+}
 
-}
-/**
- * @brief 
- * 
- * @param fsm pointer to state machine structure
- */
-void config(fsm_t* fsm){
-	//TODO -> complete this function
-	bitClear(fsm->flags, RX_CONFIG);
-	
-}
-/**
- * @brief 
- * 
- * @param fsm 
- */
-void restart(fsm_t* fsm){
-	clearFlags(fsm->flags);
-	bitSet(fsm->flags, STARTED);
+void nop(fsm_t* fsm){
+	//TODO -> test this
+
+	bitClear(fsm->flags,PR_OK);
 }
 //--------------> end fsm functions <--------------//
 
@@ -517,13 +478,21 @@ void restart(fsm_t* fsm){
 
 void main_task(void* param){
 
-	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
+	fsm_t* fsm_lora = fsm_new(table_radio, &state_flags);
 
 	while(1){
 		fsm_fire(fsm_lora);
 	}
 	
 	//TODO -> complete this function
+}
+void second_task(void* param){
+	fsm_t* fsm_second = fsm_new(table_process, &state_flags);
+
+	while(1){
+		fsm_fire(fsm_second);
+	}
+	
 }
 
 void led_blink(void* param){

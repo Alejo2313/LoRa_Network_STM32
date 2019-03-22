@@ -874,17 +874,9 @@ trace.h
 stdint.h
 -
 
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/freertos.c
-FreeRTOS.h
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/FreeRTOS.h
-task.h
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/task.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/main.c
 main.h
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/main.h
-
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/main.c
-main.h
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/main.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/main.h
 stm32l0xx_hal.h
-/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/Src/stm32l0xx_hal.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/stm32l0xx_hal.h
 

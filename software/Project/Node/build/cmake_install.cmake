@@ -1,4 +1,4 @@
-# Install script for directory: /home/alejo/Documents/LoRa_Project_v1/software/p2/Node
+# Install script for directory: /home/alejo/Documents/LoRa_Project_v1/software/Project/Node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alejo/Documents/LoRa_Project_v1/software/p2/Node/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

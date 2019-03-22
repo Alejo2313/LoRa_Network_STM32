@@ -1,0 +1,33 @@
+PCAD Importer Log
+Project : CMWX1ZZABZ-078.LibPkg
+
+Section : D:\OneDrive\workspace\altium\Work\lora\libs\CMWX1ZZABZ-078.lia
+    Section : PCB Library - CMWX1ZZABZ-078.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token CMWX1ZZABZ-078 On Line 229
+            Warning - 1 : Skipping Token attachedSymbol On Line 826
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - CMWX1ZZABZ-078.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token multiLayer On Line 108
+            Warning - 1 : Skipping Token layerContents On Line 167
+            Warning - 1 : Skipping Token layerContents On Line 171
+            Warning - 1 : Skipping Token layerContents On Line 175
+            Warning - 1 : Skipping Token layerContents On Line 182
+            Warning - 1 : Skipping Token layerContents On Line 191
+            Warning - 1 : Skipping Token layerContents On Line 206
+            Warning - 1 : Skipping Token layerContents On Line 212
+        EndSection
+
+        Section : Generating SCH Library - CMWX1ZZABZ-078.SchLib
+        EndSection
+    EndSection
+EndSection
