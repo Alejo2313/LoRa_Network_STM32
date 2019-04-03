@@ -10,7 +10,6 @@
             "request": "launch",
             "target": "${workspaceFolder}/build/LoRaNODE.elf",
             "gdbpath": "/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gdb",
-            "preLaunchTask": "gdb-server",
             "cwd": "${workspaceRoot}",
             "autorun": [
                 "target remote localhost:4242",

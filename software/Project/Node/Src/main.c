@@ -8,6 +8,13 @@ static item_t items[] ={
 						{TEMPERATURE	,2},
 						{HUMIDITY		,1},
 						{RSSI			,1},
+						{RSSI			,1},
+						{RSSI			,1},
+						{RSSI			,1},
+						{RSSI			,1},
+						{RSSI			,1},
+						{RSSI			,1},
+
 						{255, 255}
 					   };
 
@@ -260,15 +267,15 @@ void onRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr ){
 		}
 		
 	}
-
 #ifdef debug
-    if( state_flags & RX_OK)
+  	if(bitTest(&state_flags, RX_OK))
         Trace_send("-->ACK OK \n\r");
-    if( state_flags & RX_NACK)
+
+    if( bitTest(&state_flags,  RX_NACK))
         Trace_send("--> ERROR: NACK \n\r");
-    if( state_flags & RX_CONFIG)
+    if(bitTest(&state_flags,  RX_CONFIG))
         Trace_send("--> CONFIG MODE\n\r");
-    if( state_flags & RX_REQ)
+    if(bitTest(&state_flags,  RX_REQ))
         Trace_send("--> DATA REQUEST \n\r");
 #endif
 
@@ -297,7 +304,7 @@ void parser(uint8_t* pData, uint16_t size){
 
 	if(RxData == NULL){
 		RxData= (Packet_t*)pvPortMalloc(sizeof(Packet_t));
-		RxData->pData	= NULL;
+		RxData->pData	= (uint8_t*)pvPortMalloc(MAX_PAYLOAD);
 	}
 	RxData->NetAddr	= *(pData++);
 	RxData->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
@@ -306,10 +313,7 @@ void parser(uint8_t* pData, uint16_t size){
 	RxData->flags 		= *(pData++)&0xF;
 	RxData->pSize 		= *(pData++);
 
-	if(RxData->pData != NULL)
-		vPortFree(RxData->pData);
 
-	RxData->pData = (uint8_t*)pvPortMalloc(RxData->pSize); 
 	memcpy(RxData->pData, pData ,RxData->pSize);
 }
 
@@ -400,8 +404,9 @@ void clearFlags(uint32_t* flags){
  * 
  * */
 void join(fsm_t* fsm){
-	if(TxData == 0){
+	if(TxData == NULL){
 		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
+		TxData->pData = (uint8_t*)pvPortMalloc(MAX_PAYLOAD);
 	}
 
 	item_t* it;
@@ -415,21 +420,25 @@ void join(fsm_t* fsm){
 	TxData->devDest = Configuration.masterAddr;
 	TxData->MacType = JOIN_T;
 	TxData->flags 	= 0;
-	TxData->pSize 	= 0;
+	TxData->pSize 	= 2;
 
 	//Paylaod size calculation
+
+	*(TxData->pData) = (UUID >> 8)&0xFF;
+	*(TxData->pData+1) = (UUID)&0xFF;
+
+
+
 	for(it = items; it->size != 255; it++){
 		TxData->pSize++;
 	}
-	// allocating payload memory
-	TxData->pData = (uint8_t*)pvPortMalloc(RxData->pSize*sizeof(uint8_t));
 
 	size_t size = xPortGetFreeHeapSize() ;
-	cnt = 0;
+
+	cnt = 2;
 	for(it = items; it->size != 255; it++){
 		*(TxData->pData+ cnt++) = ((it->item&0xF) << 2) | (it->size & 0x3);
 	}
-	TxData->pData -= TxData->pSize;
 
 	send(fsm);
 	//TODO -> check this
@@ -467,20 +476,23 @@ void goSleep(fsm_t* fsm){
  * @param fsm pointer to state machine structure
  */
 void measure(fsm_t* fsm){
+
 	if(TxData == 0){
 		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
+		TxData->pData = (uint8_t*)pvPortMalloc(MAX_PAYLOAD);
 	}
 
 //TODO -> DELETE THIIIIIS!!!!!
-	uint16_t cnt = 16;
-	uint8_t* mess = "0123456789ABCDE";
+
+	static uint8_t cnt = 0;
 	
-	TxData->NetAddr = 0xFF;
-	TxData->devAddr = DEV_ADDR;
-	TxData->devDest = 0xFFFF;
+	TxData->NetAddr =  Configuration.netAddr;
+	TxData->devAddr = Configuration.devAddr;
+	TxData->devDest = Configuration.gateAddr;
 	TxData->MacType = TX_T;
 	TxData->flags = 0;
-	TxData->pData = mess;
+
+
 	TxData->pSize = 16; 
 
 	bitSet(fsm->flags, MEASURE_OK);
@@ -578,6 +590,10 @@ void errorHandle(fsm_t* fsm){
 void config(fsm_t* fsm){
 	uint16_t aux = 0;
 	
+
+#ifdef debug
+	Trace_send("Configuring.... \n");
+#endif
 	aux = (*(RxData->pData++) << 8) | (*(RxData->pData++)&0xFF);
 
 	if(aux != UUID){
@@ -603,11 +619,11 @@ void config(fsm_t* fsm){
 	}
 	aux =(*(RxData->pData++)&0xFF);
 	if(aux != 0){
-		Configuration.RXWIndow = aux;
+		Configuration.RXWIndow = aux * 1000 ;
 	}
 
 	Configuration.devAddr = RxData->devDest;
-	Configuration.masterAddr = RxData->devAddr;
+	Configuration.gateAddr = RxData->devAddr;
 	Configuration.netAddr = RxData->NetAddr;
 
 

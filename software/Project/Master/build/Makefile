@@ -393,6 +393,33 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowP
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.s
 
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.s
+
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj
 
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.obj
@@ -2655,6 +2682,9 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.s"

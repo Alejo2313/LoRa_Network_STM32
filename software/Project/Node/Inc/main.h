@@ -32,6 +32,7 @@ void print(Packet_t *data);
 void Config_Load();
 void bitClear(uint32_t* flag, uint8_t bit);
 void bitSet(uint32_t* flags, uint8_t bit);
+int bitTest(uint32_t* flags, uint8_t bit);
 void clearFlags(uint32_t* flags);
 
 //FSM

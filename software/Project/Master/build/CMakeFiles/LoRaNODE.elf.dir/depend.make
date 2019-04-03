@@ -876,6 +876,9 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj: ../../global/Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c
 
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj: ../../global/Core/utils/inc/circular.h
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c
+
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj: ../../global/Core/utils/inc/fsm.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c
 
@@ -981,6 +984,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Core/hw/inc/hw_msp.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Core/hw/inc/hw_rtc.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Core/hw/inc/hw_spi.h
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Core/utils/inc/circular.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Core/utils/inc/utilities.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.h
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: ../../global/Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l010x4.h

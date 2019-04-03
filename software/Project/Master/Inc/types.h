@@ -12,16 +12,46 @@
 
 /* Types */
 
+typedef enum {
+	LIGTH,
+	PRESURE,
+	HUMIDITY,
+	TEMPERATURE,
+	CONFIG_SF,
+	CONFIG_BW,
+	CONFIG_POWER,
+	RSSI,
+	RX_PWR
+}Data_t;
+
 typedef struct{
-	uint16_t DevAddr;
-	uint16_t GateAddr;
-	uint32_t SleepTime;
+	uint16_t devAddr;
+	uint16_t masterAddr;
+	uint16_t gateAddr;
+	uint32_t sleepTime;
+	uint8_t  power;
+	uint8_t  bw;
+	uint8_t  sf;
 	//ohters.....
 
-	uint16_t RXWIndow;
-	uint8_t NetAddr;
+	uint8_t RXWIndow;
+	uint8_t netAddr;
 	
 } config_t;
+
+
+typedef struct 
+{
+	Data_t 	item;
+	uint8_t size;
+}item_t;
+
+typedef struct 
+{
+	uint16_t 	UUID;		//Identificador de quien pertenece la estructura
+	uint8_t  	iSize;		// Número de items
+	item_t* 	items;		// puntero a items
+}data_format;	
 
 
 
@@ -40,42 +70,31 @@ typedef enum {
 	PROCESS
 } State_t;
 
+typedef enum{
+	REQ_DATA
+	//others...
+}mac_flags;
 
 
-
-typedef enum {
-	LIGTH,
-	PRESURE,
-	HUMIDITY,
-	TEMPERATURE,
-	CONFIG_SF,
-	CONFIG_BW,
-	CONFIG_POWER,
-	RSSI,
-	RX_PWR
-}Data_t;
 
  typedef enum {
 	TX_T,
-	ACK,
+	ACK, //REQ INFO IMPLISITO EN FLAGS
+
 	NACK,
-	JOIN_T
+	JOIN_T,
+	CONFIG
+
  }Mac_t;
 
-typedef enum{
-	DATA,
-	CONFIG,
-	REQ_INFO
-}payload_t;
 
 
  typedef struct {
-	uint8_t NettAddr;
+	uint8_t NetAddr;
  	uint16_t devAddr;
 	uint16_t devDest;
  	Mac_t MacType;
 	uint8_t flags;
- 	payload_t type;
  	uint8_t* pData;
  	uint8_t pSize;
  	uint8_t* crc;

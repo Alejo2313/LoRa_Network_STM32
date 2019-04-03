@@ -84,6 +84,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj"
+  "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj"

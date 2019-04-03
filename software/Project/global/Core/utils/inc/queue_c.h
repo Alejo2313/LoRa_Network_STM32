@@ -14,6 +14,7 @@ typedef struct queue_c
 
 
 void create_queue(queue_c*, uint8_t size);
+
 void push(queue_c* this, void* pData);
 void* pop(queue_c* this);
 void flush(queue_c* this);

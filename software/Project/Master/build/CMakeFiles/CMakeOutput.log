@@ -1,5 +1,5 @@
 The target system is: Generic -  - arm
-The host system is: Linux - 4.18.0-15-generic - x86_64
+The host system is: Linux - 4.18.0-16-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc 
 Build flags: --specs=nosys.specs;-mcpu=cortex-m0plus;-std=gnu11;--no-warn;-mthumb;-mno-thumb-interwork;;;-ffunction-sections;-fdata-sections;-Wall;-g;-fno-common;-fmessage-length=0;-std=gnu11;
@@ -16,28 +16,28 @@ The C compiler identification is GNU, found in "/home/alejo/Documents/LoRa_Proje
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a8d01/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a8d01.dir/build.make CMakeFiles/cmTC_a8d01.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d4efe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d4efe.dir/build.make CMakeFiles/cmTC_d4efe.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8d01.dir/testCCompiler.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_a8d01.dir/testCCompiler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_a8d01
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8d01.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_a8d01.dir/testCCompiler.c.obj  -o cmTC_a8d01 
+Building C object CMakeFiles/cmTC_d4efe.dir/testCCompiler.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_d4efe.dir/testCCompiler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d4efe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4efe.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_d4efe.dir/testCCompiler.c.obj  -o cmTC_d4efe 
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5ded9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5ded9.dir/build.make CMakeFiles/cmTC_5ded9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bb6e6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb6e6.dir/build.make CMakeFiles/cmTC_bb6e6.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_5ded9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ded9.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -v CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj  -o cmTC_5ded9 
+Building C object CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_bb6e6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb6e6.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -v CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj  -o cmTC_bb6e6 
 Using built-in specs.
 Reading specs from /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -49,9 +49,9 @@ Thread model: single
 gcc version 8.2.1 20181213 (release) [gcc-8-branch revision 267074] (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 
 COMPILER_PATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_5ded9' '-mfloat-abi=soft' '-march=armv6s-m'
- /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/collect2 -plugin /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9D3Sla.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi -X -o cmTC_5ded9 /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crti.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtbegin.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1 -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtend.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtn.o
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_5ded9' '-mfloat-abi=soft' '-march=armv6s-m'
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_bb6e6' '-mfloat-abi=soft' '-march=armv6s-m'
+ /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/collect2 -plugin /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaxoEoB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi -X -o cmTC_bb6e6 /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crti.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtbegin.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1 -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtend.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtn.o
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_bb6e6' '-mfloat-abi=soft' '-march=armv6s-m'
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
 
 
@@ -59,14 +59,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5ded9/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5ded9.dir/build.make CMakeFiles/cmTC_5ded9.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_bb6e6/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_bb6e6.dir/build.make CMakeFiles/cmTC_bb6e6.dir/build]
   ignore line: [make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_5ded9]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ded9.dir/link.txt --verbose=1]
-  ignore line: [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -v CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj  -o cmTC_5ded9 ]
+  ignore line: [Building C object CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -o CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_bb6e6]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb6e6.dir/link.txt --verbose=1]
+  ignore line: [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -v CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj  -o cmTC_bb6e6 ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -78,13 +78,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.2.1 20181213 (release) [gcc-8-branch revision 267074] (GNU Tools for Arm Embedded Processors 8-2018-q4-major) ]
   ignore line: [COMPILER_PATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/]
   ignore line: [LIBRARY_PATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/:/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_5ded9' '-mfloat-abi=soft' '-march=armv6s-m']
-  link line: [ /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/collect2 -plugin /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9D3Sla.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi -X -o cmTC_5ded9 /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crti.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtbegin.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1 -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtend.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-mcpu=cortex-m0plus' '-std=gnu11' '-w' '-mthumb' '-mno-thumb-interwork' '-ffunction-sections' '-fdata-sections' '-Wall' '-g' '-fno-common' '-fmessage-length=0' '-std=gnu11' '-v' '-o' 'cmTC_bb6e6' '-mfloat-abi=soft' '-march=armv6s-m']
+  link line: [ /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/collect2 -plugin /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/liblto_plugin.so -plugin-opt=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaxoEoB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi -X -o cmTC_bb6e6 /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crti.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtbegin.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib/thumb/v6-m/nofp -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1 -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib -L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg -lc --end-group --start-group -lgcc -lc -lnosys --end-group /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtend.o /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtn.o]
     arg [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9D3Sla.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccaxoEoB.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lg] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -94,7 +94,7 @@ Parsed C implicit link information from above output:
     arg [--sysroot=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi] ==> ignore
     arg [-X] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5ded9] ==> ignore
+    arg [cmTC_bb6e6] ==> ignore
     arg [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crti.o] ==> ignore
     arg [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v6-m/nofp/crtbegin.o] ==> ignore
     arg [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o] ==> ignore
@@ -105,7 +105,7 @@ Parsed C implicit link information from above output:
     arg [-L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc] ==> dir [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc]
     arg [-L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib]
     arg [-L/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib] ==> dir [/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../arm-none-eabi/lib]
-    arg [CMakeFiles/cmTC_5ded9.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_bb6e6.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [--start-group] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lg] ==> lib [g]
@@ -135,14 +135,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bd313/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bd313.dir/build.make CMakeFiles/cmTC_bd313.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_82e73/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82e73.dir/build.make CMakeFiles/cmTC_82e73.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bd313.dir/feature_tests.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c11 -o CMakeFiles/cmTC_bd313.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_bd313
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd313.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_bd313.dir/feature_tests.c.obj  -o cmTC_bd313 
+Building C object CMakeFiles/cmTC_82e73.dir/feature_tests.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c11 -o CMakeFiles/cmTC_82e73.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_82e73
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82e73.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_82e73.dir/feature_tests.c.obj  -o cmTC_82e73 
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
 
 
@@ -155,14 +155,14 @@ make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Proje
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c7c00/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c7c00.dir/build.make CMakeFiles/cmTC_c7c00.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_40694/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40694.dir/build.make CMakeFiles/cmTC_40694.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c7c00.dir/feature_tests.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c99 -o CMakeFiles/cmTC_c7c00.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c7c00
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7c00.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_c7c00.dir/feature_tests.c.obj  -o cmTC_c7c00 
+Building C object CMakeFiles/cmTC_40694.dir/feature_tests.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c99 -o CMakeFiles/cmTC_40694.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_40694
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40694.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_40694.dir/feature_tests.c.obj  -o cmTC_40694 
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
 
 
@@ -175,14 +175,14 @@ make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Proje
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_02f33/fast"
-/usr/bin/make -f CMakeFiles/cmTC_02f33.dir/build.make CMakeFiles/cmTC_02f33.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_320a9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_320a9.dir/build.make CMakeFiles/cmTC_320a9.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_02f33.dir/feature_tests.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c90 -o CMakeFiles/cmTC_02f33.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_02f33
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02f33.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_02f33.dir/feature_tests.c.obj  -o cmTC_02f33 
+Building C object CMakeFiles/cmTC_320a9.dir/feature_tests.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc   --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11     -std=c90 -o CMakeFiles/cmTC_320a9.dir/feature_tests.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_320a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_320a9.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc --specs=nosys.specs -mcpu=cortex-m0plus -std=gnu11 --no-warn -mthumb -mno-thumb-interwork   -ffunction-sections -fdata-sections -Wall -g -fno-common -fmessage-length=0 -std=gnu11      CMakeFiles/cmTC_320a9.dir/feature_tests.c.obj  -o cmTC_320a9 
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles/CMakeTmp'
 
 

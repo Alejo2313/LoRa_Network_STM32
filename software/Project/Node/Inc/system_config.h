@@ -44,4 +44,6 @@
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
 
+#define MAX_PAYLOAD                                 256
+
 #endif

@@ -6,9 +6,18 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+#include "circular.h"
 #include "hw.h"
 
 UART_HandleTypeDef huart;
+
+static buffer_c buff;
+
+#define BUFFER_SIZE 256
+
+static uint8_t inBuffer;
+
+
 void Trace_Init(){
 
     //CLK config
@@ -28,6 +37,8 @@ void Trace_Init(){
     USARTx_CLK_ENABLE();
     USARTx_TX_GPIO_CLK_ENABLE();
     USARTx_RX_GPIO_CLK_ENABLE();
+
+    create_buffer(&buff, BUFFER_SIZE);
 
 
     // GPIO config
@@ -79,13 +90,33 @@ void Trace_send(const char* str, ...){
     va_end(argp);
 }
 
-void trace_read(){
+uint8_t stop = 0;
 
-
+void Trace_listen(){
+    HAL_UART_Receive_IT(&huart,&inBuffer, 1);
+    stop = 0;  
 }
 
+void Trace_stopListen(){
 
+    stop = 1;
+}
+
+int Trace_dataAvailable(){
+    return !empty_buffer(&buff);
+}
+
+uint8_t Trace_get_data(){
+    return pop_buffer(&buff);
+}
 
 void USARTx_IRQHandler(){
     HAL_UART_IRQHandler(&huart);
+}
+
+extern void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle){
+
+    push_buffer(&buff, inBuffer);
+    if(!stop)
+        HAL_UART_Receive_IT(&huart,&inBuffer, 1);
 }

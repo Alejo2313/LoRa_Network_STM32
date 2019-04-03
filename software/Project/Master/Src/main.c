@@ -32,8 +32,8 @@
 
 //buffers
 queue_c RxRAW;
-Packet_t* RxData;
-Packet_t* TxData;
+static Packet_t* RxData = NULL;
+static Packet_t* TxData = NULL;
 
 //Radio
 static RadioEvents_t RadioEvents;
@@ -261,13 +261,12 @@ Packet_t* parser(uint8_t* pData, uint16_t size){
 	Packet_t* inPack = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
 	RxData->pData	= NULL;
 	
-	inPack->NettAddr	= *(pData++);
+	inPack->NetAddr		= *(pData++);
 	inPack->devAddr 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
 	inPack->devDest 	= (*(pData++)<< 8) | (*(pData++)&0xFF);
 	inPack->MacType 	= (*(pData)>>4)&0xF;
 	inPack->flags 		= *(pData++)&0xF;
 	inPack->pSize 		= *(pData++);
-	inPack->type 		= *(pData++);
 
 	inPack->pData = (uint8_t*)pvPortMalloc(inPack->pSize*sizeof(uint8_t)); 
 	memcpy(inPack->pData, pData ,inPack->pSize);
@@ -291,7 +290,7 @@ void print(Packet_t *data){
 	uint8_t cnt = 0;
 
 	Trace_send("\t  Net Address: %X\n\r \t device Address: %X \n\r \t Source Address: %X \n\r \t mac type: %X  \n\r \t Size: %X  \n\r \t RAW data  ->", 
-			data->NettAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
+			data->NetAddr, data->devAddr, data->devDest, data->MacType, data->pSize);
 
 	while(cnt < data->pSize){
 		Trace_send("%X ", *(data->pData + cnt++));
@@ -306,11 +305,11 @@ void print(Packet_t *data){
  */
 
 void Config_Load(){
-	Configuration.DevAddr 	= DEV_ADDR;
-	Configuration.GateAddr	= CONFIG_ADDR;
+	Configuration.devAddr 	= DEV_ADDR;
+	Configuration.gateAddr	= CONFIG_ADDR;
 	Configuration.RXWIndow	= RX_TIMEOUT_VALUE;
-	Configuration.SleepTime	= SLEEP_TIME;
-	Configuration.NetAddr	= 0;
+	Configuration.sleepTime	= SLEEP_TIME;
+	Configuration.netAddr	= 0;
 	bitClear(&state_flags, JOIN_OK);
 }
 
@@ -321,6 +320,45 @@ void Config_Load(){
 void loadInfo(){
 
 };
+
+void processJoin(Packet_t* inData){
+
+	static uint8_t cnt = 0;
+	
+	if(TxData == NULL){
+
+#ifdef debug
+		Trace_send("TxData is NULL!!!!!!");
+#endif
+		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
+		TxData->pData = (uint8_t*)pvPortMalloc(64);
+	}
+
+
+	TxData->NetAddr = NET_ADDR;
+	TxData->devAddr = DEV_ADDR;
+	TxData->devDest = 0x1234; 		//ToDo have to be random 
+	TxData->MacType = CONFIG;
+	TxData->flags = 0;
+
+	cnt = 0;
+	*(TxData->pData + cnt++) = *(inData->pData);
+	*(TxData->pData + cnt++) = *(inData->pData + 1);
+
+	*(TxData->pData + cnt++) =  (SLEEP_TIME >> 8) & 0xFF;
+	*(TxData->pData + cnt++) = 	(SLEEP_TIME)& 0xFF;
+
+	*(TxData->pData + cnt++) =  TX_OUTPUT_POWER_DF;
+
+	*(TxData->pData + cnt++) = ((LORA_BANDWIDTH_DF + 1) << 4) | ((LORA_SPREADING_FACTOR_DF - 6) & 0xF);
+	
+	*(TxData->pData + cnt++) = RX_TIMEOUT_VALUE/1000;
+
+	TxData->pSize = cnt;
+
+
+
+}
 
 /**
  * @brief Clear a single bit 
@@ -361,8 +399,9 @@ void listen(fsm_t* fsm){
 }
 
 void process(fsm_t* fsm){
+	static Packet_t* raw;
 
-	Packet_t* raw = (Packet_t*)pop(&RxRAW);
+	raw = (Packet_t*)pop(&RxRAW);
 
 
 #ifdef debug					
@@ -379,19 +418,14 @@ void process(fsm_t* fsm){
 			break;
 
 		case TX_T:
-			switch(raw->type){
-				case CONFIG:
-					bitSet(&state_flags, RX_CONFIG);
-					break;	
+			bitSet(fsm->flags, PR_OK);
+			break;
+		case JOIN_T:
+			bitSet(fsm->flags, PR_OK);
+			processJoin(raw);
+			bitSet(fsm->flags, TX_REQ);
 
-				case REQ_INFO:
-					bitSet(&state_flags, RX_REQ);
-					loadInfo();
-					break;
-				default:
-					bitSet(fsm->flags, PR_OK);
-					break;
-			}
+			break;
 
 		default:
 			bitSet(&state_flags, PR_OK);
@@ -402,6 +436,7 @@ void process(fsm_t* fsm){
 	if(empty(&RxRAW))
 		bitClear(fsm->flags, RX_DATA);
 
+	vPortFree(raw->pData);
 	vPortFree(raw);
 
 
@@ -414,6 +449,8 @@ void process(fsm_t* fsm){
         Trace_send("--> CONFIG MODE\n\r");
     if( bitTest(fsm->flags, RX_REQ))
         Trace_send("--> DATA REQUEST \n\r");
+	if( bitTest(fsm->flags, PR_OK))
+        Trace_send("--> DATA PROCESSED \n\r");
 #endif
 }
 
@@ -422,26 +459,29 @@ void send(fsm_t* fsm){
 	static uint8_t* sendData;
 
 	//Clear flags
-	bitClear(fsm->flags, MEASURE_OK);
+	bitClear(fsm->flags, TX_REQ);
 	bitClear(fsm->flags, RX_OK);
 
+	
 	//Alloc memory
 	totalSize = TxData->pSize + HEAD_SIZE;
-	sendData  = (uint8_t*)pvPortMalloc(totalSize);
+
+	if(sendData == NULL)
+		sendData  = (uint8_t*)malloc(64);
 
 	//Load data
-	*(sendData++) = (TxData->NettAddr);
+	*(sendData++) = (TxData->NetAddr);
 	*(sendData++) = (TxData->devAddr>>8)&0xFF;
 	*(sendData++) = (TxData->devAddr)&0xFF;
 	*(sendData++) = (TxData->devDest >> 8)&0xFF;
 	*(sendData++) = (TxData->devDest)&0xFF;
 	*(sendData++) = (TxData->MacType << 4)| TxData->flags;
 	*(sendData++) = (TxData->pSize);
-	*(sendData++) = (TxData->type);
-	memcpy(sendData, TxData->pData, TxData->pSize -1);
+
+	memcpy(sendData, TxData->pData, TxData->pSize);
 	//send data
-	Radio.Send(sendData - HEAD_SIZE -1, totalSize);
-	vPortFree(sendData - HEAD_SIZE -1);
+	Radio.Send(sendData - HEAD_SIZE , totalSize);
+	return;
 
 #ifdef debug
 	Trace_send("Sending data: \n\r");

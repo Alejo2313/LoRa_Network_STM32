@@ -10,15 +10,18 @@
 
 /* MPU settings */
 #define USE_ACK				true
-
-#define DEV_ADDR			0x1A2B
+#define UUID                0xAABB
+#define DEV_ADDR			0xABCD
+#define NET_ADDR             0x9876
 #define HEAD_SIZE			7
 #define CONFIG_ADDR         0xFFFF
-#define SLEEP_TIME          10000               //millisecond
+#define SLEEP_TIME          2000               //millisecond
 #define SLEEP_FACTOR        20                                     
 #define RX_TIMEOUT_VALUE    1000            //millisecond
 #define RX_TIMEOUT_FACTOR   10
+#define MAX_POWER           25
 
+#define JOIN_RETRY          1000
 
 /****** CONFIGURATION ***************/
 
@@ -41,5 +44,7 @@
 #define LORA_SYMBOL_TIMEOUT                         0         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
+
+#define MAX_PAYLOAD                                 256
 
 #endif
