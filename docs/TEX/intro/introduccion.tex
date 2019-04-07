@@ -9,7 +9,7 @@ Nos encontramos ante una autentica revolución en el sector de la ingeniería y 
 \paragraph{}
 El término \textit{IoT} (Internet of things) es un concepto que hace referencia a este fenómeno y que consiste en la conexión de elementos cotidianos a la red. A día de hoy, podemos encontrar desde bombillas hasta extensas redes de farolas interconectas.
 \paragraph{}
-Según datos del IDC (International Data Corporation), para 2019 se prevé que la inversión mundial en \textit{IoT} supere los \$745 mil millones de dolares, lo que supone un 15,4\% más que el año pasado. Se espera que el ritmo de crecimiento continue los próximos años llegando a superar \$1 billón de dólares en 2022.
+Según datos del IDC (International Data Corporation), para 2019 se prevé que la inversión mundial en \textit{IoT} supere los \$745 mil millones de dolares, lo que supone un 15,4\% más que el año pasado. Se espera que el ritmo de crecimiento continue los próximos años llegando a superar \$1 billón de dólares en 2022 \cite{IDC}.
 \paragraph{}
 Ante este panorama, se hace evidente la necesidad de innovar y desarrollar soluciones más eficientes. El creciente aumento en el número de dispositivos conectados hace necesario el desarrollo de redes y tecnologías más robustas, que soporten el gran volumen de datos actual y el esperado en años venideros.
 \paragraph{}
@@ -29,18 +29,14 @@ En el mercado actual podemos encontrar un amplio abanico de tecnologías de comu
 Algunas de las tecnologías usadas para \textit{IoT} son:
 
 \begin{itemize}
-    \item \textbf{NFC:} (Near Field Communication) es un estándar de comunicaciones de corto alcance inalámbricas desarrollado por Sony y NPX. Trabaja en la frecuencia de 13.56MHz utilizando modulaciones OOK (on-off keying) y BPSK. Esta tecnología alcanca velocidades de transmisión de hasta 848Kbps, dependiendo del entorno en el que se lleve acabo la comunicación. 
+    \item \textbf{NFC:} (Near Field Communication) es un estándar de comunicaciones de corto alcance inalámbricas desarrollado por Sony y NPX. Trabaja en la frecuencia de 13.56MHz utilizando modulaciones OOK (on-off keying) y BPSK. Esta tecnología alcanca velocidades de transmisión de hasta 848Kbps, dependiendo del entorno en el que se lleve acabo la comunicación \cite{NFC}. 
     
-    Esta tecnología no requiere altas potencias en transmisión, pero no alcanza grandes tasas binarias y su alcance se limita a algunos centímetros.
+    \item \textbf{WiFi: } Tecnología de comunicación de corto alcance inalámbrica que utiliza el estándar IEEE 802.11x. Utiliza las bandas ISM de 2.4 GHz y 5.7 GHz, utilizando un amplio número de modulaciones (varían según la banda y versión del estándar). Es uno de los estándares mas utilizados en la industria por su aplicación en redes locales (WLAN) y por las altas tasas binarias que alcanza (1.3 Gbps teóricos y hasta 400 Mbps reales) \cite{WiFiMAX}.
     
-    \item \textbf{WiFi: } Tecnología de comunicación de corto alcance inalámbrica que utiliza el estándar IEEE 802.11x. Utiliza las bandas ISM de 2.4 GHz y 5.7 GHz, utilizando un amplio número de modulaciones (varían según la banda y versión del estándar). Es uno de los estándares mas utilizados en la industria por su aplicación en redes locales (WLAN) y por las altas tasas binarias que alcanza (1.3 Gbps teóricos y hasta 400 Mbps reales).
     
-    Este sistema requiere potencias mayores para su funcionamiento, su alcance esta limitado a algunas decenas de metros y su velocidad binaria está limitada por el entorno (el amplio número de redes que coexisten actualmente limitan su funcionamiento).
+    \item \textbf{BLE:} (Bluetooth Low Energy) Se trata de una tecnología de comunicaciones de corto alcance, diseñada por Bluetooth Special Interest Group. Utiliza la banda ISM de 2.4 GHz y alcanza tasa binarias de hasta 1.37 Mbps \cite{BLE}. Este sistema destaca por su bajo consumo, pero tiene un alcance limitado y una tasa binaria no muy alta. 
     
-    \item \textbf{BLE:} (Bluetooth Low Energy) Se trata de una tecnología de comunicaciones de corto alcance, diseñada por Bluetooth Special Interest Group. Utiliza la banda ISM de 2.4 GHz y alcanza tasa binarias de hasta 1.37 Mbps. 
-    Este sistema destaca por su bajo consumo, pero tiene un alcance limitado y una tasa binaria no muy alta. 
-    
-    \item \textbf{WiMAX:} (World Interoperability for Microwave Access) Es un tecnología basada en el estándar IEEE 802.16, la cual puede dar servicio a redes de area metropolitana. Utiliza las bandas entre 2.3 y 5.8 GHz y puede alcanzar tasas binarias de hasta 20 Mbps. Destaca por su amplio alcance (hasta 70 Km), pero requiere mucha potencia para su funcionamiento.
+    \item \textbf{WiMAX:} (World Interoperability for Microwave Access) Es un tecnología basada en el estándar IEEE 802.16, la cual puede dar servicio a redes de area metropolitana. Utiliza las bandas entre 2.3 y 5.8 GHz y puede alcanzar tasas binarias de hasta 20 Mbps \cite{WiFiMAX}. Destaca por su amplio alcance (hasta 70 Km), pero requiere mucha potencia para su funcionamiento.
 
 
 \end{itemize}
@@ -51,7 +47,7 @@ Algunas de las tecnologías usadas para \textit{IoT} son:
     \begin{figure}[!h]
         \centering
         \includegraphics[width= 0.7\linewidth]{PWCVA.png}
-        \caption{Relación consumo/velocidad/alcance de las diferentes tecnologías} 
+        \caption{Relación de consumo, velocidad y alcance de las diferentes tecnologías \cite{POWER}} 
         \label{fig:PWCA}
     \end{figure}
     
@@ -60,15 +56,12 @@ Algunas de las tecnologías usadas para \textit{IoT} son:
     
     Se definen como redes de bajo consumo y largo alcance (LPWAN de sus siglas en inglés), al conjunto de redes inalámbricas caracterizadas por tener largos alcances, consumo mínimo y baja tasa binaría. Su bajo consumo posibilita implementarlo sobre dispositivos alimentados mediante baterías.
     
-    \paragraph{}
-    
+        
     Uno de los principales inconvenientes de estas tecnologías es su baja tasa binaria, la cual hace imposible la transmisión de grandes volúmenes de datos y a su vez limita su utilización a sistemas con interfaces máquina a máquina (M2M de sus siglas en inglés). Las tasas binarias con las que trabajan las redes LPWAN rondan los 0.3 Kbps y los 50 Kbps, dependiendo principalmente de las técnicas de transmisión y los estándares utilizados.  
-    \paragraph{}
 
     Para conseguir estas características, las redes LPWAN utilizan diferentes técnicas como:
     \begin{itemize}
         \item \textbf{Ultra Narrowband (UNB): } Se traduce como "banda ultra-estrecha". Su funcionamiento se basa en la utilización de canales con poco ancho de banda para trasmitir.Su reducido ancho de banda conlleva menor consumo, un uso más eficiente del espectro y un aumento drástico del número de dispositivos que pueden operar en una misma red.
-        
         
         \item \textbf{Spread Spectrum (SS):} Se trata de una modulación de espectro ensanchado en la cual, a cada canal, se le otorga un ancho de banda mayor al estrictamente necesario para funcionar. Al aumentar el ancho de banda, aumentamos la energía por bit utilizada, mejorando el ratio señal a ruido en el receptor. 
                 

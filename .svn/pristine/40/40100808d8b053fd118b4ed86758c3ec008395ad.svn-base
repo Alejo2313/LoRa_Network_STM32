@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "p2/Node"
+		},
+		{
+			"path": "p2/global"
+		},
+		{
+			"path": "p2/Master"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"hw.h": "c",
+			"hw_rtc.h": "c",
+			"hw_conf.h": "c",
+			"stm32l0xx_hal.h": "c",
+			"mlm32l07x01.h": "c",
+			"main.h": "c"
+		}
+	}
+}

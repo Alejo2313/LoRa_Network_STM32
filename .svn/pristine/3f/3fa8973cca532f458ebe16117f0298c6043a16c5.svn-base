@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../global/Core/utils/inc/circular.h
+stdint.h
+-
+stddef.h
+-
+stdlib.h
+-
+
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c
+circular.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.h
+stdio.h
+-
+

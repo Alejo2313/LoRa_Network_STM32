@@ -1,0 +1,371 @@
+\usepackage{graphicx}
+\usepackage{latexsym}
+%\usepackage{palatino}
+\oddsidemargin = .5in
+\evensidemargin = .2in
+\textwidth = 5.6in
+
+\headheight = 0.0in
+\headsep = 0.5in
+\topmargin = 0.35in
+\textheight = 7.0in
+\topskip = .0in
+\voffset=-0.1in
+
+\floatsep = .29in
+\textfloatsep = \floatsep
+\intextsep = \floatsep
+
+%\bibliographystyle{abbrv}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Almost everything is double spaced.
+%
+\newcommand{\spacing}{1.1}
+\renewcommand{\baselinestretch}{\spacing}
+% Footnotes are to be single spaced.
+%
+\newcommand{\munfootnote}[1]{%
+	\renewcommand{\baselinestretch}{1.0}%
+	\footnote{#1}%
+	\renewcommand{\baselinestretch}{\spacing}%
+}
+
+% Lengthy quotes must also be single spaced.
+% We provide a parameter for the citation label too.
+%
+\newcommand{\munquote}[2]{%
+	\renewcommand{\baselinestretch}{1.0}%
+	\normalsize
+	\begin{quote}{``\textsl{#1}''~\cite{#2}}\end{quote}
+	\renewcommand{\baselinestretch}{\spacing}%
+	\normalsize
+}
+
+% Command for creating the thesis title page in accordance with the
+% requirements of the School of Graduate Studies.
+% For usage example, see thesis.tex.
+%
+\newcommand{\thesistitle}[5]{%
+	\thispagestyle{empty}
+	\begin{center}
+
+	\renewcommand{\baselinestretch}{2.0}
+  \textbf{\Large UNIVERSIDAD POLIT\'{E}CNICA DE MADRID}\\
+  \textbf{\large ESCUELA T\'{E}CNICA SUPERIOR \\DE INGENIEROS DE TELECOMUNICACI\'{O}N}\\
+
+	\vspace{1.0cm}
+	\includegraphics[width=8cm]{etsit.eps}
+	\vspace{0.5cm}
+
+	\textbf{\Large #1}\\
+	\vspace{0.5cm}
+	\textbf{#2}\\
+
+	\vspace{3.5cm}
+
+	\baselineskip=20pt
+	\textbf{\textbf{\Large #3}}\\
+
+	\vspace{8.5cm}
+	\baselineskip = 20pt
+
+	\end{center}
+
+%\begin{center}
+%	\textbf{\Large Autor} \\
+%\end{center}
+	
+%\vspace{0.01cm}
+
+	\begin{center}
+		\textbf{\Large {#4}} \\
+	\end{center}
+
+%\vspace{0.3cm}
+
+%\begin{center}
+%	\textbf{\Large Director} \\
+%\end{center}
+
+%\begin{center}
+%	\textbf{\Large {#6}} \\
+%\end{center}
+
+%\vspace{0.01cm}
+%\begin{center}
+%	\hspace{-2cm}
+%	\begin{tabular}{cc}
+%		\textbf{\Large{#7}} & \textbf{\Large{\,\,\,#8}}\\
+%		{Doctor Ingeniero de Telecomunicaci\'{o}n} & {\,\,\,Doctor Ingeniero de Telecomunicaci\'{o}n} 
+%	\end{tabular}
+%\end{center}
+%\begin{flushleft}
+%\begin{tabular}{ll}
+%	\textbf{\Large Autor: } 			& \textbf{\Large {D. #6}}\\
+%	\textbf{\Large Directores: } 	& \textbf{\Large {Dr. D. #7}}\\
+%	& \textbf{\Large {Dr. D. #8}}\\
+%\end{tabular}
+%\end{flushleft}
+
+%\vspace{0.01cm}
+
+	\begin{center}
+		%\textbf{\Large A\~{n}o:  #9}
+		\textbf{\Large #5}\\
+	\end{center}
+
+%%%\renewcommand{\baselinestretch}{1.0}%
+%%%\textbf{\Large #1}
+%%%\renewcommand{\baselinestretch}{\spacing}%
+
+%%%\vspace{1.0cm}
+
+%%%#2\\
+%\copyright\ #2
+
+%%%\vspace{\fill}
+
+%%%\vspace{\fill}
+
+%A thesis submitted to the \\
+%School of Graduate Studies \\
+%in partial fulfilment of the \\
+%requirements for the degree of \\
+%#3 \\
+
+%\vspace{\fill}
+
+%Department of Computer Science \\
+%Memorial University of Newfoundland
+
+%\vspace{\fill}
+
+%#4 \\
+
+%\vspace{\fill}
+
+%St. John's \hfill Newfoundland
+%\end{center}
+}
+
+%The style to elaborate a thesis court for your
+%presentation project
+
+\newcommand{\thesiscourt}[9]{%
+	\thispagestyle{empty}
+	\begin{center}
+
+		\renewcommand{\baselinestretch}{3.0}
+		\baselineskip=15pt
+		%Escuela y Universidad
+    \textbf{\small UNIVERSIDAD POLIT\'{E}CNICA DE MADRID}\\
+		\vspace{-0.5cm}
+    \textbf{\small ESCUELA T\'{E}CNICA SUPERIOR \\DE INGENIEROS DE TELECOMUNICACI\'{O}N}\\
+	\end{center}
+
+	\baselineskip=11pt
+
+	\vspace{0.3cm}
+	\noindent
+  Reunido el tribunal examinador en el d\'{i}a de la fecha, constituido por \\
+	\begin{flushleft}
+  	\begin{tabular}{ll}
+			Presidente: & #5 \\
+			\rule{0cm}{0.5cm} & \rule{0cm}{0.5cm}\\
+			Vocal:      & #6\\
+      \rule{0cm}{0.5cm} & \rule{0cm}{0.5cm}\\
+			Secretario:  & #7\\
+			\rule{0cm}{0.5cm} & \rule{0cm}{0.5cm}\\
+			Suplente:   & #8\\
+		\end{tabular}
+	\end{flushleft}
+	
+	\vspace{0.2cm}
+	%\begin{flushleft}
+  	%\begin{tabular}{lll}
+			%Presidente: & Dr D.  & $\line(1,0){10}$ \\
+			%\rule{0cm}{0.5cm} & \rule{0cm}{0.5cm} & \rule{0cm}{0.5cm}\\
+			%Vocal:      & Dra D$^a$. & $\line(1,0){10}$ \\
+			%\rule{0cm}{0.5cm} & \rule{0cm}{0.5cm} & \rule{0cm}{0.5cm}\\
+			%Secretario:  & Dr D.  & $\line(1,0){10}$ \\
+		%\end{tabular}
+	%\end{flushleft}
+	\noindent
+	para juzgar el Trabajo Fin de Titulación titulado:
+
+	\vspace{0.3cm}
+
+	\baselineskip=20pt
+	\begin{center}
+		\textbf{\large #1}
+	\end{center}
+
+	\vspace{0.5cm}
+	\baselineskip=11pt
+	\noindent
+	del alumno D. #2
+
+	\vspace{0.2cm}
+	\noindent
+	dirigido por #3
+	
+  \vspace{0.2cm}
+	\noindent
+	del Departamento de #4
+
+	\baselineskip=20pt
+	\vspace{0.5cm}
+	\noindent
+	Acuerdan otorgar la calificaci\'{o}n de: $\line(1,0){5}$
+
+	\baselineskip=11pt
+	\vspace{0.5cm}
+	\noindent
+	Y, para que conste, se extiende firmada por los componentes del tribunal, la presente diligencia
+
+	\begin{flushright}
+		%Madrid, a $\line(1,0){2}$ de $\line(1,0){3}$ de $\line(1,0){2}$
+		Madrid, #9
+	\end{flushright}
+
+	\vspace{1.0cm}
+
+	\begin{center}
+		\begin{tabular}{ccc}
+			El Presidente & El Vocal & El Secretario \\
+			\rule{0cm}{1.5cm} & \rule{0cm}{1.5cm} & \rule{0cm}{1.5cm} \\
+			Fdo: $\line(1,0){3.5}$ &  Fdo: $\line(1,0){3.5}$ &  Fdo: $\line(1,0){3.5}$ \\
+		\end{tabular}
+	\end{center}
+}
+
+% Command for creating the third page for the degree project
+%
+\newcommand{\thesispresentation}[8]{%
+	\thispagestyle{empty}
+	\begin{center}
+
+		\renewcommand{\baselinestretch}{3.0}
+		\textbf{\Large#1}\\
+		\vspace{-0.5cm}
+		\textbf{\large#2}\\
+		\textbf{\large#3}\\
+
+		\vspace{3.5cm}
+
+		\textbf{\small#4}\\
+
+		\vspace{0.5cm}
+
+		\baselineskip=25pt
+		\textbf{\Large #5}\\
+
+		\vspace{4.5cm}
+		\baselineskip = 20pt
+
+	\end{center}
+
+	\begin{center}
+  	\textbf{\large Autor:} \\
+	  \textbf{\large #6} \\
+	\end{center}
+
+	\vspace{0.3cm}
+
+	\begin{center}
+	  \textbf{\large Director:} \\
+	  \textbf{\large #7} \\
+	\end{center}
+
+	\vspace{0.5cm}
+
+	\begin{center}
+		%\textbf{\large A\~{n}o:}\\
+		\textbf{\large #8}\\
+	\end{center}
+
+}
+%
+% The \munepsfig command is used to insert a new EPS figure 
+% into our document.  Usage is:
+%
+%	\munepsfig[scale]{filename}{caption}
+%
+% Note:
+%	- scale is optional (defaults to 1.0)
+%	- Assumes that the EPS file is in the 'figures' directory.
+% 	- 'filename' should not include the filename extension.
+%	- 'filename' also serves as the label for the figure.
+%	- Ideally, we'd want to create a \newenvironment to do this
+%	  but because the caption must appear below the figure, this
+%	  doesn't appear to be possible.
+%
+\newcommand{\munepsfig}[3][1.0]{%
+	\begin{figure}[!htbp]
+	\centering
+	\vspace{2mm}
+	\scalebox{#1}{\includegraphics{figures/#2.eps}}
+	\caption{#3}
+	\label{fig:#2}
+	\end{figure}
+}
+
+%
+% The \munfig command is used to insert 'textual' figures
+% into our document.  Usage is:
+%
+%	\munfig{caption}{label}{content}
+%
+\newcommand{\munfig}[3]{%
+	\begin{figure}[!htbp]
+	\centering
+	\vspace{2mm}
+	#3
+	\caption{#1}
+	\label{fig:#2}
+	\end{figure}
+}
+
+%
+% The \muntab command is used to insert a new table into our document.
+% Usage is:
+%
+%	\muntab{table_format}{label}{caption}{table_contents}
+%
+% Note that we could have created a \newenvironment, but opted for
+% a \newcommand so as to be consistent with the \munepsfig command.
+%
+\newcommand{\muntab}[4]{%
+	\begin{table}[!htbp]
+	\centering
+	\caption{#3}
+	\label{tab:#2}
+	\vspace{2mm}
+	\begin{tabular}{#1}
+	#4
+	\end{tabular}
+	\end{table}
+}
+
+%
+% The \muneqn command is used to add an equation to the thesis.
+% Usage is 
+%
+%	\muneqn{label}{equation_body}
+%
+\newcommand{\muneqn}[2]{%
+	\begin{equation}
+	\centering
+	\label{eqn:#1}
+	#2
+	\end{equation}
+}
+
+%
+% For theorems and corollaries.
+%
+\newtheorem{cor}{Corollary}
+\newtheorem{thm}{Theorem}

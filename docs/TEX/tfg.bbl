@@ -1,0 +1,35 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Cypress}{2015}]{BLE}
+Cypress (2015).
+\newblock Bluetooth low energy (ble).
+\newblock Technical report, Cypress Semiconductor Corporation.
+
+\bibitem[\protect\astroncite{et~al.}{2016}]{POWER}
+et~al., M.~F. (2016).
+\newblock Energy efficiency of the internet of things.
+\newblock Technical report, IEA 4E Electronic Devices and Networks Annex.
+
+\bibitem[\protect\astroncite{Minihold}{2014}]{WiFiMAX}
+Minihold, R. (2014).
+\newblock Analisis of wifi and wimax and wireless network coexistence.
+\newblock Technical report, School of Computing, Teesside University.
+
+\bibitem[\protect\astroncite{SEMTECH}{2015}]{LoRaMod}
+SEMTECH (2015).
+\newblock Lora modulation basics.
+\newblock Technical Report~2, Semtech Corporation.
+
+\bibitem[\protect\astroncite{Song and Issac}{2011}]{NFC}
+Song, S. and Issac, B. (2011).
+\newblock Near field communication (nfc) technology and measurements.
+\newblock Technical report, Rohde and Schwarz.
+
+\bibitem[\protect\astroncite{Torchia}{2019}]{IDC}
+Torchia, M. (2019).
+\newblock Idc forecasts worldwide spending on the internet of things to reach
+  745 billion in 2019, led by the manufacturing, consumer, transportation, and
+  utilities sectors.
+\newblock {\em IDC Research Reports}.
+
+\end{thebibliography}
