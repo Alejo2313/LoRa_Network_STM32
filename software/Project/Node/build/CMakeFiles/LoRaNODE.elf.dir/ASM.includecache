@@ -6,3 +6,5 @@
 
 #IncludeRegexTransform: 
 
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s
+

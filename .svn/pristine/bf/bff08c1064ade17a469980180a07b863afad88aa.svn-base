@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{Doc-Start}{Resumen}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{Resumen}{}% 2
+\BOOKMARK [0][-]{Doc-Start}{Agradecimientos}{}% 3
+\BOOKMARK [0][-]{Doc-Start}{\315ndice General}{}% 4
+\BOOKMARK [0][-]{chapter*.1}{\315ndice de Figuras}{}% 5
+\BOOKMARK [0][-]{chapter*.2}{\315ndice de Tablas}{}% 6
+\BOOKMARK [0][-]{chapter*.3}{Lista de acr\363nimos}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n y Objetivos}{}% 8
+\BOOKMARK [1][-]{subsection.1.0.1}{Tecnolog\355as actuales }{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.0.2}{Redes LPWAN}{subsection.1.0.1}% 10
+\BOOKMARK [2][-]{subsection.1.0.3}{LoRa}{subsection.1.0.1}% 11
+\BOOKMARK [2][-]{subsection.1.0.4}{Objetivos y motivaciones}{subsection.1.0.1}% 12
+\BOOKMARK [2][-]{subsection.1.0.5}{Metodolog\355a }{subsection.1.0.1}% 13
+\BOOKMARK [0][-]{chapter.2}{Dise\361o software}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Dise\361o del protocolo}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{Formato de trama}{section.2.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.1.1}{Trama de conexi\363n}{subsection.2.1.1}% 17
+\BOOKMARK [3][-]{subsubsection.2.1.1.2}{Trama de configuraci\363n}{subsection.2.1.1}% 18
+\BOOKMARK [3][-]{subsubsection.2.1.1.3}{Trama de datos}{subsection.2.1.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{Comportamiento del protocolo}{section.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Conexi\363n de un nodo a la red}{subsection.2.1.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Env\355o y recepci\363n de datos}{subsection.2.1.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.2.3}{Tratamiento de errores}{subsection.2.1.2}% 23
+\BOOKMARK [1][-]{section.2.2}{Implementaci\363n}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.1}{Fundamentos te\363ricos}{section.2.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Sistemas embebidos}{subsection.2.2.1}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{Sistemas operativos de tiempo real \(RTOs}{subsection.2.2.1}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.1.3}{M\341quinas de estados extendidas \(xFSM\)}{subsection.2.2.1}% 28
+\BOOKMARK [2][-]{subsection.2.2.2}{Descripci\363n del entorno}{section.2.2}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Drivers, Librer\355as y \372tiles}{subsection.2.2.2}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Herramientas de edici\363n, compilaci\363n y depuraci\363n}{subsection.2.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.3}{Modelado del comportamiento de los nodos}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.4}{Modelado del comportamiento del nodo maestro}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.5}{Estructura del c\363digo}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.6}{Proceso de dise\361o e implementaci\363n}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.7}{Resultados obtenidos}{section.2.2}% 36
+\BOOKMARK [0][-]{chapter.3}{Conclusiones y l\355neas futuras}{}% 37
+\BOOKMARK [1][-]{section.3.1}{Conclusiones}{chapter.3}% 38
+\BOOKMARK [0][-]{section.3.1}{Bibliograf\355a}{}% 39

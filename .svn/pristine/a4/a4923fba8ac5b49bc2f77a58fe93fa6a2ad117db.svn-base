@@ -1,0 +1,185 @@
+%\documentclass[12pt]{report}
+\documentclass[twoside,a4paper,11pt]{book}
+%\documentstyle{english}
+%\documentclass[a4paper]{book}
+\usepackage{tfg}
+%\usepackage{phdthesis}
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{epic}\setlength{\unitlength}{1cm}
+\usepackage{eepic}\setlength{\unitlength}{1cm}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage{babel}
+%\usepackage{varioref}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{chngpage}
+\usepackage{listings}
+
+
+\hyphenpenalty=5000
+\tolerance=1000
+
+% ------------------ Fancy headers ----------------------
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\thechapter.\ #1}{}}
+
+\renewcommand{\sectionmark}[1]{%
+\markright{\thesection.\ #1}{}}
+
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancypagestyle{plain}{%
+\fancyhead{} % get rid of headers
+\renewcommand{\headrulewidth}{0pt} % and the line
+}
+
+% ------------------ End Fancy headers ----------------------
+% --------------------- Special Data ------------------------
+%MATHx
+\newcommand{\vectornorm}[1]{\left|\left|#1\right|\right|}
+\newcommand{\spectralnorm}[1]{\left|\left|#1\right|\right|_{2}}
+% --------------------- End Special Data ------------------------
+
+\begin{document}
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\changepage{2in}{}{}{-0.2in}{}{-0.6in}{}{}{}
+\thispagestyle{empty}
+\thesistitle
+  {GRADO EN INGENIER\'{I}A DE ....}
+	{TRABAJO FIN DE GRADO} 
+  {T\'{I}TULO}
+	{NOMBRE}
+	{AÑO}
+
+\newpage
+\changepage{-1.5in}{}{}{0.2in}{}{0.5in}{}{}{}
+%\thispagestyle{empty}
+%\mbox{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%% TRIBUNAL %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thesiscourt
+  {T\'{I}TULO}
+	{ALUMNO}
+	{Dr. D. DIRECTOR}
+  {DEPARTAMENTO}
+	{Dr. D. MIEMBRO 1}
+	{Dr. D. MIEMBRO 2}
+	{Dr. Dña. MIEMBRO 3}
+	{D. SUPLENTE}
+  {DIA de mes de AÑO}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%% Repetimos Portada %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\changepage{2in}{}{}{-0.2in}{}{-0.6in}{}{}{}
+\thispagestyle{empty}
+\thesistitle
+  {GRADO EN INGENIER\'{I}A DE ...}
+	{TRABAJO FIN DE GRADO}
+  {T\'{I}TULO}
+	{NOMBRE}
+	{AÑO}
+
+%%%%%%%%%%%%%% RESUMEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\baselineskip=20pt
+\thispagestyle{empty}
+\include{resumen}
+
+%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\baselineskip=20pt
+\thispagestyle{empty}
+\include{abstract}
+
+%%%%%%%%%%%%%%%%%%%%% ACKS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\include{ack}
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+
+%%%%%%%%%%%%%%%%%%%%% CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\baselineskip=15pt
+%\phantomsection
+\addcontentsline{toc}{chapter}{Índice General}
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%% FIGURES %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%\phantomsection
+\addcontentsline{toc}{chapter}{Índice de Figuras}
+\listoffigures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%% TABLES  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%\phantomsection
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%ACRONYM%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Lista de acrónimos}
+
+\rule{0cm}{2.5cm}
+\begin{flushleft}
+{\bf\Huge{Lista de Acrónimos}}
+\end{flushleft}
+
+\vspace{1.1cm}
+\begin{description}
+
+\item [IES:] Instituto de Energía Solar.
+
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\pagenumbering{arabic}
+\renewcommand{\labelitemi}{$\bullet$}
+\baselineskip=15pt
+
+\input {intro/introduccion}
+\input {soft/software}
+\input {conclusiones/conclusiones}
+
+\newpage
+\mbox{}
+\newpage
+\addcontentsline{toc}{chapter}{Bibliograf\'{i}a}
+\bibliographystyle{tfg}
+\bibliography{biblio}
+
+\end{document}

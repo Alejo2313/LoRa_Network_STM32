@@ -1,0 +1,58 @@
+@BOOK{Haykin09,      
+      author = {Simon Haykin},
+      title = {Neuronal Networks and Learning Machines, Third Edition},
+      year = {2009},      
+      publisher = {Pearson International Edition},
+      address = {New Jersey, USA},           
+}
+
+
+
+
+@ARTICLE{IDC,
+ author  = {Marcus Torchia},
+ title   = {IDC Forecasts Worldwide Spending on the Internet of Things to Reach $745 Billion in 2019, Led by the Manufacturing, Consumer, Transportation, and Utilities Sectors},
+ journal = {IDC Research Reports},
+ year    = {2019},
+}
+
+
+@techreport{NFC,
+    author    = {Shuang Song and Biju Issac},
+    title     = {Near Field Communication (NFC) Technology and Measurements},
+    institution = {Rohde and Schwarz},
+    year      = {2011},
+
+}
+
+@techreport{WiFiMAX,
+    author    = {Roland Minihold},
+    title     = {Analisis of WIFI and WIMAX and wireless network coexistence},
+    institution = {School of Computing, Teesside University},
+    year      = {2014},
+
+}
+
+@techreport{BLE,
+    author    = {Cypress},
+    title     = {Bluetooth Low Energy (BLE)},
+    institution = {Cypress Semiconductor Corporation},
+    year      = {2015},
+}
+
+@techreport{POWER,
+    author    = {Martin Friedli et al.},
+    title     = {Energy Efficiency of the Internet of Things},
+    institution = {IEA 4E Electronic Devices and Networks Annex },
+    year      = {2016},
+
+}
+
+
+@TECHREPORT{LoRaMod,
+ author      = {SEMTECH},
+ title 	     = {LoRa Modulation Basics},
+ institution = {Semtech Corporation},
+ number      = {2},
+ year        = {2015},
+}
