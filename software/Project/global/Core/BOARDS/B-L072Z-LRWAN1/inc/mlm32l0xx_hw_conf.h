@@ -77,6 +77,21 @@
 #define ADCCLK_ENABLE()                 __HAL_RCC_ADC1_CLK_ENABLE() ;
 #define ADCCLK_DISABLE()                __HAL_RCC_ADC1_CLK_DISABLE() ;
 
+/* SPI2 I/0 redefinition*/
+#define EXT_ADC_MISO_PORT           GPIOB
+#define EXT_ADC_MISO_PIN            GPIO_PIN_15
+
+#define EXT_ADC_MOSI_PORT           GPIOB
+#define EXT_ADC_MOSI_PIN            GPIO_PIN_14
+
+#define EXT_ADC_SCK_PORT            GPIOB
+#define EXT_ADC_SCK_PIN             GPIO_PIN_13
+
+#define EXT_ADC_NSS_PORT            GPIOB
+#define EXT_ADC_NSS_PIN             GPIO_PIN_12
+
+#define EXT_ADC_SPI                 SPI2
+#define EXT_ADC_SPI_ALT             GPIO_AF0_SPI2
 
 
 /* --------------------------- RTC HW definition -------------------------------- */

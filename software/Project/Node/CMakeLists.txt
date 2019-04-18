@@ -54,6 +54,7 @@ file(GLOB_RECURSE BOARD_CORE            ../global/Core/BOARDS/${BSP_MCU}/src/*.c
 file(GLOB_RECURSE CORE_SOURCES          ./Src/*.c
                                         ../global/Core/utils/src/*.c
                                         ../global/Core/hw/src/*.c)
+file(GLOB_RECURSE DRIVER                ../global/Drivers/AD7194/src/*.c)
 
 
 
@@ -76,7 +77,8 @@ include_directories(    ../global/Drivers/${MCU_FAMILY}_HAL_Driver/Inc
                         ../global/Drivers/BSP/${BSP_MCU}
                         ../global/Drivers/BSP/Components/${RADIO_DRIVER}
                         ../global/Drivers/BSP/${RADIO_BOARD}
-                        ../global/Drivers/CMSIS/Include )
+                        ../global/Drivers/CMSIS/Include 
+                        ../global/Drivers/AD7194/inc)
 
 
 include_directories(    ../global/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
