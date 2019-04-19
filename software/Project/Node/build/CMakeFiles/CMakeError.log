@@ -1,21 +1,21 @@
 Determining if the C compiler works failed with the following output:
 Change Dir: /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4382e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4382e.dir/build.make CMakeFiles/cmTC_4382e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f722c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f722c.dir/build.make CMakeFiles/cmTC_f722c.dir/build
 make[1]: Entering directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4382e.dir/testCCompiler.c.obj
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_4382e.dir/testCCompiler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_4382e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4382e.dir/link.txt --verbose=1
-/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc      CMakeFiles/cmTC_4382e.dir/testCCompiler.c.obj  -o cmTC_4382e 
+Building C object CMakeFiles/cmTC_f722c.dir/testCCompiler.c.obj
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_f722c.dir/testCCompiler.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f722c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f722c.dir/link.txt --verbose=1
+/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc      CMakeFiles/cmTC_f722c.dir/testCCompiler.c.obj  -o cmTC_f722c 
 /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld: /opt/gcc-arm-none-eabi-8-2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
 exit.c:(.text.exit+0x2c): undefined reference to `_exit'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_4382e.dir/build.make:97: recipe for target 'cmTC_4382e' failed
-make[1]: *** [cmTC_4382e] Error 1
+CMakeFiles/cmTC_f722c.dir/build.make:97: recipe for target 'cmTC_f722c' failed
+make[1]: *** [cmTC_f722c] Error 1
 make[1]: Leaving directory '/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_4382e/fast' failed
-make: *** [cmTC_4382e/fast] Error 2
+Makefile:126: recipe for target 'cmTC_f722c/fast' failed
+make: *** [cmTC_f722c/fast] Error 2
 
 

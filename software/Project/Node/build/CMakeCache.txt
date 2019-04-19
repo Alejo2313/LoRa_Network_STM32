@@ -28,6 +28,21 @@ CMAKE_ASM_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-no
 // for the GCC compiler
 CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc-ranlib
 
+//Flags used by the assembler during all build types.
+CMAKE_ASM_FLAGS:STRING=
+
+//Flags used by the assembler during debug builds.
+CMAKE_ASM_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the assembler during release minsize builds.
+CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the assembler during release builds.
+CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the assembler during Release with Debug Info builds.
+CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
@@ -183,6 +198,17 @@ CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
 CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
 CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS
+CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
+CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_MINSIZEREL
+CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELEASE
+CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/build
 //Major version of cmake used to create the current loaded cache

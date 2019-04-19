@@ -555,6 +555,33 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/util
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj
 
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj
@@ -2700,6 +2727,9 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.s"

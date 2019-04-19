@@ -1,6 +1,8 @@
 #include "main.h"
 #include "stm32l0xx_hal.h"
 
+#include "extADC.h"
+
 #include "hw_gpio.h"
 /*varibles*/
 
@@ -99,7 +101,13 @@ int main(void){
 
 	UUID = (STM32_UUID[0]^STM32_UUID[1]^STM32_UUID[2])&0xFFFF;
 	HAL_Init();
+
+	ExtADC_Init();
+	ExtADC_Reset();
+
 	wakeUpSystem();
+
+
 
 
 	xTaskCreate(main_task, "PWM", 256, NULL, osPriorityNormal, NULL);
@@ -656,7 +664,18 @@ void retryoin(fsm_t* fsm){
 	bitClear(fsm->flags, CONF_ERROR);
 
 #ifdef debug
-	vTaskDelay(JOIN_RETRY/portTICK_RATE_MS);
+
+	vTaskDelay(500/portTICK_RATE_MS);
+
+	//void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t Gain, ExtMode_t mode, ExtChannel_t negativeInput);
+
+
+	 float val1 = ExtADC_ReadVoltageInput(CHANNEL_1);
+	 Trace_send("Value %lf \n", val1);
+	// val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
+	// val3 = ExtADC_ReadVoltageInput(CHANNEL_4);
+	//uint8_t id = ExtADC_ReadIDReg();
+
 
 #else
 	GoBed(JOIN_RETRY);
@@ -693,11 +712,11 @@ void led_blink(void* param){
 	while(1){
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
 
-		vTaskDelay(500/portTICK_RATE_MS);
+		vTaskDelay(100/portTICK_RATE_MS);
 
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0,  GPIO_PIN_RESET);
 
-		vTaskDelay(500/portTICK_RATE_MS);
+		vTaskDelay(100/portTICK_RATE_MS);
 
 	}
 	
