@@ -665,16 +665,21 @@ void retryoin(fsm_t* fsm){
 
 #ifdef debug
 
-	vTaskDelay(500/portTICK_RATE_MS);
 
 	//void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t Gain, ExtMode_t mode, ExtChannel_t negativeInput);
 
+	ExtADC_ConfigChannel(CHANNEL_1, EXTADC_GAIN_1, DIFFERENTIAL, CHANNEL_2);
 
-	 float val1 = ExtADC_ReadVoltageInput(CHANNEL_1);
-	 Trace_send("Value %lf \n", val1);
-	// val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
-	// val3 = ExtADC_ReadVoltageInput(CHANNEL_4);
+	float val1 = ExtADC_ReadVoltageInput(CHANNEL_7);
+	float val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
+	float val3 = ExtADC_ReadTempSensor();
+
+	 Trace_send("Value %lf %lf  %lf \n", val1, val2, val3);
+	//val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
+	//val3 = ExtADC_ReadVoltageInput(CHANNEL_4);
 	//uint8_t id = ExtADC_ReadIDReg();
+
+//	vTaskDelay(500/portTICK_RATE_MS);
 
 
 #else

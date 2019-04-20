@@ -33,18 +33,15 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-	SPI_InitTypeDef SPI_InitStructure;
-  /* Create SPIs struct */
-  SPI_HandleTypeDef SPI_Handle;
-	/* Create GPIOs struct */
-	GPIO_InitTypeDef GPIO_InitStructure;
 
 /* Private function prototypes -----------------------------------------------*/
+
+
 void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel);
 void ExtADC_loadModeReg(uint8_t* buffer);
 uint8_t 	ExtADC_CalcRealGain 	( ExtGain_t gain );
-void ExtADC_EnableDRDYInt();
-void ExtADC_DisableDRDYInt();
+uint8_t ExtADC_GetRegSize(uint8_t reg);
+
 
 
 
@@ -64,7 +61,11 @@ void ExtADC_Init ( void )
 
 	spi_init();
 
+	ExtADC_loadModeReg(buffer);
+	ExtADC_WriteRegister(MODE_REG, buffer, 3);
 
+	spi_enNSS();
+	
 }
 
 
@@ -92,7 +93,7 @@ void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t gain, ExtMode_t mode, 
 	channelConfig[channel].gain = gain;
 	channelConfig[channel].mode = mode;
 
-	if(mode)
+	if(mode == DIFFERENTIAL)
 		channelConfig[channel].negative = negativeInput;
 	else
 		channelConfig[channel].negative = AINCOM;
@@ -107,20 +108,13 @@ void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t gain, ExtMode_t mode, 
  */
 void ExtADC_Reset ( void )
 {
-  uint8_t out = 0xFF;
-	/* Enable NSS */
-	spi_enNSS();
+  uint8_t out[5];
+
+	memset1(out, 0xFF, 5);
 	/* Go for reset */
 
-	spi_Transmit(&out, 1);
-	spi_Transmit(&out, 1);
-	spi_Transmit(&out, 1);
-	spi_Transmit(&out, 1);
-	spi_Transmit(&out, 1);
-
-
+	spi_Transmit(&out, 5); //ToDo revisar
 	/* Disable NSS */
-	spi_disNSS();
 }
 
 
@@ -133,31 +127,26 @@ void ExtADC_Reset ( void )
  */
 uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 
-	uint8_t buffer[3];	//out buffer
-
-	uint32_t data;
+	static uint8_t buffer[3];	//out buffer
+	static uint32_t data, counter;
 
 	//Confgiure CONF_REG to allow channel reading
 
-	ExtADC_loadConfigReg(buffer, channel);
-
 	spi_enNSS();
+	ExtADC_loadConfigReg(buffer, channel);
 	ExtADC_WriteRegister(CONF_REG, buffer, 3);
+
+	counter = 0;
 
 	ExtADC_loadModeReg(buffer);
 	ExtADC_WriteRegister(MODE_REG, buffer, 3);
 
-	spi_disNSS();
+	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
 
-
-	while(HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
-		/* code */
 	}
-	
 
-	data  = ExtADC_ReadRegister(DATA_REG, 3);
+	data  = ExtADC_ReadRegister(DATA_REG);
 	spi_disNSS();
-
 	return data; 
 }
 
@@ -210,9 +199,9 @@ float ExtADC_ReadVoltageInput ( ExtChannel_t channel)
  */
 float ExtADC_ReadTempSensor ( void )
 {
-		uint32_t 	data = 0;
+		static uint32_t data = 0, counter;
 		float temp = 0;
-		uint8_t buffer[3];
+		static uint8_t buffer[3];
 
 		/* Write communication register to allow a writing to the configuration register */ 
 
@@ -228,19 +217,20 @@ float ExtADC_ReadTempSensor ( void )
 		buffer[1] = 0x00;
 		buffer[2] = 0x17;
 
-
 		spi_enNSS();
 		ExtADC_WriteRegister(CONF_REG, buffer, 3);
+		spi_delay(1);
 
-		ExtADC_loadModeReg(buffer);
-		ExtADC_WriteRegister(MODE_REG, buffer, 3);
-
-		while(HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
-		/* code */
-		}
 	
-		data  = ExtADC_ReadRegister(DATA_REG, 3);
 
+
+
+	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
+
+	}
+		
+		data  = ExtADC_ReadRegister(DATA_REG);
+	spi_disNSS(),
 		/* Convert data to degreees */
 		temp = (float) (data - 0x800000) / 2815; //In Kelvin
 		temp -= 273; //in celsius
@@ -248,87 +238,6 @@ float ExtADC_ReadTempSensor ( void )
 		return temp;
 
 }
-
-
-// We will change this!!!
-
-/**
- * @brief Read Full sacale register
- * 
- * @return uint32_t register value
- */
-uint32_t ExtADC_ReadFullScaleReg ( void )
-{
-
-	return ExtADC_ReadRegister(FULLSCALE_REG, 3);
-}
-
-/**
- * @brief Read offset register
- * 
- * @return uint32_t register value
- */
-
-uint32_t ExtADC_ReadOffsetReg ( void )
-{
-	
-	return ExtADC_ReadRegister(OFFSET_REF, 3);
-}
-
-/**
- * @brief Read config register
- * 
- * @return uint32_t register value
- */
-
-uint32_t ExtADC_ReadConfReg ( void )
-{
-	return ExtADC_ReadRegister(CONF_REG, 3); 
-}
-
-/**
- * @brief Read data register
- * 
- * @return uint32_t register value
- */
-
-uint32_t ExtADC_ReadDataReg ( void )
-{
-	return ExtADC_ReadRegister(DATA_REG, 3); 
-}
-
-/**
- * @brief Read mode register
- * 
- * @return uint32_t register value
- */
-
-uint32_t ExtADC_ReadModeReg ( void )
-{
-	return ExtADC_ReadRegister(MODE_REG, 3); 
-}
-
-/**
- * @brief Read GPOCON register
- * 
- * @return uint8_t register value
- */
-
-uint8_t ExtADC_ReadGPOCONReg ( void )
-{	
-	return (uint8_t)ExtADC_ReadRegister(GPOCON_REG, 1); 
-}
-
-/**
- * @brief Read ID register
- * 
- * @return uint8_t 
- */
-uint8_t ExtADC_ReadIDReg ( void )
-{
-	return (uint8_t)ExtADC_ReadRegister(ID_REG, 1); 
-}
-
 
 
 /**
@@ -341,13 +250,13 @@ void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel){
 
 	if( channelConfig[channel].mode == PSEUDO){
 		buffer[0] = 0x84;
-		buffer[1] = (channel << 4) | (channelConfig[channel].negative & 0x0F);
-		buffer[2] =	channelConfig[channel].gain;
+		buffer[1] = (channel << 4);
+		buffer[2] =	0x18 | (channelConfig[channel].gain & 0x7); //ToDO -> change bipolar
 	}
 	else{
 		buffer[0] = 0x80;
 		buffer[1] = (channel << 4) | (channelConfig[channel].negative & 0x0F);
-		buffer[2] = 0x08 | channelConfig[channel].gain;
+		buffer[2] =	channelConfig[channel].gain;
 	}	
 
 }
@@ -358,7 +267,7 @@ void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel){
  * todo -> hacerlo bien 
  */
 void ExtADC_loadModeReg(uint8_t* buffer){
-	buffer[0] = 0x28;
+	buffer[0] = 0x08;
 	buffer[1] = 0x00;
 	buffer[2] = 0x60;
 }
@@ -464,22 +373,24 @@ uint8_t 	ExtADC_CalcRealGain 		( ExtGain_t gain )
  */
 
 
-uint32_t ExtADC_ReadRegister(uint8_t reg, uint8_t size){
-	 uint8_t inBuffer[3] = {0,0,0};
+uint32_t ExtADC_ReadRegister(uint8_t reg){
+	static uint8_t inBuffer[3] = {0,0,0};
 	static uint32_t data = 0;
-	static uint8_t aux = 0;
+	static uint8_t aux = 0, size;
+
+	size = ExtADC_GetRegSize(reg);
 
 	data = 0;
 	aux = 0;
 
 	uint8_t comByte = 0x40 | ((reg << 3)&0x38) | 0x00;
 
-	spi_enNSS();
+//	spi_enNSS();
 
 	spi_Transmit(&comByte, 1U);
 	spi_Receive(inBuffer, size);
 
-	spi_disNSS();
+//	spi_disNSS();
 
 	while(size){
 		--size;
@@ -500,112 +411,69 @@ void ExtADC_WriteRegister(uint8_t reg, uint8_t* data, uint8_t size){
 
 	uint8_t comByte = 0x00 | ((reg << 3)&0x38) | 0x00;
 
-	spi_enNSS();
+//	spi_enNSS();
 	spi_Transmit(&comByte, 1U);
-	spi_Transmit(data, size);
+	spi_Transmit(data, ExtADC_GetRegSize(reg));
+//	spi_disNSS();
 
 }
 
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
+
+int ExtADC_DataReady(ExtChannel_t channel){
+	static uint8_t stReg;
+
+	stReg = ExtADC_ReadRegister(STATUS_REG);
+
+	// b 7:-> 0: data ready  3 - 0: channel
+	//See status register -> Table 18, AD7194 REV.B
+
+	if((~stReg)&0x80 && (stReg&0xF) == channel){
+		return stReg & 0x0F;
+	}
+
+	return -1;
+}
 
 
-
-
-//<------------------------------------------------------------------------------>
-
-
-void spi_init ( void )
-{
-
-	//ToDo ->  añadir init de configuracion 
-
-	/* Activate Clock */
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-
-	__HAL_RCC_SPI2_CLK_ENABLE();
-
-  /* Config GPIOs */
-
-  /* Configure spi GPIOs */
-	GPIO_InitStructure.Pin 				= EXT_ADC_MISO_PIN | EXT_ADC_MOSI_PIN;
-  GPIO_InitStructure.Speed 			= GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStructure.Mode 			= GPIO_MODE_AF_PP;
-  GPIO_InitStructure.Pull 			= GPIO_PULLDOWN;
-	GPIO_InitStructure.Alternate 	= EXT_ADC_SPI_ALT;
-
-
-  HAL_GPIO_Init(EXT_ADC_SPI_PORT, &GPIO_InitStructure);
-
-	GPIO_InitStructure.Pin  	=	EXT_ADC_SCK_PIN;
-	GPIO_InitStructure.Pull 	= GPIO_PULLUP;
-
-	HAL_GPIO_Init(EXT_ADC_SPI_PORT, &GPIO_InitStructure);
-
-		
-	/*Configure NSS port*/
-
-	GPIO_InitStructure.Pin  = EXT_ADC_NSS_PIN;
-  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStructure.Pull = GPIO_PULLUP;
-  
-	HAL_GPIO_Init(EXT_ADC_NSS_PORT, &GPIO_InitStructure);
-	spi_disNSS();
-
-
-
-  SPI_Handle.Instance 			= EXT_ADC_SPI;
-  SPI_Handle.Init.Mode 			= SPI_MODE_MASTER;
-  SPI_Handle.Init.Direction = SPI_DIRECTION_2LINES;
-  SPI_Handle.Init.DataSize 	= SPI_DATASIZE_8BIT;
-  SPI_Handle.Init.CLKPolarity 	= SPI_POLARITY_HIGH;
-  SPI_Handle.Init.CLKPhase 	= SPI_PHASE_2EDGE;
-  SPI_Handle.Init.NSS 			= SPI_NSS_SOFT;
-  SPI_Handle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
-  SPI_Handle.Init.FirstBit 	= SPI_FIRSTBIT_MSB;
-  SPI_Handle.Init.TIMode 		= SPI_TIMODE_DISABLE;
-  SPI_Handle.Init.CRCCalculation 	= SPI_CRCCALCULATION_DISABLE;
-  SPI_Handle.Init.CRCPolynomial 	= 7;
-
-  if (HAL_SPI_Init(&SPI_Handle) != HAL_OK)
-  {
-    while(1);
-		
-  }
+void ExtADC_Calibrate(){
 
 
 }
 
-void spi_deInit ( void )
-{
+void ExtADC_SetOpMode(ExtOpMode_t mode){
 
-  /* Deconfig GPIOs */
-  /* Deconfigure SCK as Alternative Function PP */
-  HAL_GPIO_DeInit(EXT_ADC_SCK_PORT, EXT_ADC_SCK_PIN);
-
-  /* Deinitialize previous SPI configurations */
-  if(HAL_SPI_DeInit(&SPI_Handle) != HAL_OK)
-  {
-    while(1);
-  }
-
-  /* Deselect extADC module on SPI bus */
-  HAL_GPIO_WritePin(EXT_ADC_NSS_PORT, EXT_ADC_NSS_PIN, GPIO_PIN_SET);
 }
 
-void spi_enNSS(){
-	HAL_GPIO_WritePin(EXT_ADC_NSS_PORT, EXT_ADC_NSS_PIN, GPIO_PIN_RESET);
+uint8_t ExtADC_GetRegSize(uint8_t reg){
+
+	switch (reg)
+	{
+		case COM_REG:
+		case ID_REG:
+		case GPOCON_REG:
+			return 1;
+			break;
+
+		case MODE_REG:
+		case CONF_REG:
+		case DATA_REG:
+		case OFFSET_REF:
+		case FULLSCALE_REG:
+			return 3;
+			break;
+
+		default:
+			return 0;
+			break;
+	}
 }
 
-void spi_disNSS(){
-	HAL_GPIO_WritePin(EXT_ADC_NSS_PORT, EXT_ADC_NSS_PIN, GPIO_PIN_SET);
-}
 
-void spi_Transmit(uint8_t* data, uint8_t size){
-	HAL_SPI_Transmit(&SPI_Handle, data, size, HAL_MAX_DELAY);
-}
-
-void spi_Receive(uint8_t* data, uint8_t size){
-	HAL_SPI_Receive(&SPI_Handle, data, size, HAL_MAX_DELAY);
-}
 
 /******************** Creative Commons -- Robolabo *****************************/
 /***************************** END OF FILE *************************************/

@@ -93,6 +93,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj"
+  "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj"
   "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj"
   "LoRaNODE.elf.pdb"
   "LoRaNODE.elf"

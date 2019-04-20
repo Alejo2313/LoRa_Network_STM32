@@ -555,6 +555,33 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/util
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
 
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj
@@ -2727,6 +2754,9 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s"

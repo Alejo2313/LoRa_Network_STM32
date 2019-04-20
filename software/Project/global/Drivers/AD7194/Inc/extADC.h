@@ -20,14 +20,12 @@
 #define _EXT_ADC_H_
 
 /* Includes ------------------------------------------------------------------*/
-#include "hw.h"
 #include "math.h"
+#include "custom_spi.h"
 
 /* Defines ------------------------------------------------------------*/
 
 #define NUM_CHANNELS        	16
-#define NUM_DIFF_CHANNELS   	2
-#define BUFFER_SIZE				33
 
 
 //Register selection ( Table 17, AD7194 datasheet REV.B)
@@ -52,35 +50,28 @@
 #define AINCOM 					0x00
 
 
-#define WRITE_MODE_REG 			0x08
-#define WRITE_CONF_REG 			0x10
-#define READ_MODE_REG				0x48
-#define READ_CONF_REG				0x50
-#define READ_DATA_REG				0x58
-#define READ_ID_REG					0x60
-#define READ_GPOCON_REG			0x68
-#define READ_OFFSET_REG			0x70
-#define READ_FULLSCALE_REG	0x78
+
+
 
 /* Typedef -----------------------------------------------------------*/
 
 typedef enum{
-	CHANNEL_1,
-	CHANNEL_2,
-	CHANNEL_3,
-	CHANNEL_4,
-	CHANNEL_5,
-	CHANNEL_6,
-	CHANNEL_7,
-	CHANNEL_8,
-	CHANNEL_9,
-	CHANNEL_10,
-	CHANNEL_11,
-	CHANNEL_12,
-	CHANNEL_13,
-	CHANNEL_14,
-	CHANNEL_15,
-	CHANNEL_16,
+	CHANNEL_1	= 0x00,
+	CHANNEL_2	= 0x01,
+	CHANNEL_3	= 0x02,
+	CHANNEL_4	= 0x03,
+	CHANNEL_5	= 0x04,
+	CHANNEL_6	= 0x05,
+	CHANNEL_7	= 0x06,
+	CHANNEL_8	= 0x07,
+	CHANNEL_9	= 0x08,
+	CHANNEL_10	= 0x09,
+	CHANNEL_11	= 0x0A,
+	CHANNEL_12	= 0x0B,
+	CHANNEL_13	= 0x0C,
+	CHANNEL_14	= 0x0D,
+	CHANNEL_15	= 0x0E,
+	CHANNEL_16	= 0x0F,
 }ExtChannel_t;	
 
 // Gain Select bits ( Table 21,  AD7194 datasheet REV.B)
@@ -93,6 +84,20 @@ typedef enum{
 	EXTADC_GAIN_128	= 0x07
 }ExtGain_t;
 
+/**
+ * @brief Operation modes, (Table 20, AD7194 datasheet REV.B)
+ * 
+ */
+typedef enum{
+	CONTINUOUS,
+	SINGLE,
+	IDLE,
+	POWER_DOWN,
+	INT_ZERO_SCALE_CALIB,
+	INT_FULL_SCALE_CALIB,
+	SYS_ZERO_SCALE_CALIB,
+	SYS_FULL_SCALE_CALIB
+}ExtOpMode_t;
 
 typedef enum{
 	DIFFERENTIAL,
@@ -111,6 +116,8 @@ typedef struct
 {
 	/* data */
 }Ext_functions_t;
+
+
 
 
 /* Variables ---------------------------------------------------------*/
@@ -133,33 +140,15 @@ float ExtADC_ReadVoltageInput ( ExtChannel_t channel);
 float ExtADC_ReadTempSensor	( void );
 
 void ExtADC_WriteRegister(uint8_t reg, uint8_t* data, uint8_t size);
-uint32_t ExtADC_ReadRegister(uint8_t reg, uint8_t size);
-
-
-
-uint32_t 	ExtADC_ReadOffsetReg 	( void );
-uint32_t 	ExtADC_ReadConfReg 		( void );
-uint32_t 	ExtADC_ReadDataReg 		( void );
-uint32_t 	ExtADC_ReadModeReg 		( void );
-uint8_t 	ExtADC_ReadGPOCONReg 	( void );
-uint8_t 	ExtADC_ReadIDReg 		( void );
+uint32_t ExtADC_ReadRegister(uint8_t reg);
 
 
 void ExtADC_SetMode			( ExtChannel_t channel,ExtMode_t mode, ExtChannel_t negative);
-void ExtADC_SetGain			( uint8_t channel, uint8_t gain );
+void ExtADC_SetGain			( ExtChannel_t channel, ExtGain_t gain );
 ExtGain_t ExtADC_GetGain	( ExtChannel_t channel);
 ExtMode_t ExtADC_GetMode	( ExtChannel_t channel );
 
-//beta
-
-void spi_Transmit(uint8_t* data, uint8_t size);
-void spi_Receive(uint8_t* data, uint8_t size);
-void spi_TransmitReceive(uint8_t* data, uint8_t size);
-void spi_enNSS();
-void spi_disNSS();
-void spi_init();
-void spi_deInit();
-
+int ExtADC_DataReady(ExtChannel_t channel);
 
 
 #endif //_EXT_ADC_H_
