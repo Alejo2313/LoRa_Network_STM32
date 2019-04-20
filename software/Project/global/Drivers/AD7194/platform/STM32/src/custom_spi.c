@@ -97,11 +97,14 @@ void spi_disNSS(){
 }
 
 void spi_Transmit(uint8_t* data, uint8_t size){
-	HAL_SPI_Transmit(&SPI_Handle, data, size, HAL_MAX_DELAY);
+  uint8_t input[8];
+	HAL_SPI_TransmitReceive(&SPI_Handle, data, input, size, HAL_MAX_DELAY);
 }
 
 void spi_Receive(uint8_t* data, uint8_t size){
-	HAL_SPI_Receive(&SPI_Handle, data, size, HAL_MAX_DELAY);
+  uint8_t input[8];
+  memset1(input, 0, size);
+	HAL_SPI_TransmitReceive(&SPI_Handle,input, data, size, HAL_MAX_DELAY);
 }
 
 void spi_delay(uint32_t millis){

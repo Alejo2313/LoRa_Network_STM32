@@ -135,18 +135,26 @@ uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 	spi_enNSS();
 	ExtADC_loadConfigReg(buffer, channel);
 	ExtADC_WriteRegister(CONF_REG, buffer, 3);
+	spi_delay(1);
 
 	counter = 0;
 
-	ExtADC_loadModeReg(buffer);
-	ExtADC_WriteRegister(MODE_REG, buffer, 3);
+//	ExtADC_loadModeReg(buffer);
+//	ExtADC_WriteRegister(MODE_REG, buffer, 3);
 
 	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
+				spi_delay(1);
+		counter++;
+
+		if( counter > 500)
+			return 0;
 
 	}
 
 	data  = ExtADC_ReadRegister(DATA_REG);
 	spi_disNSS();
+	spi_delay(1);
+
 	return data; 
 }
 
@@ -225,12 +233,20 @@ float ExtADC_ReadTempSensor ( void )
 
 
 
+	counter = 0;
 	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
+		spi_delay(1);
+		counter++;
 
+		if( counter > 500)
+			return 0;
 	}
 		
 		data  = ExtADC_ReadRegister(DATA_REG);
-	spi_disNSS(),
+	spi_disNSS();
+
+	spi_delay(1);
+
 		/* Convert data to degreees */
 		temp = (float) (data - 0x800000) / 2815; //In Kelvin
 		temp -= 273; //in celsius
