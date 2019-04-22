@@ -6,18 +6,14 @@
 #include "hw_gpio.h"
 /*varibles*/
 
-static item_t items[] ={
-						{LIGTH			,0},
-						{TEMPERATURE	,1},
-						{HUMIDITY		,1},
-						{RSSI			,0},
-						{RSSI			,0},
-						{RSSI			,0},
-						{RSSI			,0},
-						{RSSI			,0},
-						{RSSI			,0},
-						{RSSI			,0},
 
+static ExtChannel_t channels[4] = {CHANNEL_1, CHANNEL_4, CHANNEL_7, CHANNEL_9};
+
+static item_t items[] ={
+						{TEMPERATURE	,2},
+						{TEMPERATURE	,2},
+						{TEMPERATURE	,2},
+						{TEMPERATURE	,2},
 						{255, 255}
 					   };
 
@@ -495,8 +491,13 @@ void measure(fsm_t* fsm){
 
 //TODO -> DELETE THIIIIIS!!!!!
 
-	static uint8_t cnt = 0;
+	static uint8_t cnt1 = 0, cnt2 = 0;
+	t_u32_in_4 res;
 	
+	cnt1 = 0;
+	cnt2 = 0;
+
+
 	TxData->NetAddr =  Configuration.netAddr;
 	TxData->devAddr = Configuration.devAddr;
 	TxData->devDest = Configuration.gateAddr;
@@ -505,8 +506,14 @@ void measure(fsm_t* fsm){
 
 	TxData->pSize = 12; 
 
-	for(cnt = 0; cnt < 12 ; cnt++){
-		TxData->pData[cnt] = cnt;
+
+
+	for(cnt1 = 0; cnt1 < 4 ; cnt1++){
+		res.all = ExtADC_ReadAnalogInput(channels[cnt1]);
+
+		TxData->pData[cnt2++] = res.bytes[2];
+		TxData->pData[cnt2++] = res.bytes[1];
+		TxData->pData[cnt2++] = res.bytes[0];
 	}
 
 
@@ -666,21 +673,36 @@ void retryoin(fsm_t* fsm){
 #ifdef debug
 
 
-	//void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t Gain, ExtMode_t mode, ExtChannel_t negativeInput);
+	static extADC_t config;
 
-	ExtADC_ConfigChannel(CHANNEL_1, EXTADC_GAIN_1, DIFFERENTIAL, CHANNEL_2);
+	config.gain 	= EXTADC_GAIN_1;
+	config.negative = CHANNEL_2;
+	config.mode		= DIFFERENTIAL;
+	config.ExtConfigOptions =  0;
 
-	float val1 = ExtADC_ReadVoltageInput(CHANNEL_7);
-	float val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
-	float val3 = ExtADC_ReadTempSensor();
+	//ExtADC_Init();        //ToDo -> re init after low power mode
+/*
+	ExtADC_ConfigChannel(CHANNEL_1, &config);
 
-	 Trace_send("Value %lf %lf  %lf \n", val1, val2, val3);
-	//val2 = ExtADC_ReadVoltageInput(CHANNEL_1);
-	//val3 = ExtADC_ReadVoltageInput(CHANNEL_4);
-	//uint8_t id = ExtADC_ReadIDReg();
+	config.negative = CHANNEL_5;
 
-//	vTaskDelay(500/portTICK_RATE_MS);
+	ExtADC_ConfigChannel(CHANNEL_4, &config);
 
+	config.ExtConfigOptions = UNIPOLAR;
+	config.mode = PSEUDO;
+	ExtADC_ConfigChannel(CHANNEL_7, &config);
+	ExtADC_ConfigChannel(CHANNEL_9, &config);
+
+
+	float val1 = ExtADC_ReadVoltageInput(CHANNEL_1);
+	float val2 = ExtADC_ReadVoltageInput(CHANNEL_4);
+	float val3 = ExtADC_ReadVoltageInput(CHANNEL_7);
+	float val4 = ExtADC_ReadVoltageInput(CHANNEL_9);
+	float val5 = ExtADC_ReadTempSensor();
+
+	Trace_send("ch1: %lf, ch4: %lf, ch7: %lf, ch9: %lf, temp: %lf \n ",val1,val2,val3,val4,val5 );
+*/
+	vTaskDelay(500/portTICK_RATE_MS);
 
 #else
 	GoBed(JOIN_RETRY);
@@ -692,6 +714,20 @@ void retryoin(fsm_t* fsm){
 //--------------> begin System task functions <--------------//
 
 void main_task(void* param){
+	static extADC_t config;
+
+	config.gain 	= EXTADC_GAIN_1;
+	config.negative = CHANNEL_2;
+	config.mode		= DIFFERENTIAL;
+	config.ExtConfigOptions =  UNIPOLAR;
+
+	ExtADC_Init();        //ToDo -> re init after low power mode
+
+	ExtADC_ConfigChannel(CHANNEL_1, &config);
+
+	config.negative = CHANNEL_5;
+
+	ExtADC_ConfigChannel(CHANNEL_4, &config);
 
 	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
 

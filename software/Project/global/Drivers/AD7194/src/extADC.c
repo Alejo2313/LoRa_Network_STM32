@@ -30,18 +30,22 @@
 /* Private typedef -----------------------------------------------------------*/
 
 /* Private define ------------------------------------------------------------*/
-
+#define BUFFER_SIZE 5
 /* Private variables ---------------------------------------------------------*/
 
+static extADC_t channelConfig[NUM_CHANNELS];
+static ExtModeReg_t mode;
+
+static uint8_t inBuffer[BUFFER_SIZE];
+static uint8_t outBuffer[BUFFER_SIZE];
 
 /* Private function prototypes -----------------------------------------------*/
 
 
 void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel);
 void ExtADC_loadModeReg(uint8_t* buffer);
-uint8_t 	ExtADC_CalcRealGain 	( ExtGain_t gain );
+uint8_t ExtADC_CalcRealGain 	( ExtGain_t gain );
 uint8_t ExtADC_GetRegSize(uint8_t reg);
-
 
 
 
@@ -57,14 +61,21 @@ void ExtADC_Init ( void )
 		channelConfig[aux].gain = EXTADC_GAIN_1;
 		channelConfig[aux].mode = PSEUDO;
 		channelConfig[aux].negative = AINCOM;
+		channelConfig[aux].ExtConfigOptions = 0;
 	}
 
 	spi_init();
 
-	ExtADC_loadModeReg(buffer);
-	ExtADC_WriteRegister(MODE_REG, buffer, 3);
+	mode.mode = SINGLE;
+	mode.clk  = INTERNAL;
+	mode.average = AVG_0;
+	mode.filterSelect = 0x60;
+	mode.ExtModeOptions = 0;
 
-	spi_enNSS();
+
+	ExtADC_loadModeReg(buffer);
+	ExtADC_WriteRegister(MODE_REG, buffer);
+
 	
 }
 
@@ -88,13 +99,14 @@ void ExtADC_DeInit ( void )
  * @param mode 
  * @param negativeInput 
  */
-void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t gain, ExtMode_t mode, ExtChannel_t negativeInput){
+void ExtADC_ConfigChannel(ExtChannel_t channel, extADC_t* config){
 
-	channelConfig[channel].gain = gain;
-	channelConfig[channel].mode = mode;
+	channelConfig[channel].gain = config->gain;
+	channelConfig[channel].mode = config->mode;
+	channelConfig[channel].ExtConfigOptions = config->ExtConfigOptions;
 
-	if(mode == DIFFERENTIAL)
-		channelConfig[channel].negative = negativeInput;
+	if(config->mode == DIFFERENTIAL)
+		channelConfig[channel].negative = config->negative;
 	else
 		channelConfig[channel].negative = AINCOM;
 
@@ -108,12 +120,10 @@ void ExtADC_ConfigChannel(ExtChannel_t channel, ExtGain_t gain, ExtMode_t mode, 
  */
 void ExtADC_Reset ( void )
 {
-  uint8_t out[5];
 
-	memset1(out, 0xFF, 5);
+	memset1(outBuffer, 0xFF, BUFFER_SIZE);
 	/* Go for reset */
-
-	spi_Transmit(&out, 5); //ToDo revisar
+	spi_Transmit(outBuffer, 5); //ToDo revisar
 	/* Disable NSS */
 }
 
@@ -127,22 +137,21 @@ void ExtADC_Reset ( void )
  */
 uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 
-	static uint8_t buffer[3];	//out buffer
-	static uint32_t data, counter;
+	//static uint8_t buffer[3];	//out buffer
+	static  uint16_t counter;
 
 	//Confgiure CONF_REG to allow channel reading
 
-	spi_enNSS();
-	ExtADC_loadConfigReg(buffer, channel);
-	ExtADC_WriteRegister(CONF_REG, buffer, 3);
-	spi_delay(1);
+	ExtADC_loadConfigReg(outBuffer, channel);
+	ExtADC_WriteRegister(CONF_REG, outBuffer);
+
+	ExtADC_loadModeReg(outBuffer);
+	ExtADC_WriteRegister(MODE_REG, outBuffer);
 
 	counter = 0;
 
-//	ExtADC_loadModeReg(buffer);
-//	ExtADC_WriteRegister(MODE_REG, buffer, 3);
 
-	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
+	while (ExtADC_DataReady(channel) == -1){
 				spi_delay(1);
 		counter++;
 
@@ -151,11 +160,8 @@ uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 
 	}
 
-	data  = ExtADC_ReadRegister(DATA_REG);
-	spi_disNSS();
-	spi_delay(1);
+	return ExtADC_ReadRegister(DATA_REG);
 
-	return data; 
 }
 
 
@@ -169,8 +175,11 @@ uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 
 float ExtADC_ReadVoltageInput ( ExtChannel_t channel)
 {
-	uint32_t 	code  	= 0;
-	float 		voltage = 0;
+	static uint32_t 	code  	= 0;
+	static float 		voltage = 0;
+
+	code = 0;
+	voltage = 0;
 
 	code = ExtADC_ReadAnalogInput ( channel );
 	/* CODE = 2^(N-1) * [(AIN * Gain/V_ref) +1]
@@ -207,9 +216,14 @@ float ExtADC_ReadVoltageInput ( ExtChannel_t channel)
  */
 float ExtADC_ReadTempSensor ( void )
 {
-		static uint32_t data = 0, counter;
-		float temp = 0;
-		static uint8_t buffer[3];
+	static uint32_t data = 0;
+	static uint16_t counter = 0;
+	static float temp = 0;
+
+	data = 0;
+	counter = 0;
+	temp = 0;
+	//static uint8_t buffer[3];
 
 		/* Write communication register to allow a writing to the configuration register */ 
 
@@ -221,20 +235,18 @@ float ExtADC_ReadTempSensor ( void )
 		 * TOTAL: 0000 0001 0000 0000 0001 0111 --> 0x010017
 		 * */
 
-		buffer[0] = 0x01;
-		buffer[1] = 0x00;
-		buffer[2] = 0x17;
-
-		spi_enNSS();
-		ExtADC_WriteRegister(CONF_REG, buffer, 3);
-		spi_delay(1);
-
 	
+	outBuffer[0] = 0x01;
+	outBuffer[1] = 0x00;
+	outBuffer[2] = 0x17;
 
+	ExtADC_WriteRegister(CONF_REG, outBuffer);
 
+	ExtADC_loadModeReg(outBuffer);
+	ExtADC_WriteRegister(MODE_REG, outBuffer);
 
 	counter = 0;
-	while (HAL_GPIO_ReadPin(EXT_ADC_MISO_PORT, EXT_ADC_MISO_PIN) == GPIO_PIN_SET){
+	while (ExtADC_DataReady(0) == -1){
 		spi_delay(1);
 		counter++;
 
@@ -242,16 +254,14 @@ float ExtADC_ReadTempSensor ( void )
 			return 0;
 	}
 		
-		data  = ExtADC_ReadRegister(DATA_REG);
-	spi_disNSS();
+	data  = ExtADC_ReadRegister(DATA_REG);
 
-	spi_delay(1);
 
-		/* Convert data to degreees */
-		temp = (float) (data - 0x800000) / 2815; //In Kelvin
-		temp -= 273; //in celsius
+	/* Convert data to degreees */
+	temp = (float) (data - 0x800000) / 2815; //In Kelvin
+	temp -= 273; //in celsius
 
-		return temp;
+	return temp;
 
 }
 
@@ -263,17 +273,18 @@ float ExtADC_ReadTempSensor ( void )
  * @param channel Channel to be configured 
  */
 void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel){
+	static t_u32_in_4 res;
 
-	if( channelConfig[channel].mode == PSEUDO){
-		buffer[0] = 0x84;
-		buffer[1] = (channel << 4);
-		buffer[2] =	0x18 | (channelConfig[channel].gain & 0x7); //ToDO -> change bipolar
-	}
-	else{
-		buffer[0] = 0x80;
-		buffer[1] = (channel << 4) | (channelConfig[channel].negative & 0x0F);
-		buffer[2] =	channelConfig[channel].gain;
-	}	
+	res.all = 1 << 23;
+	res.all |= channelConfig[channel].gain & 0x7;
+	res.all |= (channelConfig[channel].mode << 18);
+	res.all |= (channel&0xF) << 12;
+	res.all |= (channelConfig[channel].negative & 0xF) << 8;
+	res.all |= channelConfig[channel].ExtConfigOptions;
+
+	buffer[0] = res.bytes[2];
+	buffer[1] = res.bytes[1];
+	buffer[2] =	res.bytes[0];
 
 }
 /**
@@ -283,11 +294,34 @@ void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel){
  * todo -> hacerlo bien 
  */
 void ExtADC_loadModeReg(uint8_t* buffer){
-	buffer[0] = 0x08;
-	buffer[1] = 0x00;
-	buffer[2] = 0x60;
-}
+	static t_u32_in_4 res;
+	res.all = 0;
+	res.all |= mode.mode << 21;
+	res.all |= (mode.clk << 18);
+	res.all |= (mode.average << 16);
+	res.all |= mode.filterSelect & 0x3FF; 
+	res.all |= mode.ExtModeOptions ;
 
+
+	buffer[0] = res.bytes[2];
+	buffer[1] = res.bytes[1];
+	buffer[2] = res.bytes[0];
+}
+/**
+ * @brief 
+ * 
+ * @param config 
+ */
+void ExtADC_setModeConfig(ExtModeReg_t* config){
+	mode.mode = config->mode;
+	mode.clk  = config->clk;
+	mode.average = config->average;
+	mode.filterSelect = config->filterSelect;
+	mode.ExtModeOptions = config->ExtModeOptions;
+
+	ExtADC_loadModeReg(outBuffer);
+	ExtADC_WriteRegister(MODE_REG, outBuffer);
+}
 
 /**
  * @brief Update gain value for a giving channel
@@ -350,7 +384,7 @@ ExtMode_t ExtADC_GetMode	( ExtChannel_t channel ){
  * (I'm to lazy)
  */
 
-uint8_t 	ExtADC_CalcRealGain 		( ExtGain_t gain )
+uint8_t ExtADC_CalcRealGain ( ExtGain_t gain )
 {
 	switch (gain)
 	{
@@ -390,23 +424,23 @@ uint8_t 	ExtADC_CalcRealGain 		( ExtGain_t gain )
 
 
 uint32_t ExtADC_ReadRegister(uint8_t reg){
-	static uint8_t inBuffer[3] = {0,0,0};
+	//static uint8_t inBuffer[3] = {0,0,0};
 	static uint32_t data = 0;
 	static uint8_t aux = 0, size;
 
+	memset1(inBuffer, 0x00, BUFFER_SIZE);
 	size = ExtADC_GetRegSize(reg);
 
 	data = 0;
 	aux = 0;
 
 	uint8_t comByte = 0x40 | ((reg << 3)&0x38) | 0x00;
-
-//	spi_enNSS();
+	spi_enNSS();
 
 	spi_Transmit(&comByte, 1U);
 	spi_Receive(inBuffer, size);
 
-//	spi_disNSS();
+	spi_disNSS();
 
 	while(size){
 		--size;
@@ -423,14 +457,14 @@ uint32_t ExtADC_ReadRegister(uint8_t reg){
  * @param data data pointer
  * @param size amount of data in bytes
  */
-void ExtADC_WriteRegister(uint8_t reg, uint8_t* data, uint8_t size){
+void ExtADC_WriteRegister(uint8_t reg, uint8_t* data){
 
 	uint8_t comByte = 0x00 | ((reg << 3)&0x38) | 0x00;
 
-//	spi_enNSS();
+	spi_enNSS();
 	spi_Transmit(&comByte, 1U);
 	spi_Transmit(data, ExtADC_GetRegSize(reg));
-//	spi_disNSS();
+	spi_disNSS();
 
 }
 
