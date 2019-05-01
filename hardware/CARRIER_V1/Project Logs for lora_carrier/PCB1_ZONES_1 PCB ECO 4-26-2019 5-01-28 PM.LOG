@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=AN3 Pin=R22-1
+Added Member To Class: ClassName=Sheet1 Member=Component C12 0.01 uF
+Added Member To Class: ClassName=supply Member=Component C29 1uF
+Added Room: Name=Sheet1
+Added Room: Name=supply

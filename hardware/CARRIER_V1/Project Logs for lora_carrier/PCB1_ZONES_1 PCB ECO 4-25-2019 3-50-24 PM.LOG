@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=AN3 Pin=C27-1
+Removed Pin From Net: NetName=AN3 Pin=R22-1
+Removed Pin From Net: NetName=AN3 Pin=R31-2
+Removed Pin From Net: NetName=AN3 Pin=U5-1
+Added Pin To Net: NetName=BS1 Pin=U5-1
+Added Net: Name=BS1
+Added Room: Name=Sheet1
+Added Room: Name=supply

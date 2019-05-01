@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=AGND Pin=D5-1
+Removed Pin From Net: NetName=Vbat Pin=D5-3
+Removed Member From Class: ClassName=supply Member=D5
+Removed Member From Class: ClassName=Sheet1 Member=P1
+Added Member To Class: ClassName=supply Member=Component P4 
+Added Room: Name=Sheet1
+Added Room: Name=supply

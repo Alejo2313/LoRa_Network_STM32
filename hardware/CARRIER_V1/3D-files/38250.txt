@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.6";"";
+"SUPPLIER";"Phoenix Contact";"";
+"TraceParts.PartStatus";"Published";"";
+"RS_STOCK_NUMBER";"8045064";"";
+"REVISION";"A";"";
+"DESIGN";"MC 0,5/12-G-2,5 Header 12way 2.5mm";"";
+"TraceParts.InstanceId";"10-25072014-10187986VHRSH1XVOQ51AJL9BKDAAC6";"";
+"TraceParts.PartTitle";"MC 0,5/12-G-2,5 Header 12way 2.5mm";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.PartNumber";"10-25072014-101879";"";
+"REFERENCE";"1881545";"";
+"TIMESTAMP";"22/07/2014 15:51";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.ClassPath";"/F_RS_COMPONENTS/PSSS_435563/PSS_435683/PSF_435704/";"";

@@ -1,0 +1,82 @@
+Removed Member From Class: ClassName=supply Member=C19
+Removed Member From Class: ClassName=Sheet1 Member=C29
+Removed Member From Class: ClassName=Sheet1 Member=C30
+Removed Member From Class: ClassName=Sheet1 Member=C31
+Added Component: Designator=U5(QFN127P600-AD7194BCPZ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Architecture"; Value = "Sigma-Delta"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Analog to Digital Converters - ADC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://www.mouser.com/datasheet/2/609/AD7194-1501808.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/609/AD7194-1501808.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Development Kit"; Value = "EVAL-AD7194EBZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gain Error"; Value = "+/- 0.005 %FSR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.73 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "INL - Integral Nonlinearity"; Value = "+/- 30 ppm of FSR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "Differential/Pseudo-Differential"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "+/- 2.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface Type"; Value = "Serial, 3-Wire, SPI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "AD7194BCPZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum Operating Temperature"; Value = "+ 105 C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Operating Temperature"; Value = "- 40 C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of ADC Inputs"; Value = "16 Input/8 Input"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = "8 Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Converters"; Value = "1 Converter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "3.3 V, 5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "LFCSP-32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pd - Power Dissipation"; Value = "29 mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=13.48, 10=12.23, 25=11.49, 50=11.06, 100=9.96, 250=9.20, 500=8.65, 1000=8.35 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Analog to Digital Converters"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Type"; Value = "ADCs - Analog to Digital Converters"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reference Type"; Value = "External"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resolution"; Value = "24 bit"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sample and Hold"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sampling Rate"; Value = "4.8 kS/s"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "AD7194"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Pack Qty"; Value = "490"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "878"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Subcategory"; Value = "Data Converter ICs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "584-AD7194BCPZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "5 mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AN1 Pin=U5-1
+Added Pin To Net: NetName=AN2 Pin=U5-2
+Added Pin To Net: NetName=AN3 Pin=U5-3
+Added Pin To Net: NetName=BS1 Pin=U5-4
+Added Pin To Net: NetName=AGND Pin=U5-5
+Added Pin To Net: NetName=AGND Pin=U5-6
+Added Pin To Net: NetName=TC_P1 Pin=U5-7
+Added Pin To Net: NetName=TC_N1 Pin=U5-8
+Added Pin To Net: NetName=TC_P2 Pin=U5-9
+Added Pin To Net: NetName=TC_N2 Pin=U5-10
+Added Pin To Net: NetName=TC_P3 Pin=U5-11
+Added Pin To Net: NetName=TC_N3 Pin=U5-12
+Added Pin To Net: NetName=TC_P4 Pin=U5-13
+Added Pin To Net: NetName=TC_N4 Pin=U5-14
+Added Pin To Net: NetName=TC_P5 Pin=U5-15
+Added Pin To Net: NetName=TC_N5 Pin=U5-16
+Added Pin To Net: NetName=Vref Pin=U5-17
+Added Pin To Net: NetName=AGND Pin=U5-18
+Added Pin To Net: NetName=TC_P6 Pin=U5-19
+Added Pin To Net: NetName=TC_N6 Pin=U5-20
+Added Pin To Net: NetName=AGND Pin=U5-21
+Added Pin To Net: NetName=AGND Pin=U5-22
+Added Pin To Net: NetName=3v3A Pin=U5-23
+Added Pin To Net: NetName=3v3E Pin=U5-24
+Added Pin To Net: NetName=SPI2_MISO Pin=U5-27
+Added Pin To Net: NetName=SPI2_MOSI Pin=U5-28
+Added Pin To Net: NetName=SPI2_SCK Pin=U5-31
+Added Pin To Net: NetName=SPI2_NSS Pin=U5-32
+Added Member To Class: ClassName=Sheet1 Member=Component C7 0.01uF 0603
+Added Member To Class: ClassName=Sheet1 Member=Component C15 0.01uF 0603
+Added Member To Class: ClassName=Sheet1 Member=Component C19 0.01uF 0603
+Added Member To Class: ClassName=supply Member=Component C36 1uF
+Added Member To Class: ClassName=Sheet1 Member=Component U5 AD71994
