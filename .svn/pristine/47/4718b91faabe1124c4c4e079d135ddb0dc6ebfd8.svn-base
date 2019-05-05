@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=F1 Old Footprint=Chip2Pin-1206-FUSE-0ZCJ0005FF2E New Footprint=Chip2PinMICROSMD005F
+Change Component Footprint: Designator=F2 Old Footprint=Chip2Pin-1206-FUSE-0ZCJ0005FF2E New Footprint=Chip2PinMICROSMD005F
+Change Component Footprint: Designator=F3 Old Footprint=Chip2Pin-1206-FUSE-0ZCJ0005FF2E New Footprint=Chip2PinMICROSMD005F
+Added Room: Name=Sheet1
+Added Room: Name=supply

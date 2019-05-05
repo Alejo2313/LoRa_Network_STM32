@@ -67,7 +67,7 @@ La representación gráfica de la trama es la siguiente:
 	\end{enumerate}
 
 
-\subsubsection{Trama de conexión}
+\subsubsection{Trama de conexión} \label{ConnectionPay}
 
 	Al iniciarse un nodo, este intentará conectarse a una red (conocida o cercana). Para  hacerlo, enviará un paquete cuyo payload contendrá el identificador único de nodo así como el formato de trama que utilizará en la transacción. El formato es el siguiente:
 	
@@ -116,7 +116,7 @@ La representación gráfica de la trama es la siguiente:
 		\end{center}
 	\end{enumerate}
 	
-\subsubsection{Trama de configuración}
+\subsubsection{Trama de configuración} \label{ConfigPay}
 	
 	
 	Cuando es enviada por un master, contiene la configuración que deberá utilizar el nodo. El formato de trama es el siguiente:
@@ -198,7 +198,7 @@ La representación gráfica de la trama es la siguiente:
 	
 	
 	
-	\subsubsection{Tratamiento de errores}
+	\subsubsection{Tratamiento de errores} \label{ErrorHandle}
 	
 	El sistema deberá se robusto frente a errores. La forma en la que el sistema responderá a erroes será la siguiente:
 	
@@ -230,6 +230,7 @@ La representación gráfica de la trama es la siguiente:
 		
 		\subsubsection{Máquinas de estados extendidas (xFSM)}
 		
+		\subsubsection{Colas circulares }
 		
 	\subsection{Descripción del entorno}
 		\subsubsection{Drivers, Librerías y útiles}
@@ -265,9 +266,67 @@ La representación gráfica de la trama es la siguiente:
 	Para depurar el código, se han utilizado las herramientas GDB y STLINK. STLINK es un circuito integrado que permite la depuración y programación de microcontroladores STM32. Por otro lado, GDB (GNU Debugger) es un depurador de lenguajes como C y C++ que permite ejecutar instrucción a instrucción el programa y conocer, en cada momento, el estado de los registros y memoria. 
 	
 				
-	\subsection{Modelado del comportamiento de los nodos}
+	\subsection{Modelado del comportamiento de los nodos} \label{NodeFSM}
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.75\linewidth]{FSM_NODE.jpg}
+		\caption{Esquema de modelado de los nodos mediante máquinas de estado}
+		\label{fig:nodeFSM}
+	\end{figure}
+	
+	El sistema se ha modualdo mediante máquinas de estado extendidad cuyo comportamiento de los nodos se puede ver resumido en la figura \ref{fig:nodeFSM}. La función principal de los nodos será enviar datos referentes a los sensores de forma periódica al nodo maestro. 
+	El comportamiento del nodo cuenta con los siguientes 8 estados:
+	
+	\begin{itemize}
+		\item \textbf{JOIN:} Los nodos intentarán establecer una conexión con un master. Para ello, enviaran un paquete de tipo JOIN como el especificado en la sección \ref{ConnectionPay}. Al llegar un paquete con estas características, el master responderá con un paquete tipo CONFIG con la configuración del nodo, siguiendo el formato visto en la sección \ref{ConfigPay} . Si el paquete de configuración contiene información válida, el sistema iniciará su funcionamiento habitual. El sistema solo volverá a JOIN si se reinicia ó, si la función esta habilitada, si supera el número máximo de paquetes tipo NACK definido.
+		
+		\item \textbf{SLEEP: } El sistema entrará en bajo consumo durante el tiempo definido. En este estado, se deshabilitaran los recursos no esenciales con el fin de minimizar el consumo del sistema.
+		
+		\item \textbf{MEASURE: } El sistema procesará las entradas de los sensores y cargará los datos en el buffer de salida. El formato de trama tendrá que coincidir con el especificado en proceso de JOIN, de lo contrario el nodo master responderá con un mensaje tipo NACK.
+		
+		\item \textbf{TX: } El sistema enviará los elementos del buffer de salida. En caso de error, este será tratado.
+		
+		\item \textbf{RX: } Tras enviar los datos, se abrirá una ventana de recepción a la espera de un paquete de datos. En caso de error, este será tratado.
+		
+		\item \textbf{CONFIG: } Si el el paquete recibido es de tipo configuración (ver sección \ref{ConfigPay}), esta se cargará en el sistema y será utilizada en la siguiente transacción.
+		
+		\item \textbf{TX\_REQ: } Si el paquete recibido es del tipo request info, se cargará la información del sistema en un paquete tipo configuración y se enviará al nodo master. (TODO -> revisar)
+		
+		\item \textbf{ERROR\_HANDLE: } Si ocurriese algún error durante la ejecución de alguno de los procesos, este se capturara y se intentará buscarle
+una solución. La forma en la que se tratarán los erroes, se encuentra especificada en la sección \ref{ErrorHandle}.
+		
+		
+	\end{itemize}
 	
 	\subsection{Modelado del comportamiento del nodo maestro}
+	
+	\begin{figure}[!h]
+		\includegraphics[width=\linewidth]{FSM_MASTER.png}
+		\caption{Modelado del comportamiento mediantes maquinas de estado extendidas}
+		
+		\label{fig:MasterFSM}
+	\end{figure}
+	
+	A diferencia de los nodos vistos en el apartadado \ref{NodeFSM}, el comportamiento de los nodos maestros se ha modelado mediante dos máquinas de estados. La principal motivación de este cambio, será separar la funciones de recepción y transmisión de paquetes de las funciones de procesado de datos, de esta forma, evitamos la perdida de datos durante procedentes de los nodos. Todo esto es posible gracias a las posibilidades que nos ofrecese FreeRTOs y las máquinas de estados extendidas.
+	
+	los estados de la máquina de recepción de datos son los siguientes:
+	
+	\begin{itemize}
+		\item \textbf{RX: }Este es el estado por defecto del receptor. Se encuentra siempre escuchando el canal a la espera de datos. Cuando recibe datos los encola en una cola circular y avisa a la segunda máquina de la prescencia de datos.
+		\item \textbf{TX: }Cuando la segunda máquina notifica la existencia de datos en el buffer de salida, esta envía los datos y vuelve a su estado por defecto.
+		\item \textbf{ERROR\_HANDLE: } Recupera al sistema de los errores notificados por otros estados.
+	\end{itemize}
+	
+	Por otro lado, los estados asociados al procesado de datos son los siguientes:
+	
+	\begin{itemize}
+		\item \textbf{WAIT: }Se matiene a la espera de datos.
+		\item \textbf{PROCESS: }Cuando existen datos encolados, los procesa y genera un respuesta.
+		\item \textbf{ERROR\_HANDLE: }Recupera el sistema de un error.
+	\end{itemize}
+	
+	Los estados y las transiciones asociadas de cada máquina se pueden ver resumidos en la figura \ref{fig:MasterFSM}.
 	
 	\subsection{Estructura del código}
 	\subsection{Proceso de diseño e implementación}

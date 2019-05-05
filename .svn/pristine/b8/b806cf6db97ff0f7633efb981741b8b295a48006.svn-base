@@ -1,0 +1,37 @@
+Remove Pin=U3-1 From Net=AN1
+Remove Pin=U3-2 From Net=AN2
+Remove Pin=U3-3 From Net=AN3
+Remove Pin=U3-7 From Net=TC_P1
+Remove Pin=U3-8 From Net=TC_N1
+Remove Pin=U3-9 From Net=TC_P2
+Remove Pin=U3-10 From Net=TC_N2
+Remove Pin=U3-11 From Net=TC_P3
+Remove Pin=U3-12 From Net=TC_N3
+Remove Pin=U3-13 From Net=TC_P4
+Remove Pin=U3-14 From Net=TC_N4
+Remove Pin=U3-15 From Net=TC_P5
+Remove Pin=U3-16 From Net=TC_N5
+Remove Pin=U3-19 From Net=TC_P6
+Remove Pin=U3-20 From Net=TC_N6
+Remove Pin=U3-27 From Net=SPI2_MISO
+Remove Pin=U3-28 From Net=SPI2_MOSI
+Remove Pin=U3-31 From Net=SPI2_SCK
+Remove Pin=U3-32 From Net=SPI2_NSS
+Change Component Designator: OldDesignator=P1 NewDesignator=P2
+Change Component Designator: OldDesignator=P2 NewDesignator=P3
+Change Component Designator: OldDesignator=P3 NewDesignator=P4
+Change Component Designator: OldDesignator=P4 NewDesignator=P5
+Change Component Designator: OldDesignator=P5 NewDesignator=P6
+Change Component Designator: OldDesignator=P6 NewDesignator=P7
+Change Component Designator: OldDesignator=P7 NewDesignator=P8
+Change Component Designator: OldDesignator=P9 NewDesignator=P1
+Change Component Designator: OldDesignator=R2 NewDesignator=R4
+Change Component Designator: OldDesignator=R3 NewDesignator=R2
+Change Component Designator: OldDesignator=R4 NewDesignator=R3
+Change Component Designator: OldDesignator=R19 NewDesignator=R20
+Change Component Designator: OldDesignator=R20 NewDesignator=R19
+Change Component Designator: OldDesignator=U2 NewDesignator=U3
+Change Component Designator: OldDesignator=U4 NewDesignator=U7
+Change Component Designator: OldDesignator=U5 NewDesignator=U2
+Change Component Designator: OldDesignator=U6 NewDesignator=U4
+Change Component Designator: OldDesignator=U7 NewDesignator=U6

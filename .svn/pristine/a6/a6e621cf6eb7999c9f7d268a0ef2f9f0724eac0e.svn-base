@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=P1 Pin=P3-1
+Removed Pin From Net: NetName=P2 Pin=P3-2
+Removed Pin From Net: NetName=P3 Pin=P3-3
+Removed Pin From Net: NetName=P4 Pin=P3-4
+Removed Pin From Net: NetName=P5 Pin=P3-5
+Removed Pin From Net: NetName=P6 Pin=P3-6
+Removed Pin From Net: NetName=P7 Pin=P3-7
+Removed Pin From Net: NetName=P8 Pin=P3-8
+Removed Pin From Net: NetName=P9 Pin=P3-9
+Removed Pin From Net: NetName=P10 Pin=P3-10
+Removed Pin From Net: NetName=P11 Pin=P3-11
+Removed Pin From Net: NetName=P12 Pin=P3-12
+Removed Pin From Net: NetName=P1 Pin=R1-2
+Removed Pin From Net: NetName=P3 Pin=R7-2
+Removed Pin From Net: NetName=P5 Pin=R12-2
+Removed Pin From Net: NetName=P7 Pin=R18-2
+Removed Pin From Net: NetName=P9 Pin=R24-2
+Removed Pin From Net: NetName=P11 Pin=R28-2
+Removed Pin From Net: NetName=P3 Pin=U2-1
+Removed Pin From Net: NetName=P1 Pin=U2-6
+Removed Pin From Net: NetName=P7 Pin=U4-1
+Removed Pin From Net: NetName=P5 Pin=U4-6
+Removed Pin From Net: NetName=P11 Pin=U6-1
+Removed Pin From Net: NetName=P9 Pin=U6-6
+Added Pin To Net: NetName=P2 Pin=P3-1
+Added Pin To Net: NetName=P11 Pin=P3-2
+Added Pin To Net: NetName=P4 Pin=P3-3
+Added Pin To Net: NetName=P9 Pin=P3-4
+Added Pin To Net: NetName=P6 Pin=P3-5
+Added Pin To Net: NetName=P7 Pin=P3-6
+Added Pin To Net: NetName=P8 Pin=P3-7
+Added Pin To Net: NetName=P5 Pin=P3-8
+Added Pin To Net: NetName=P3 Pin=P3-10
+Added Pin To Net: NetName=P12 Pin=P3-11
+Added Pin To Net: NetName=P1 Pin=P3-12
+Added Pin To Net: NetName=P11 Pin=R1-2
+Added Pin To Net: NetName=P9 Pin=R7-2
+Added Pin To Net: NetName=P7 Pin=R12-2
+Added Pin To Net: NetName=P5 Pin=R18-2
+Added Pin To Net: NetName=P3 Pin=R24-2
+Added Pin To Net: NetName=P1 Pin=R28-2
+Added Pin To Net: NetName=P9 Pin=U2-1
+Added Pin To Net: NetName=P11 Pin=U2-6
+Added Pin To Net: NetName=P5 Pin=U4-1
+Added Pin To Net: NetName=P7 Pin=U4-6
+Added Pin To Net: NetName=P1 Pin=U6-1
+Added Pin To Net: NetName=P3 Pin=U6-6
+Change Net Name : Old Net Name=P1 New Net Name=P_N6
+Change Net Name : Old Net Name=P2 New Net Name=P_P1
+Change Net Name : Old Net Name=P3 New Net Name=P_N5
+Change Net Name : Old Net Name=P4 New Net Name=P_P2
+Change Net Name : Old Net Name=P5 New Net Name=P_N4
+Change Net Name : Old Net Name=P6 New Net Name=P_P3
+Change Net Name : Old Net Name=P7 New Net Name=P_N3
+Change Net Name : Old Net Name=P8 New Net Name=P_P4
+Change Net Name : Old Net Name=P9 New Net Name=P_N2
+Change Net Name : Old Net Name=P10 New Net Name=P_P5
+Change Net Name : Old Net Name=P11 New Net Name=P_N1
+Change Net Name : Old Net Name=P12 New Net Name=P_P6
+Added Member To Class: ClassName=Sheet1 Member=Component U3 MCP9808T
+Added Room: Name=Sheet1
+Added Room: Name=supply

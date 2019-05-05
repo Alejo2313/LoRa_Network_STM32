@@ -6,5 +6,13 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces [\citep {LoRaMod}]\relax }}{5}{figure.caption.14}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces [\cite {LoRaI}]\relax }}{6}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Cronograma de conexi\IeC {\'o}n de un nodo\relax }}{12}{figure.caption.27}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Componentes de Altium DPX\relax }}{9}{figure.caption.23}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema de bloques del chip CMWX1ZZABZ\relax }}{10}{figure.caption.24}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Consumo y modos de funcionamiento del microcontrolador STM32L072\relax }}{11}{figure.caption.26}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Esquema de bloques de la familia de tranceptores SX127x\relax }}{11}{figure.caption.27}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Diagrama funcional del AD7194\relax }}{11}{figure.caption.29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Cronograma de conexi\IeC {\'o}n de un nodo\relax }}{18}{figure.caption.35}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de modelado de los nodos mediante m\IeC {\'a}quinas de estado\relax }}{22}{figure.caption.41}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Modelado del comportamiento mediantes maquinas de estado extendidas\relax }}{23}{figure.caption.42}
 \addvspace {10\p@ }

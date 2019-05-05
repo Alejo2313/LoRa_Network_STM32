@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=TC_P1 Pin=U5-7
+Removed Pin From Net: NetName=TC_N1 Pin=U5-8
+Removed Pin From Net: NetName=TC_P2 Pin=U5-9
+Removed Pin From Net: NetName=TC_N2 Pin=U5-10
+Removed Pin From Net: NetName=TC_P3 Pin=U5-11
+Removed Pin From Net: NetName=TC_N3 Pin=U5-12
+Removed Pin From Net: NetName=TC_P4 Pin=U5-13
+Removed Pin From Net: NetName=TC_N4 Pin=U5-14
+Removed Pin From Net: NetName=TC_P5 Pin=U5-15
+Removed Pin From Net: NetName=TC_N5 Pin=U5-16
+Removed Pin From Net: NetName=TC_P6 Pin=U5-19
+Removed Pin From Net: NetName=TC_N6 Pin=U5-20
+Added Pin To Net: NetName=TC_N1 Pin=U5-7
+Added Pin To Net: NetName=TC_P1 Pin=U5-8
+Added Pin To Net: NetName=TC_N2 Pin=U5-9
+Added Pin To Net: NetName=TC_P2 Pin=U5-10
+Added Pin To Net: NetName=TC_N3 Pin=U5-11
+Added Pin To Net: NetName=TC_P3 Pin=U5-12
+Added Pin To Net: NetName=TC_N4 Pin=U5-13
+Added Pin To Net: NetName=TC_P4 Pin=U5-14
+Added Pin To Net: NetName=TC_N5 Pin=U5-15
+Added Pin To Net: NetName=TC_P5 Pin=U5-16
+Added Pin To Net: NetName=TC_N6 Pin=U5-19
+Added Pin To Net: NetName=TC_P6 Pin=U5-20
+Change Net Name : Old Net Name=TC_N1 New Net Name=TC_P1
+Change Net Name : Old Net Name=TC_N2 New Net Name=TC_P2
+Change Net Name : Old Net Name=TC_N3 New Net Name=TC_P3
+Change Net Name : Old Net Name=TC_N4 New Net Name=TC_P4
+Change Net Name : Old Net Name=TC_N5 New Net Name=TC_P5
+Change Net Name : Old Net Name=TC_N6 New Net Name=TC_P6
+Change Net Name : Old Net Name=TC_P1 New Net Name=TC_N1
+Change Net Name : Old Net Name=TC_P2 New Net Name=TC_N2
+Change Net Name : Old Net Name=TC_P3 New Net Name=TC_N3
+Change Net Name : Old Net Name=TC_P4 New Net Name=TC_N4
+Change Net Name : Old Net Name=TC_P5 New Net Name=TC_N5
+Change Net Name : Old Net Name=TC_P6 New Net Name=TC_N6
+Added Room: Name=Sheet1
+Added Room: Name=supply
