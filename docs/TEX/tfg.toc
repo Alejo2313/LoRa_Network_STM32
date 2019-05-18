@@ -33,49 +33,56 @@
 \contentsline {subsubsection}{\numberline {2.2.1.1}Microcontrolador STM32L072}{10}{subsubsection.2.2.1.1}
 \contentsline {paragraph}{}{10}{section*.25}
 \contentsline {subsubsection}{\numberline {2.2.1.2}Transceptor SX1276}{10}{subsubsection.2.2.1.2}
-\contentsline {paragraph}{}{10}{section*.28}
+\contentsline {paragraph}{}{11}{section*.28}
 \contentsline {subsection}{\numberline {2.2.2}Conversor anal\IeC {\'o}gico/digital AD7194}{11}{subsection.2.2.2}
 \contentsline {paragraph}{}{12}{section*.30}
 \contentsline {subsection}{\numberline {2.2.3}Sensor de temperatura MCP9808T}{12}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Componentes activos}{12}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Componentes pasivos}{12}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Dise\IeC {\~n}o las tarjetas}{12}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Fase 1: nodo b\IeC {\'a}sico}{12}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Esquem\IeC {\'a}ticos}{13}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Layout}{13}{subsubsection.2.3.1.2}
-\contentsline {subsection}{\numberline {2.3.2}Fase 2: Tarjeta de expaci\IeC {\'o}n}{13}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Esquem\IeC {\'a}ticos}{13}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Layout}{13}{subsubsection.2.3.2.2}
-\contentsline {section}{\numberline {2.4}Lista de componentes}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Fabricaci\IeC {\'o}n y montaje}{13}{section.2.5}
-\contentsline {chapter}{\numberline {3}Dise\IeC {\~n}o software}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Dise\IeC {\~n}o del protocolo}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Formato de trama}{16}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Trama de conexi\IeC {\'o}n}{16}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Trama de configuraci\IeC {\'o}n}{17}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Trama de datos}{18}{subsubsection.3.1.1.3}
-\contentsline {subsection}{\numberline {3.1.2}Comportamiento del protocolo}{18}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Conexi\IeC {\'o}n de un nodo a la red}{18}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Env\IeC {\'\i }o y recepci\IeC {\'o}n de datos}{18}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}Tratamiento de errores}{19}{subsubsection.3.1.2.3}
-\contentsline {section}{\numberline {3.2}Implementaci\IeC {\'o}n}{20}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Fundamentos te\IeC {\'o}ricos}{20}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Sistemas embebidos}{20}{subsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Sistemas operativos de tiempo real (RTOs}{20}{subsubsection.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.1.3}M\IeC {\'a}quinas de estados extendidas (xFSM)}{20}{subsubsection.3.2.1.3}
-\contentsline {subsubsection}{\numberline {3.2.1.4}Colas circulares }{20}{subsubsection.3.2.1.4}
-\contentsline {subsection}{\numberline {3.2.2}Descripci\IeC {\'o}n del entorno}{20}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Drivers, Librer\IeC {\'\i }as y \IeC {\'u}tiles}{20}{subsubsection.3.2.2.1}
-\contentsline {paragraph}{}{20}{section*.37}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Herramientas de edici\IeC {\'o}n, compilaci\IeC {\'o}n y depuraci\IeC {\'o}n}{21}{subsubsection.3.2.2.2}
-\contentsline {paragraph}{}{21}{section*.38}
-\contentsline {paragraph}{}{21}{section*.39}
-\contentsline {paragraph}{}{21}{section*.40}
-\contentsline {subsection}{\numberline {3.2.3}Modelado del comportamiento de los nodos}{21}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Modelado del comportamiento del nodo maestro}{22}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Estructura del c\IeC {\'o}digo}{23}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Proceso de dise\IeC {\~n}o e implementaci\IeC {\'o}n}{23}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Resultados obtenidos}{23}{subsection.3.2.7}
-\contentsline {chapter}{\numberline {4}Conclusiones y l\IeC {\'\i }neas futuras}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusiones}{25}{section.4.1}
-\contentsline {chapter}{Bibliograf\'{i}a}{27}{section.4.1}
+\contentsline {subsection}{\numberline {2.2.5}Componentes pasivos}{13}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Termopares}{13}{subsubsection.2.2.5.1}
+\contentsline {section}{\numberline {2.3}Dise\IeC {\~n}o las tarjetas}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Dise\IeC {\~n}o del nodo b\IeC {\'a}sico}{14}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Esquem\IeC {\'a}ticos}{15}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Layout}{16}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}Dise\IeC {\~n}o de la tarjeta de expaci\IeC {\'o}n}{17}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Medida de los termopares}{17}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Medida de entradas anal\IeC {\'o}gicas}{18}{subsubsection.2.3.2.2}
+\contentsline {paragraph}{}{18}{section*.37}
+\contentsline {paragraph}{}{18}{section*.38}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Media del nivel de bater\IeC {\'\i }a}{19}{subsubsection.2.3.2.3}
+\contentsline {subsubsection}{\numberline {2.3.2.4}Alimentaci\IeC {\'o}n de los componentes}{19}{subsubsection.2.3.2.4}
+\contentsline {subsubsection}{\numberline {2.3.2.5}Esquem\IeC {\'a}ticos}{21}{subsubsection.2.3.2.5}
+\contentsline {subsubsection}{\numberline {2.3.2.6}Layout}{22}{subsubsection.2.3.2.6}
+\contentsline {section}{\numberline {2.4}Lista de componentes}{23}{section.2.4}
+\contentsline {section}{\numberline {2.5}Fabricaci\IeC {\'o}n y montaje}{23}{section.2.5}
+\contentsline {chapter}{\numberline {3}Dise\IeC {\~n}o software}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Dise\IeC {\~n}o del protocolo}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Formato de trama}{26}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Trama de conexi\IeC {\'o}n}{26}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Trama de configuraci\IeC {\'o}n}{27}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Trama de datos}{28}{subsubsection.3.1.1.3}
+\contentsline {subsection}{\numberline {3.1.2}Comportamiento del protocolo}{28}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Conexi\IeC {\'o}n de un nodo a la red}{28}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Env\IeC {\'\i }o y recepci\IeC {\'o}n de datos}{28}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Tratamiento de errores}{29}{subsubsection.3.1.2.3}
+\contentsline {section}{\numberline {3.2}Implementaci\IeC {\'o}n}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Fundamentos te\IeC {\'o}ricos}{30}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Sistemas embebidos}{30}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Sistemas operativos de tiempo real (RTOs}{30}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}M\IeC {\'a}quinas de estados extendidas (xFSM)}{31}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Colas circulares }{31}{subsubsection.3.2.1.4}
+\contentsline {subsection}{\numberline {3.2.2}Descripci\IeC {\'o}n del entorno}{31}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Drivers, Librer\IeC {\'\i }as y \IeC {\'u}tiles}{31}{subsubsection.3.2.2.1}
+\contentsline {paragraph}{}{31}{section*.52}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Herramientas de edici\IeC {\'o}n, compilaci\IeC {\'o}n y depuraci\IeC {\'o}n}{32}{subsubsection.3.2.2.2}
+\contentsline {paragraph}{}{32}{section*.53}
+\contentsline {paragraph}{}{32}{section*.54}
+\contentsline {paragraph}{}{32}{section*.55}
+\contentsline {subsection}{\numberline {3.2.3}Modelado del comportamiento de los nodos}{32}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Modelado del comportamiento del nodo maestro}{33}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Estructura del c\IeC {\'o}digo}{34}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Proceso de dise\IeC {\~n}o e implementaci\IeC {\'o}n}{34}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Resultados obtenidos}{34}{subsection.3.2.7}
+\contentsline {chapter}{\numberline {4}Conclusiones y l\IeC {\'\i }neas futuras}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusiones}{35}{section.4.1}
+\contentsline {chapter}{Bibliograf\'{i}a}{37}{section.4.1}

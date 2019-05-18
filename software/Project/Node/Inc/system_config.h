@@ -4,7 +4,7 @@
 #define STM32_UUID ((uint32_t *)0x1FF80050)
 /***** OPTIONS**********/
 
-#define debug
+//#define debug
 //#define NODE
 
 

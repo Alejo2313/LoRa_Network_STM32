@@ -1,5 +1,16 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{{Analog Devices}}{2017}]{AD7194}
+{Analog Devices} ({2017}).
+\newblock {AD7194 - 8-Channel, 4.8 kHz, Ultralow Noise,24-Bit Sigma-Delta ADC
+  with PGA}.
+\newblock Technical Report {Rev. B}, {Analog}.
+
+\bibitem[\protect\astroncite{{CAPEL}}{2008}]{Altium}
+{CAPEL} ({2008}).
+\newblock {¿Qué es Altium Designer?}
+\newblock {\em {CAPEL}}.
+
 \bibitem[\protect\astroncite{Cypress}{2015}]{BLE}
 Cypress (2015).
 \newblock Bluetooth low energy (ble).
@@ -10,26 +21,46 @@ Friedli, M. (2016).
 \newblock Energy efficiency of the internet of things.
 \newblock Technical report, IEA 4E Electronic Devices and Networks Annex.
 
+\bibitem[\protect\astroncite{{Microchip}}{2011}]{MCP9808}
+{Microchip} ({2011}).
+\newblock {MCP9808 - Maximum Accuracy Digital Temperature Sensor}.
+\newblock Technical Report {DS25095A}, {Microchip}.
+
 \bibitem[\protect\astroncite{Minihold}{2014}]{WiFiMAX}
 Minihold, R. (2014).
 \newblock Analisis of wifi and wimax and wireless network coexistence.
 \newblock Technical report, School of Computing, Teesside University.
+
+\bibitem[\protect\astroncite{{Murata}}{2018}]{Murata}
+{Murata} ({2018}).
+\newblock {Sub-GModule Data Sheet}.
+\newblock Technical Report {BP-ABZ-C}, {Murata}.
 
 \bibitem[\protect\astroncite{SEMTECH}{2015}]{LoRaMod}
 SEMTECH (2015).
 \newblock Lora modulation basics.
 \newblock Technical Report~2, Semtech Corporation.
 
-\bibitem[\protect\astroncite{Song and Issac}{2011}]{NFC}
-Song, S. and Issac, B. (2011).
+\bibitem[\protect\astroncite{{SEMTECH}}{2016}]{SX1276}
+{SEMTECH} ({2016}).
+\newblock {SX1276 - 137 MHz to 1020 MHz Low Power Long Range Transceiver}.
+\newblock Technical Report {Rev. 5}, {SEMTECH}.
+
+\bibitem[\protect\astroncite{{Shuang Song}}{2011}]{NFC}
+{Shuang Song}, B. (2011).
 \newblock Near field communication (nfc) technology and measurements.
 \newblock Technical report, Rohde and Schwarz.
+
+\bibitem[\protect\astroncite{{STMicroelectronics}}{2014}]{STMpow}
+{STMicroelectronics} ({2014}).
+\newblock {STM32L0xx ultra-low power features overview }.
+\newblock Technical Report {DocID025944 Rev 1}, {STMicroelectronics}.
 
 \bibitem[\protect\astroncite{Telkamp}{2015}]{LoRaI}
 Telkamp, T. (2015).
 \newblock Lora, lorawan, and the challenges of long-range networking in shared
   spectrum.
-\newblock Technical report, Cognitive Radio Platform NL,.
+\newblock Technical report, Cognitive Radio Platform NL.
 
 \bibitem[\protect\astroncite{Torchia}{2019}]{IDC}
 Torchia, M. (2019).

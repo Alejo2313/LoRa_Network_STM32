@@ -6,44 +6,44 @@ A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: ack.aux
 The style file: tfg.bst
 Database file #1: biblio.bib
-You've used 7 entries,
+You've used 13 entries,
             1940 wiz_defined-function locations,
-            515 strings with 4540 characters,
-and the built_in function-call counts, 1927 in all, are:
-= -- 192
-> -- 55
-< -- 8
-+ -- 16
-- -- 16
-* -- 135
-:= -- 383
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 48
-chr.to.int$ -- 7
-cite$ -- 7
-duplicate$ -- 80
-empty$ -- 129
-format.name$ -- 25
-if$ -- 355
+            552 strings with 5121 characters,
+and the built_in function-call counts, 3514 in all, are:
+= -- 349
+> -- 91
+< -- 19
++ -- 26
+- -- 26
+* -- 248
+:= -- 694
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 83
+chr.to.int$ -- 13
+cite$ -- 13
+duplicate$ -- 153
+empty$ -- 239
+format.name$ -- 39
+if$ -- 648
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 38
-num.names$ -- 21
-pop$ -- 30
+missing$ -- 2
+newline$ -- 68
+num.names$ -- 39
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 43
+purify$ -- 78
 quote$ -- 0
-skip$ -- 66
+skip$ -- 122
 stack$ -- 0
-substring$ -- 84
-swap$ -- 9
-text.length$ -- 1
+substring$ -- 156
+swap$ -- 21
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 78
 warning$ -- 0
-while$ -- 14
+while$ -- 26
 width$ -- 0
-write$ -- 92
+write$ -- 169

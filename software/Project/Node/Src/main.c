@@ -103,6 +103,8 @@ int main(void){
 
 	wakeUpSystem();
 
+	Config_Load();
+
 
 
 
@@ -296,7 +298,6 @@ void wakeUpSystem(){
 	SystemClock_Config();
 	HW_Init();
 	radio_init();
-	Config_Load();
 	Trace_Init();
 }
 
@@ -411,6 +412,8 @@ void clearFlags(uint32_t* flags){
  * 
  * */
 void join(fsm_t* fsm){
+
+
 	if(TxData == NULL){
 		TxData = (Packet_t*)pvPortMalloc(sizeof(Packet_t));
 		TxData->pData = (uint8_t*)pvPortMalloc(MAX_PAYLOAD);
@@ -707,6 +710,8 @@ void retryoin(fsm_t* fsm){
 #else
 	GoBed(JOIN_RETRY);
 	wakeUpSystem();
+
+	vTaskDelay(1000/portTICK_RATE_MS);
 #endif
 };
 //--------------> end fsm functions <--------------//
@@ -731,6 +736,7 @@ void main_task(void* param){
 
 	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
 
+	//
 	while(1){
 		fsm_fire(fsm_lora);
 	}

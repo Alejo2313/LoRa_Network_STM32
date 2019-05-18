@@ -226,9 +226,46 @@ La representación gráfica de la trama es la siguiente:
 	\subsection{Fundamentos teóricos}
 		\subsubsection{Sistemas embebidos}
 		
-		\subsubsection{Sistemas operativos de tiempo real (RTOs}
+		Un sistema embebido es un sistema, que a diferencia de los sistemas de propócito general, está diseñado para realizar unas pocas funciones específicas. Estas funciones, generalmente, tienen requisitos de ejecución de tiempo real.
 		
+		Estos sitemas suelen tener recursos limitados y requisitos  estrictos. Por este motivo, existe un gran compromiso entre el hardware y el software (la manipulación del hardware se hace de forma directa), lo que limita su programación a lenguajes de bajo nivel.
+		
+		En la mayoría de los casos, estos sistemas no pueden tener intervención humana, por lo que sus principales características deben ser:
+		
+		\begin{itemize}
+			\item \textbf{Fiabilidad: }El sistema debe tener una tasa de fallos baja.
+			\item \textbf{Robustez frente a fallo: }En caso de fallo, el sistema debe ser capaz de recuperarse de manera eficiente.
+			
+			\item \textbf{Disponibilidad: }El sistema debe estar disponible en el menor tiempo posible.
+			
+			\item \textbf{Seguridad: }En muchos caso, deben contar con funciones y protocolos que aseguren la integridad de los datos y eviten su acceso a terceros.
+		\end{itemize}
+		
+		
+		
+		\subsubsection{Sistemas operativos de tiempo real (RTOs}
+		Un sistema operativo de tiempo real (también conocido como RTOs por sus siglas en inglés), es un sistema operativo ligero, diseñado para sistemás embebidos con requisitos temporales estrictos. Los RTOs permite la ejecución de código organizado en forma de tareas independientes y gerarquizadas.
+		
+		Un RTO se puede describir como un "planificador de tiempo real", ya que su función principal es organizar tareas según su prioridad y ejecutarlas garantizado tiempos de ejecución. También, administran los accesos a memoria y los recursos compartidos mediante la implemetación de mutex, semáforos, colas, etc. Estos sistemas son especialmente útiles en microcontroladores con un único núclero, los cuales solo pueden ejecutar una taréa de manera simultanea.
+		
+		La utilización de un RTOs tiene grandes ventajas que facilitan el desarrollo, depuración y mejora de un sistema, entre ellas podemos encontrar:
+		
+		\begin{itemize}
+			\item \textbf{Abstracción del manejo del tiempo: }Un sistema operativo de tiempo contiene las herramientas necesarias para controlar los tiempo de ejecución. 
+			\item \textbf{Escalabilidad y modularidad: }La organización del código en forma de tareas independientes, permite añadir, quitar o modificar módulos de manera rápida y sin comprometer el funcionamiento global del sistema.
+			\item \textbf{Reutilización del código: }La utilización de tareas independientes, también permite migrar módulos a otros proyectos.
+			
+			\item \textbf{Control del consumo: }Los RTOs permiten tener un control estricto de los tiempo de ejecición, lo que se traduce en un mejor control del consumo del sistema.
+			
+			\item \textbf{Fácil depuración: }Las tareás independientes pueden ser depuradas de forma individual y aislada.
+			
+			 
+		\end{itemize}
+		
+				
 		\subsubsection{Máquinas de estados extendidas (xFSM)}
+		
+		
 		
 		\subsubsection{Colas circulares }
 		
@@ -255,7 +292,7 @@ La representación gráfica de la trama es la siguiente:
 				
 				El middleware de FreeRTOs ha sido implementado utilizando la configuración propuesta por STM para su microcontrolador. Por otro lado, la implementación del FSM ha sido modificada para comprobar bits de estado y no funciones en las transiciones de estados.
 			
-		\subsubsection{Herramientas de edición, compilación y depuración}
+		\subsubsection{Herramientas de edición, compilación y depuración} \label{soft:debugApp}
 		
 		El software de este TFG se ha desarrollado completamente sobre un sistema operativo linux pero, procurando su compatibilidad con otros sistemas operativos. Para ello, se han utilizado herramientas software libres y multiplataforma.
 	\paragraph{}
