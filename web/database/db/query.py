@@ -1,9 +1,16 @@
 
 
 add_node =  (   "INSERT INTO node_list "
-                "(UUID, ADDR, SENSOR_N, L_CONECTION)"
-                " VALUES (%s,%s,%s,%s) ")
+                "(UUID, Nickname, ADDR, SENSOR_N, L_CONECTION)"
+                " VALUES (%s,%s, %s,%s,%s) ")
 
+is_update = (   "SELECT UPDT FROM node_list "
+                "WHERE UUID = %s"
+            )
+
+unset_update = (    "UPDATE node_list SET UPDT = 0 "
+                    "WHERE UUID = %s"
+                )
 add_addr = (    "INSERT INTO Address "
                 "(ADDR, UUID, LDate)"
                 "VALUES (%s, %s, %s)")
@@ -22,7 +29,7 @@ add_sensors =   (   "INSERT INTO USensors "
 
 add_value   =   (   "INSERT INTO SensorVals "
                     "(SensorID, Date, Val) "
-                    "VALUES (%s, %s, %s) "
+                    "VALUES (%s, %s,%s, %s) "
                 )
 
 get_sensors =   (   "SELECT SensorID, Size FROM USensors "
@@ -33,3 +40,21 @@ get_sensors =   (   "SELECT SensorID, Size FROM USensors "
 upd_node_date = (   "UPDATE node_list SET L_CONECTION = %s " 
                     "WHERE UUID = %s"
                 )
+
+add_config = (  "INSERT INTO DefaultConfig "
+                "( UUID, POWER, BW, SF, SLEEP, RXWIN) "
+                " VALUES (%s, %s, %s, %s, %s, %s)"                   
+             )                
+
+update_config = (   "UPDATE DefaultConfig SET POWER = %s, BW = %s, SF = %s, SLEEP = %s, RXWIN = %s "
+                    "WHERE UUID = %s"
+                )  
+
+get_config = ( "SELECT POWER, BW, SF, SLEEP, RXWIN FROM DefaultConfig "
+                "WHERE UUID = %s"
+            )   
+
+
+get_def_config = ( "SELECT  POWER, BW, SF, SLEEP, RXWIN FROM DefaultConfig "
+                "WHERE UUID = 0"
+            )             

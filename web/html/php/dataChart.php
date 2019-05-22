@@ -12,6 +12,20 @@
 
     $action = $_POST['action'];
 
+    if($action == 0){
+        $result = $cnx->query($get_sensor);
+        echo '<option value="" selected disabled hidden>Choose Node</option>';
+
+        if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+  
+            echo '<option value="'. $row["UUID"].'" > '.($row["Nickname"]).'</otpion>'.PHP_EOL;
+  
+          }
+        }
+    }
+
     if($action == 1){
         $UUID = $_POST['UUID'];
 
@@ -19,10 +33,11 @@
 
         $result = $cnx->query($query);
 
+        echo '<option value="" selected disabled hidden>Choose Sensor</option>';
+
         if ($result->num_rows > 0) {
         // output data of each row
-            echo '<option value="" selected disabled hidden>Choose Sensor</option>';
-
+            
             while($row = $result->fetch_assoc()) {
                 
                 
@@ -30,6 +45,7 @@
 
                 if($res2->num_rows > 0){
                     $row2 = $res2->fetch_assoc();
+                    
                     echo '<option value="'. $row["SensorID"].'" > '.( $row2["Description"]).' '.($row["Ind"]).'</otpion>'.PHP_EOL;
                 }
                 else{
@@ -65,5 +81,39 @@
         }
 
     }
+
+    elseif($action == 3){
+        $UUID = $_POST['UUID'];
+        $name = $_POST['Nickname'];
+
+        $query = sprintf($update_nickname, $name, $UUID);
+        $cnx->query($query);
+
+        echo "OK";
+    }
+
+    elseif($action == 4){
+        $result = $cnx->query($get_sensor);
+
+        if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+  
+            echo '<tr>
+            <td>' .($row["UUID"]).'</td>
+            <td>  <input type="text" id="edit_'.($row["UUID"]).'" value="'.($row["Nickname"]).'" disabled></td>
+            <td>' .($row["ADDR"]).'</td>
+            <td>' .($row["SENSOR_N"]).'</td>
+            <td>' .($row["L_CONECTION"]).'</td>
+            <td> <button type="button" class="EDBTN" value="'.($row["UUID"]).'">Edit</button>
+          </tr>';
+  
+          }
+        }
+        else {
+          echo "0 results";
+        }
+    }
+
 
 ?>
