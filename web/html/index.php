@@ -94,7 +94,7 @@
 
           </div>
 
-          <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+          <div class="my-4" id="myChart"style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
           <h2>Section title</h2>
           <div class="table-responsive">
@@ -173,6 +173,8 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script type="text/javascript" src="js/dataloader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
 
   </body>
 </html>

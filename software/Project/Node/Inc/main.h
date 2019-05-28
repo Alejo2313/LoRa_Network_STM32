@@ -36,6 +36,9 @@ void bitClear(uint32_t* flag, uint8_t bit);
 void bitSet(uint32_t* flags, uint8_t bit);
 int bitTest(uint32_t* flags, uint8_t bit);
 void clearFlags(uint32_t* flags);
+void init_board();
+void en_board();
+void dis_board();
 
 //FSM
 void join(fsm_t* fsm);

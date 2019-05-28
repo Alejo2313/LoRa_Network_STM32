@@ -15,8 +15,7 @@ baudrate = 115200
 try:
     ser = serial.Serial(port,baudrate)
 except serial.SerialException:
-    print("Hola")
-   # sys.exit("Error opening port! so, closing...")
+    sys.exit("Error opening port! so, closing...")
 
 #while(ser.is_open != True):
 
@@ -32,8 +31,8 @@ count = 0
 
 while 1:
 
-  #  tdata = ser.readline().decode('utf-8')       # Wait forever for anything
-    tdata = input()
+    tdata = ser.readline().decode('utf-8')       # Wait forever for anything
+ #   tdata = input()
 
     print(str(tdata))
     
@@ -58,11 +57,12 @@ while 1:
             cursor.execute(get_def_config)
             config = cursor.fetchone()
 
-          #  ser.write(chr(addr[0]).encode())
+            ser.write(chr(addr[0]).encode())
 
-            for val in config:
-            #    ser.write(chr(val).encode())
-                print(str(val) + " ", end = '')
+            if config != None:
+                for val in config:
+                # ser.write(chr(val).encode())  #TODO finish it
+                    print(str(val) + " ", end = '')
 
             print("\n address " + str(addr[0]))
 
@@ -81,11 +81,12 @@ while 1:
             cursor.execute(get_config, (UUID,))
             config = cursor.fetchone()
 
-            for val in config:
-            #    ser.write(chr(val).encode())
-                print(str(val) + " ", end = '')
+            if(config != None):
+                for val in config:
+                    #ser.write(chr(val).encode()) -> #TODO finish it
+                    print(str(val) + " ", end = '')
 
-            #ser.write(chr(addr[0]).encode())
+            ser.write(chr(addr[0]).encode())
 
             print("\n address" + str(addr[0]))
             cursor.execute(upd_addr, (UUID, date, addr[0]) )
@@ -103,13 +104,13 @@ while 1:
         cursor.execute(is_update, (UUID,))
 
         if cursor.fetchone()[0] == 1:
-            cursor.execute(get_config, (UUID,))
+            cursor.execute(get_config,1 (UUID,))
             config = cursor.fetchone()
 
             print("ADDRESS " + str(addr))
             for val in config:
-                #    ser.write(chr(val).encode())
-                    print(str(val) + " ", end = '')
+                ser.write(chr(val).encode()) #TODO ->FINISH IT
+                print(str(val) + " ", end = '')
             
             cursor.execute(unset_update, (UUID,))
 

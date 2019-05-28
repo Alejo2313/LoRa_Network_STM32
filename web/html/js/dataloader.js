@@ -22,6 +22,46 @@ function updateNodeList(){
 }
 
 function updateChart(labels, values){
+    Highcharts.chart('myChart', {
+        chart: {
+          type: 'line'
+        },
+        title: {
+          text: 'Monthly Average Temperature'
+        },
+        subtitle: {
+          text: 'Source: WorldClimate.com'
+        },
+        xAxis: {
+          categories: null
+        },
+        yAxis: {
+          title: {
+            text: 'Temperature (°C)'
+          }
+        },
+        plotOptions: {
+          line: {
+            dataLabels: {
+              enabled: false
+            },
+            enableMouseTracking: false
+          }
+        },
+        series: [{
+          name: 'nn',
+          data: values
+        }]
+      });
+
+
+
+}
+
+
+
+
+function updateChart2(labels, values){
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
       type: 'line',

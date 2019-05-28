@@ -351,7 +351,7 @@ void processJoin(Packet_t* inData){
 
 	TxData->devDest = Trace_get_data(); 		//ToDo have to be random 
 
-
+	
 	TxData->MacType = CONFIG;
 	TxData->flags = 0;
 

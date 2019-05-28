@@ -94,6 +94,22 @@
 #define EXT_ADC_SPI_ALT             GPIO_AF0_SPI2
 #define EXT_ADC_SPI_PORT            GPIOB
 
+/* BOARD GPIO CONFIG */
+
+
+#define BOARD_PORT                  GPIOA_BASE     
+#define BOARD_PIN_EN                GPIO_PIN_2
+
+
+#define ANALOG_PORT_1               GPIOA_BASE
+#define ANALOG_EN_PIN_1             GPIO_PIN_5
+
+#define ANALOG_PORT_2               GPIOA_BASE
+#define ANALOG_EN_PIN_2             GPIO_PIN_8
+
+#define ANALOG_PORT_3               GPIOA_BASE
+#define ANALOG_EN_PIN_3             GPIO_PIN_9
+
 
 /* --------------------------- RTC HW definition -------------------------------- */
 

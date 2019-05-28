@@ -16,7 +16,7 @@ static bool McuInitialized = false;
 void HW_Init( void )
 {
   if( McuInitialized == false )
-  {
+  { 
 #if defined( USE_BOOTLOADER )
     /* Set the Vector Table base location at 0x3000 */
     NVIC_SetVectorTable( NVIC_VectTab_FLASH, 0x3000 );
