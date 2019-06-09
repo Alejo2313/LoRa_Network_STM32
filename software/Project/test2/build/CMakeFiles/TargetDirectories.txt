@@ -1,3 +1,0 @@
-/home/alejo/Documents/LoRa_Project_v1/software/Project/test2/build/CMakeFiles/rebuild_cache.dir
-/home/alejo/Documents/LoRa_Project_v1/software/Project/test2/build/CMakeFiles/LoRaNODE.elf.dir
-/home/alejo/Documents/LoRa_Project_v1/software/Project/test2/build/CMakeFiles/edit_cache.dir
