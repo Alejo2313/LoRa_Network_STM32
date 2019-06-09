@@ -121,13 +121,13 @@ while 1:
             index =  5
             for sensor in cursor.fetchall():
 
-                value = ''
-
-                for i in range(sensor[1]):
-                    value = value + splited[index]
+                value = int(splited[index], 16)
+                index = index +1
+                for i in range(sensor[1] - 1):                   
+                    value = (value << 8) | int(splited[index], 16)
                     index = index + 1
-                
-                cursor.execute(add_value, (sensor[0], date, int(value, 16)) )
+                    
+                cursor.execute(add_value, (sensor[0], date, value) )
                 cursor.execute(upd_addr, (UUID, date, addr) )
                 cursor.execute(upd_node_date, (date, UUID) )
                 

@@ -29,7 +29,7 @@ add_sensors =   (   "INSERT INTO USensors "
 
 add_value   =   (   "INSERT INTO SensorVals "
                     "(SensorID, Date, Val) "
-                    "VALUES (%s, %s,%s, %s) "
+                    "VALUES (%s, %s,%s) "
                 )
 
 get_sensors =   (   "SELECT SensorID, Size FROM USensors "

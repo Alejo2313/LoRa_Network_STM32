@@ -3,21 +3,20 @@
 
 
 #include <stdint.h>
+#include "hw.h"
 
 
-
-
-enum register{
+typedef enum {
     RFU     = 0x00,             // RFU, Reserved for Future Use (Read-Only register)
-    CONFIG  = 0x01,             // Configuration registe
+    M_CONFIG  = 0x01,             // Configuration registe
     TUPPER  = 0x02,             // Alert Temperature Upper Boundary Trip register
     TLOWER  = 0x03,             // Alert Temperature Lower Boundary Trip register
     TCRIT   = 0x04,             // Critical Temperature Trip register
     TEMP    = 0x05,             // Temperature register 
     MANID   = 0x06,             // Manufacturer ID registe
     DEVID   = 0x07,             // Device ID/Revision register
-    RESREG  = 0x08,             // Resolution register
-}
+    RESREG  = 0x08              // Resolution register
+}Mregister_t;
 
 typedef enum{
     HYST_1  = 0x00,             // 0º Power-up default
@@ -25,7 +24,7 @@ typedef enum{
     HYST_3  = 2 << 9,           // +3.0º
     HYST_4  = 3 << 9,           // +6.0º
 
-}hyst_t
+}hyst_t;
 
 typedef enum{
     SHUTDOWN    = 1 << 8,           // Enter in low-power mdoe
@@ -44,7 +43,9 @@ typedef enum{
     RES_3,                          // +0.125°C (tCONV = 130 ms typical)
     RES_4                           // +0.0625°C (power-up default, tCONV = 250 ms typical)
 }Resolution_t;
+
 typedef enum{
+    STATUS_0    = 0,
     STATUS_1    = 1 << 15,          // Ta > Tcrit
     STATUS_2    = 1 << 14,          // Ta > Tupper
     STATUS_3    = 1<< 13            // Ta < Tlower
@@ -61,7 +62,7 @@ typedef struct
 }MCP9808_config_t;
 
 
-union Data{
+static union Data{
     uint32_t r1;
     float  r2;
 }data;
@@ -69,27 +70,27 @@ union Data{
 //Config funtions
 
 void MCP9808_Init(MCP9808_config_t* config);
-
+void MCP9808_setConfig(MCP9808_config_t* config);
 void MCP9808_SetHysteresis(hyst_t hyst);
-void MCP9808_LowPower(bool set);
-void MCP9808_LockWindow(bool set);
+void MCP9808_LowPower(uint8_t set);
+void MCP9808_LockWindow(uint8_t set);
 void MCP9808_ClearInterrupt();
-void MCP9808_EnableInterrupt(bool set);
+void MCP9808_EnableInterrupt(uint8_t set);
 void MCP9808_SetConfigOptions(uint16_t options);
 
 
 
-void MCP9808_SetUpperTemp(int temp)
-void MCP9808_SetLowerTemp(int temp)
-int MCP9808_GetUpperTemp();
-int MCP9808_GetUpperTemp();
+void MCP9808_SetUpperTemp(float temp);
+void MCP9808_SetLowerTemp(float temp);
+float MCP9808_GetUpperTemp();
+float MCP9808_GetUpperTemp();
 
-TempStatus_t MCP9808_GetTemp(int* temp);
+TempStatus_t MCP9808_GetTemp(float* temp);
 
-uint_16 MCP9808_GetManId();
-uint_16 MCP9808_GetDevId();
+uint16_t MCP9808_GetManId();
+uint16_t MCP9808_GetDevId();
 
-void MCP9808_SetResolution();
+void MCP9808_SetResolution(Resolution_t resolution);
 
 
 #endif

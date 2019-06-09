@@ -162,6 +162,12 @@ mlm32l0xx_hw_conf.h
 hw.h
 ../../global/Core/utils/inc/hw.h
 
+../../global/Core/utils/inc/Thermo.h
+extADC.h
+-
+MCP9808.h
+-
+
 ../../global/Core/utils/inc/circular.h
 stdint.h
 -
@@ -463,6 +469,12 @@ stdint.h
 -
 cmsis_compiler.h
 ../../global/Drivers/CMSIS/Include/cmsis_compiler.h
+
+../../global/Drivers/MCP9808/inc/MCP9808.h
+stdint.h
+-
+hw.h
+../../global/Drivers/MCP9808/inc/hw.h
 
 ../../global/Drivers/STM32L0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 
@@ -1029,8 +1041,12 @@ stm32l0xx_hal.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/stm32l0xx_hal.h
 extADC.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/extADC.h
+MCP9808.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/MCP9808.h
 hw_gpio.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/hw_gpio.h
+Thermo.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/Node/Src/Thermo.h
 
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/BOARDS/B-L072Z-LRWAN1/src/mlm32l0xx_hal_msp.c
 hw.h
@@ -1073,6 +1089,10 @@ hw.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c
 LowPower.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.h
+
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c
+Thermo.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.h
 
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c
 circular.h
@@ -1179,6 +1199,10 @@ sx1276Regs-LoRa.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c
 stm32l0xx.h
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/stm32l0xx.h
+
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c
+MCP9808.h
+/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.h
 
 /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c
 stm32l0xx_hal.h

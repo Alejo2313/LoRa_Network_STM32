@@ -2,12 +2,18 @@
 #include "stm32l0xx_hal.h"
 
 #include "extADC.h"
-
+#include "MCP9808.h"
 #include "hw_gpio.h"
+#include "Thermo.h"
+
+
+
+#define THERMOC 	CHANNEL_5
+#define BATTERYC	CHANNEL_1	
+
 /*varibles*/
 
 
-static ExtChannel_t channels[4] = {CHANNEL_2, CHANNEL_3, CHANNEL_5, CHANNEL_7};
 
 static item_t items[] ={
 						{TEMPERATURE	,2},
@@ -109,7 +115,7 @@ int main(void){
 
 
 	xTaskCreate(main_task, "PWM", 256, NULL, osPriorityNormal, NULL);
-	xTaskCreate(led_blink, "LED", 128, NULL, osPriorityNormal, NULL);
+//	xTaskCreate(led_blink, "LED", 128, NULL, osPriorityNormal, NULL);
 	vTaskStartScheduler();
 	while(1){
 	}
@@ -521,8 +527,40 @@ void measure(fsm_t* fsm){
 
 	TxData->pSize = 12; 
 
+	float temp= 0;
+	MCP9808_GetTemp(&temp);
+
+	uint16_t val = (uint16_t)(temp*10);
+
+	TxData->pData[cnt2++] = 0;
+	TxData->pData[cnt2++] = (val&0xFF00 ) >> 8;
+	TxData->pData[cnt2++] = val&0xFF;
+
+	temp = ExtADC_ReadTempSensor();
+	val = (uint16_t)(temp*10);
+
+	TxData->pData[cnt2++] = 0;
+	TxData->pData[cnt2++] = (val&0xFF00 ) >> 8;
+	TxData->pData[cnt2++] = val&0xFF;
 
 
+	val = therm_getTemp(CHANNEL_15);
+
+	TxData->pData[cnt2++] = 0;
+	TxData->pData[cnt2++] = (val&0xFF00 ) >> 8;
+	TxData->pData[cnt2++] = val&0xFF;
+
+
+	val = ExtADC_ReadVoltageInput(BATTERYC);
+
+	TxData->pData[cnt2++] = 0;
+	TxData->pData[cnt2++] = (val&0xFF00 ) >> 8;
+	TxData->pData[cnt2++] = val&0xFF;
+	
+  
+
+
+/*
 	for(cnt1 = 0; cnt1 < 4 ; cnt1++){
 		res.all = (int)(ExtADC_ReadVoltageInput(channels[cnt1]));
 		
@@ -531,7 +569,7 @@ void measure(fsm_t* fsm){
 		TxData->pData[cnt2++] = res.bytes[1];
 		TxData->pData[cnt2++] = res.bytes[0];
 	}
-
+*/
 
 
 	bitSet(fsm->flags, MEASURE_OK);
@@ -681,7 +719,7 @@ void restart(fsm_t* fsm){
 }
 
 void retryoin(fsm_t* fsm){
-	
+	 
 	bitClear(fsm->flags, RX_TIMEOUT);
 	bitClear(fsm->flags, RX_ERROR);
 	bitClear(fsm->flags, CONF_ERROR);
@@ -690,7 +728,17 @@ void retryoin(fsm_t* fsm){
 
 
 	vTaskDelay(500/portTICK_RATE_MS);
-}
+
+	float temp = ExtADC_ReadTempSensor(); 
+	uint16_t id = MCP9808_GetManId();
+	MCP9808_GetTemp(&temp);
+	temp = ExtADC_ReadVoltageInput(CHANNEL_5);
+	vTaskDelay(100/portTICK_RATE_MS);
+
+	uint16_t te = therm_getTemp(CHANNEL_5);
+
+	vTaskDelay(100/portTICK_RATE_MS);
+
 
 #else
 	powerDownPheri();
@@ -705,25 +753,18 @@ void retryoin(fsm_t* fsm){
 //--------------> begin System task functions <--------------//
 
 void main_task(void* param){
-	static extADC_t config;
 
-	config.gain 	= EXTADC_GAIN_1;
-	config.negative = CHANNEL_6;
-	config.mode		= DIFFERENTIAL;
+	therm_init();
+	therm_config(TYPE_T, CHANNEL_15, CHANNEL_16);
 
-	ExtADC_Init();        //ToDo -> re init after low power mode
+	extADC_t config;
 
-	ExtADC_ConfigChannel(CHANNEL_5, &config);
+	config.gain = EXTADC_GAIN_1;
+	config.mode = PSEUDO;
+	config.ExtConfigOptions = UNIPOLAR;
 
-	config.negative = CHANNEL_8;
 
-	ExtADC_ConfigChannel(CHANNEL_7, &config);
-
-	config.mode		= PSEUDO;
-	config.ExtConfigOptions =  UNIPOLAR;
-
-	ExtADC_ConfigChannel(CHANNEL_2, &config);
-
+	ExtADC_ConfigChannel(BATTERYC, &config);
 
 	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
 
@@ -783,9 +824,7 @@ void init_board(){
 
 
 void en_board(){
-
 	HAL_GPIO_WritePin(BOARD_PORT, BOARD_PIN_EN, GPIO_PIN_SET);
-
 }
 
 void dis_board(){

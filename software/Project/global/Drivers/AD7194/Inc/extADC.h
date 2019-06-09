@@ -248,6 +248,8 @@ ExtMode_t ExtADC_GetMode ( ExtChannel_t channel );
 /* Check if is data available */
 int ExtADC_DataReady (ExtChannel_t channel);
 
+void ExtADC_shutdown();
+
 
 #endif //_EXT_ADC_H_
 

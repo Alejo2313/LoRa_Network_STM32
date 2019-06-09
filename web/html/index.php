@@ -94,7 +94,7 @@
 
           </div>
 
-          <div class="my-4" id="myChart"style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+          <canvas class="my-4" id="myChart"style="min-width: 310px; height: 400px; margin: 0 auto"></canvas>
 
           <h2>Section title</h2>
           <div class="table-responsive">

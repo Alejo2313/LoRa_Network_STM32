@@ -21,7 +21,7 @@ function updateNodeList(){
     });
 }
 
-function updateChart(labels, values){
+function updateChart2(labels, values){
     Highcharts.chart('myChart', {
         chart: {
           type: 'line'
@@ -33,7 +33,7 @@ function updateChart(labels, values){
           text: 'Source: WorldClimate.com'
         },
         xAxis: {
-          categories: null
+          categories: labels
         },
         yAxis: {
           title: {
@@ -61,7 +61,7 @@ function updateChart(labels, values){
 
 
 
-function updateChart2(labels, values){
+function updateChart(labels, values){
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
       type: 'line',

@@ -176,16 +176,16 @@ uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 float ExtADC_ReadVoltageInput ( ExtChannel_t channel)
 {
 	static uint32_t 	code  	= 0;
-	static float 		voltage = 0;
+	static double 		voltage = 0;
 
 	code = 0;
 	voltage = 0;
-
+  
 	code = ExtADC_ReadAnalogInput ( channel );
 	/* CODE = 2^(N-1) * [(AIN * Gain/V_ref) +1]
 	 * AIN 	= ((CODE / 2^(N-1)) -1 ) * (V_ref/Gain)
 	 */
-	if (channelConfig[channel].mode == DIFFERENTIAL)
+	if (!(channelConfig[channel].ExtConfigOptions & UNIPOLAR))
 	{
 		voltage = (float) code / (float) EXTADC_HALF_RESOL;
 		voltage -= 1.0;
@@ -274,6 +274,8 @@ float ExtADC_ReadTempSensor ( void )
  */
 void ExtADC_loadConfigReg(uint8_t* buffer, ExtChannel_t channel){
 	static t_u32_in_4 res;
+
+	res.all = 0;
 
 	res.all = 1 << 23;
 	res.all |= channelConfig[channel].gain & 0x7;
