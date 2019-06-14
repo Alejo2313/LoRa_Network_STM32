@@ -42,7 +42,7 @@ void spi_init ( void ){
 
 	GPIO_InitStructure.Pin  = EXT_ADC_NSS_PIN;
   GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStructure.Pull = GPIO_PULLUP;
+	GPIO_InitStructure.Pull = GPIO_NOPULL;
   
 	HAL_GPIO_Init(EXT_ADC_NSS_PORT, &GPIO_InitStructure);
 	spi_disNSS();
@@ -74,19 +74,42 @@ void spi_init ( void ){
 void spi_deInit ( void )
 {
 
-  /* Deconfig GPIOs */
-  /* Deconfigure SCK as Alternative Function PP */
-  HAL_GPIO_DeInit(EXT_ADC_SCK_PORT, EXT_ADC_SCK_PIN);
+  __HAL_RCC_GPIOB_CLK_DISABLE();
+  __HAL_RCC_SPI2_CLK_DISABLE();
 
-  /* Deinitialize previous SPI configurations */
+  __HAL_RCC_SPI2_FORCE_RESET();
+  __HAL_RCC_SPI2_RELEASE_RESET();
+
+
   if(HAL_SPI_DeInit(&SPI_Handle) != HAL_OK)
   {
     while(1);
   }
 
-  /* Deselect extADC module on SPI bus */
-  HAL_GPIO_WritePin(EXT_ADC_NSS_PORT, EXT_ADC_NSS_PIN, GPIO_PIN_SET);
+  
+
+  GPIO_InitTypeDef initStruct={0};
+    
+  initStruct.Mode =GPIO_MODE_OUTPUT_PP;
+
+  initStruct.Pull =GPIO_NOPULL  ; 
+  HW_GPIO_Init ( EXT_ADC_SPI_PORT, EXT_ADC_MOSI_PIN, &initStruct ); 
+  HW_GPIO_Write( EXT_ADC_SPI_PORT, EXT_ADC_MOSI_PIN, 0 );
+  
+  initStruct.Pull =GPIO_PULLDOWN; 
+  HW_GPIO_Init ( EXT_ADC_SPI_PORT, EXT_ADC_MISO_PIN, &initStruct ); 
+  HW_GPIO_Write( EXT_ADC_SPI_PORT, EXT_ADC_MISO_PIN, 0 );
+  
+  initStruct.Pull =GPIO_NOPULL  ; 
+  HW_GPIO_Init ( EXT_ADC_SPI_PORT, EXT_ADC_SCK_PIN, &initStruct ); 
+  HW_GPIO_Write(  EXT_ADC_SPI_PORT, EXT_ADC_SCK_PIN, 0 );
+
+  initStruct.Pull =GPIO_NOPULL  ; 
+  HW_GPIO_Init ( EXT_ADC_SPI_PORT, EXT_ADC_NSS_PIN , &initStruct ); 
+  HW_GPIO_Write( EXT_ADC_SPI_PORT, EXT_ADC_NSS_PIN , 0 );
 }
+
+
 
 void spi_enNSS(){
 	HAL_GPIO_WritePin(EXT_ADC_NSS_PORT, EXT_ADC_NSS_PIN, GPIO_PIN_RESET);

@@ -1,0 +1,6 @@
+<div class="container">
+
+    To all Cases, in Law and Equity, arising under this Constitution, the Laws of the Union, and recommend to their Enemies, giving them Aid and Comfort. No Title of Nobility shall be President of the Senate, shall appoint Ambassadors, other public Ministers and Consuls, Judges of the supreme Court, and all other Officers of the United States which shall be Commander in Chief of the Army and Navy of the Militia of the several State Legislatures, and all Treaties made, or which shall be a Party. A quorum for this Purpose shall consist of a Member or Members from two thirds of that House, it shall have originated, who shall flee from Justice, and be found in another State, shall on demand of the land and naval Forces. Neither shall any person be eligible to the Time of chusing the President, the Person having the greatest Number of Senators and Representatives, shall be prescribed in each State shall have the Qualifications requisite for Electors of the Fourteenth Amendment. The Seats of the Militia of the several States which shall be made in Pursuance thereof. No person except a natural born Citizen, or a Citizen of the executive Departments, upon any subject relating to the State having Jurisdiction of the Crime.
+
+
+</div>

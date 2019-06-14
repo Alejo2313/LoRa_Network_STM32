@@ -24,11 +24,11 @@
 /****** CONFIGURATION ***************/
 
 #define RF_FREQUENCY		                        868000000	    //Europe band
-#define TX_OUTPUT_POWER_DF		                    14				//dBm
+#define TX_OUTPUT_POWER_DF		                    17				//dBm
 
 /*Lora settings */
 
-#define LORA_BANDWIDTH_DF                           0         // [0: 125 kHz,
+#define LORA_BANDWIDTH_DF                           2         // [0: 125 kHz,
                                                               //  1: 250 kHz,
                                                               //  2: 500 kHz,
                                                               //  3: Reserved]

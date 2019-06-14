@@ -14,6 +14,7 @@
 #define PAIRS 6
 #define ANALOGS 3
 
+#define debug 1
 
 /*varibles*/
 
@@ -57,6 +58,8 @@ static int8_t	SfTx    = LORA_SPREADING_FACTOR_DF;		//Actual Spreading factor
 static uint16_t Bw      = LORA_BANDWIDTH_DF;	        //Actual bandwidth		
 static uint8_t	TxPower = TX_OUTPUT_POWER_DF;           //Actual out power
 
+TickType_t tick = 0;
+float tmp = 0.0;
 //Private
 
 static config_t  Configuration;						    // Main configuration 
@@ -123,10 +126,13 @@ int main(void){
 	UUID = 99;
 	HAL_Init();
 
-	ExtADC_Init();
-	ExtADC_Reset();
+
 
 	wakeUpSystem();
+
+
+	ExtADC_Init();
+	ExtADC_Reset();
 
 	Config_Load();
 
@@ -325,6 +331,9 @@ void wakeUpSystem(){
 	radio_init();
 	init_board();
 	en_board();
+
+	ExtADC_Init();
+	ExtADC_Reset();
 #ifdef DEBUG
 	Trace_Init();
 #endif
@@ -335,6 +344,7 @@ void powerDownPheri(){
 	HW_DeInit();
 	Radio.Sleep();
 	dis_board();
+	ExtADC_DeInit();
 }
 
 /**
@@ -550,8 +560,13 @@ void measure(fsm_t* fsm){
 	uint16_t val = 0;
 
 
+	tick = xTaskGetTickCount(  );
 	for(cont = 0; cont < PAIRS; cont++){
+		
+
 		val = therm_getTemp(channels_p[cont]);
+
+		
 
 		TxData->pData[cnt2++] = 0;
 		TxData->pData[cnt2++] = (val&0xFF00 ) >> 8;
@@ -559,6 +574,8 @@ void measure(fsm_t* fsm){
 
 	}
 
+	
+	tmp = (float)(xTaskGetTickCount() - tick)/portTICK_RATE_MS;
 	cont = 0;
 
 	for(cont = 0; cont < ANALOGS; cont++){
@@ -570,6 +587,7 @@ void measure(fsm_t* fsm){
 
 	}
 
+	tmp = (float)(xTaskGetTickCount() - tick)/portTICK_RATE_MS;
 
 
 
@@ -654,7 +672,12 @@ void send(fsm_t* fsm){
 
 	memcpy(sendData, TxData->pData, TxData->pSize);
 	//send data
-	Radio.Send(sendData - HEAD_SIZE , totalSize);
+
+	tick = xTaskGetTickCount();
+	
+	while(1)
+		Radio.Send(sendData - HEAD_SIZE , totalSize);
+		
 	vPortFree(sendData - HEAD_SIZE);
 
 #ifdef debug
@@ -798,83 +821,84 @@ void retryoin(fsm_t* fsm){
 //--------------> end fsm functions <--------------//
 
 //--------------> begin System task functions <--------------//
-void main_task(void* param){
-
-	static float temp1 = 0, temp2 = 0, analog = 0;
-	uint16_t manId;
-
-	//init hardware
-	therm_init();
-	ExtADC_Init();
-	ExtADC_Reset();
-
-	//Config channel
-	extADC_t config;
-
-	config.gain = EXTADC_GAIN_1;
-	config.mode = PSEUDO;
-	config.ExtConfigOptions = UNIPOLAR;
-
-	ExtADC_ConfigChannel(BATTERYC, &config);
-
-	while(1){
-		temp1 = ExtADC_ReadTempSensor();
-		analog = ExtADC_ReadVoltageInput(CHANNEL_1);
-
-		manId = MCP9808_GetManId();
-		MCP9808_GetTemp(&temp2);
-
-		vTaskDelay(1000/portTICK_RATE_MS);
-
-	}
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // void main_task(void* param){
 
+// 	static float temp1 = 0, temp2 = 0, analog = 0;
+// 	uint16_t manId;
+
+// 	//init hardware
 // 	therm_init();
+// 	ExtADC_Init();
+// 	ExtADC_Reset();
 
-// 	uint8_t cont = 0;
-
-// 	for(cont = 0; cont < PAIRS; cont++){
-// 		therm_config(TYPE_T, channels_p[cont], channels_n[cont]);
-// 	}
-
+// 	//Config channel
 // 	extADC_t config;
-
 
 // 	config.gain = EXTADC_GAIN_1;
 // 	config.mode = PSEUDO;
 // 	config.ExtConfigOptions = UNIPOLAR;
 
-
 // 	ExtADC_ConfigChannel(BATTERYC, &config);
 
-// 	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
-
-// 	//
 // 	while(1){
-// 		fsm_fire(fsm_lora);
+// 		temp1 = ExtADC_ReadTempSensor();
+// 		analog = ExtADC_ReadVoltageInput(CHANNEL_1);
+
+// 		manId = MCP9808_GetManId();
+// 		MCP9808_GetTemp(&temp2);
+
+// 		vTaskDelay(1000/portTICK_RATE_MS);
+
 // 	}
 	
-// 	//TODO -> complete this function
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void main_task(void* param){
+
+	therm_init();
+
+	uint8_t cont = 0;
+
+	for(cont = 0; cont < PAIRS; cont++){
+		therm_config(TYPE_T, channels_p[cont], channels_n[cont]);
+	}
+
+	extADC_t config;
+
+
+	config.gain = EXTADC_GAIN_1;
+	config.mode = PSEUDO;
+	config.ExtConfigOptions = UNIPOLAR;
+
+
+	ExtADC_ConfigChannel(BATTERYC, &config);
+
+	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
+
+	//
+	while(1){
+		fsm_fire(fsm_lora);
+	}
+	
+	//TODO -> complete this function
+}
+
 
 void led_blink(void* param){
 
@@ -928,5 +952,5 @@ void en_board(){
 }
 
 void dis_board(){
-	//HAL_GPIO_WritePin(BOARD_PORT, BOARD_PIN_EN, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(BOARD_PORT, BOARD_PIN_EN, GPIO_PIN_RESET);
 }

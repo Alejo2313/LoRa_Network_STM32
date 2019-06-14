@@ -56,7 +56,7 @@ while 1:
 
             cursor.execute(get_def_config)
             config = cursor.fetchone()
-
+  
             ser.write(chr(addr[0]).encode())
 
             if config != None:

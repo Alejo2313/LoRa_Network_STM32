@@ -114,6 +114,39 @@
           echo "0 results";
         }
     }
+    elseif($action == 5){
+        $SensorID = $_POST['SensorID'];
+
+        $query = sprintf($get_sensor_values, $SensorID);
+
+        //echo $query; 
+
+        $result = $cnx->query($query);
+
+        if ($result->num_rows > 0) {
+            
+            $file = "test.txt";
+            $txt = fopen($file, "w") or die("Unable to open file!");
+            
+            while($row = $result->fetch_assoc()) {
+                $tmp = sprintf("%s %u \n",  $row['Date'] ,  $row['Val']);
+                fwrite($txt, $tmp);
+            }
+
+            fclose($txt);
+
+            header('Content-Description: File Transfer');
+            header('Content-Disposition: attachment; filename='.basename($file));
+            header('Expires: 0');
+            header('Cache-Control: must-revalidate');
+            header('Pragma: public');
+            header('Content-Length: ' . filesize($file));
+            header("Content-Type: text/plain");
+            readfile($file);
+
+        }
+
+    }
 
 
 ?>

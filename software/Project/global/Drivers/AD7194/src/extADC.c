@@ -53,24 +53,32 @@ uint8_t ExtADC_GetRegSize(uint8_t reg);
 
 void ExtADC_Init ( void )
 {
+	static init = 0;
 	uint8_t aux = 0;
 
 	uint8_t buffer[3];
 
-	for(aux = 0; aux < NUM_CHANNELS; aux++){
-		channelConfig[aux].gain = EXTADC_GAIN_1;
-		channelConfig[aux].mode = PSEUDO;
-		channelConfig[aux].negative = AINCOM;
-		channelConfig[aux].ExtConfigOptions = 0;
+
+
+	if(!init){
+		init = 1;
+		for(aux = 0; aux < NUM_CHANNELS; aux++){
+			channelConfig[aux].gain = EXTADC_GAIN_1;
+			channelConfig[aux].mode = PSEUDO;
+			channelConfig[aux].negative = AINCOM;
+			channelConfig[aux].ExtConfigOptions = 0;
+		}
+
+		mode.mode = SINGLE;
+		mode.clk  = INTERNAL;
+		mode.average = AVG_0;
+		mode.filterSelect = 0x60;
+		mode.ExtModeOptions = 0;
+
 	}
 
-	spi_init();
 
-	mode.mode = SINGLE;
-	mode.clk  = INTERNAL;
-	mode.average = AVG_0;
-	mode.filterSelect = 0x60;
-	mode.ExtModeOptions = 0;
+	spi_init();
 
 
 	ExtADC_loadModeReg(buffer);
@@ -164,7 +172,19 @@ uint32_t ExtADC_ReadAnalogInput ( ExtChannel_t channel ) {
 
 }
 
+void ExtADC_shutdown(){
+	uint8_t buffer[3];
+	uint8_t temp = mode.mode;
 
+	mode.mode = POWER_DOWN;
+
+	ExtADC_loadModeReg(buffer);
+	ExtADC_WriteRegister(MODE_REG, buffer);
+
+	mode.mode = temp;
+
+
+}
 
 /**
  * @brief Read voltage 
@@ -215,7 +235,7 @@ float ExtADC_ReadVoltageInput ( ExtChannel_t channel)
  * @return float data readed
  */
 float ExtADC_ReadTempSensor ( void )
-{
+{   
 	static uint32_t data = 0;
 	static uint16_t counter = 0;
 	static float temp = 0;

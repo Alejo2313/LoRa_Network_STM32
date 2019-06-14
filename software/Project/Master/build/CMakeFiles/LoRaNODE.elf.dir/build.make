@@ -2049,9 +2049,33 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c > CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.i: cmake_force
@@ -2075,7 +2099,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.i: cmake_force
@@ -2099,7 +2123,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.i: cmake_force
@@ -2123,7 +2147,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/timeServer.c.i: cmake_force
@@ -2147,7 +2171,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/trace.c.i: cmake_force
@@ -2171,7 +2195,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.i: cmake_force
@@ -2195,7 +2219,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_gpio.c.i: cmake_force
@@ -2219,7 +2243,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.i: cmake_force
@@ -2243,7 +2267,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.i: cmake_force
@@ -2267,7 +2291,7 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.i: cmake_force
@@ -2289,9 +2313,81 @@ CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Projec
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj
 
 
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c > CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c > CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj   -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c > CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s"
+	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.requires:
+
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.requires
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.provides: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.requires
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.provides.build
+.PHONY : CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.provides
+
+CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.provides.build: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj
+
+
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj: CMakeFiles/LoRaNODE.elf.dir/flags.make
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj: /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building ASM object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building ASM object CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj"
 	/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj -c /home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s
 
 CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj.requires:
@@ -2390,6 +2486,7 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/Src/freertos.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/Src/main.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj" \
@@ -2400,6 +2497,9 @@ LoRaNODE_elf_OBJECTS = \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj" \
+"CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj" \
 "CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj"
 
 # External object files for target LoRaNODE.elf
@@ -2488,6 +2588,7 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/s
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Src/freertos.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/Src/main.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj
@@ -2498,10 +2599,13 @@ LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/s
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/build.make
 LoRaNODE.elf: CMakeFiles/LoRaNODE.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable LoRaNODE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking C executable LoRaNODE.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LoRaNODE.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/LoRaNODE.hex "
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/alejo/Documents/LoRa_Project_v1/software/Project/Master/build/LoRaNODE.bin"
@@ -2596,6 +2700,7 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Doc
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Src/freertos.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/Src/main.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/fsm.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/queue_c.c.obj.requires
@@ -2606,6 +2711,9 @@ CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Doc
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_rtc.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_spi.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/hw/src/hw_uart.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj.requires
+CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj.requires
 CMakeFiles/LoRaNODE.elf.dir/requires: CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/gcc/startup_stm32l072xx.s.obj.requires
 
 .PHONY : CMakeFiles/LoRaNODE.elf.dir/requires

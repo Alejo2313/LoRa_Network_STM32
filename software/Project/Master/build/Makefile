@@ -393,6 +393,33 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowP
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.c.s
 
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.c.s
+
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.c.obj
 
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj
@@ -555,6 +582,60 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/util
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.c.s
 
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.c.s
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.c.s
+
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.c.obj
 
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj
@@ -671,6 +752,33 @@ home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Devic
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s:
 	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
 .PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.c.s
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.obj
+
+# target to build an object file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.obj
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.i: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.i
+
+# target to preprocess a source file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.i
+
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.s: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s
+
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.s
+
+# target to generate assembly for a file
+home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s:
+	$(MAKE) -f CMakeFiles/LoRaNODE.elf.dir/build.make CMakeFiles/LoRaNODE.elf.dir/home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s
+.PHONY : home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.c.s
 
 home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.obj: home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj
 
@@ -2682,6 +2790,9 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/LowPower.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/Thermo.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/circular.s"
@@ -2700,6 +2811,12 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Core/utils/src/utilities.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/platform/STM32/src/custom_spi.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/AD7194/src/extADC.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.s"
@@ -2713,6 +2830,9 @@ help:
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/CMSIS/Device/ST/STM32L0xx/Source/Templates/system_stm32l0xx.s"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.obj"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.i"
+	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/MCP9808/src/MCP9808.s"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.obj"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.i"
 	@echo "... home/alejo/Documents/LoRa_Project_v1/software/Project/global/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.s"

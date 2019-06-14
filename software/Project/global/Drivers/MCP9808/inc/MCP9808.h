@@ -62,6 +62,8 @@ typedef struct
 }MCP9808_config_t;
 
 
+
+
 static union Data{
     uint32_t r1;
     float  r2;
@@ -69,6 +71,8 @@ static union Data{
 
 //Config funtions
 
+
+void MCP9808_DeInit();
 void MCP9808_Init(MCP9808_config_t* config);
 void MCP9808_setConfig(MCP9808_config_t* config);
 void MCP9808_SetHysteresis(hyst_t hyst);

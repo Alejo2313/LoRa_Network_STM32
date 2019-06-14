@@ -13,6 +13,7 @@
 
 /*varibles*/
 
+#define debug
 
 
 static item_t items[] ={
@@ -754,17 +755,17 @@ void retryoin(fsm_t* fsm){
 
 void main_task(void* param){
 
-	therm_init();
-	therm_config(TYPE_T, CHANNEL_15, CHANNEL_16);
+	// therm_init();
+	// therm_config(TYPE_T, CHANNEL_15, CHANNEL_16);
 
-	extADC_t config;
+	// extADC_t config;
 
-	config.gain = EXTADC_GAIN_1;
-	config.mode = PSEUDO;
-	config.ExtConfigOptions = UNIPOLAR;
+	// config.gain = EXTADC_GAIN_1;
+	// config.mode = PSEUDO;
+	// config.ExtConfigOptions = UNIPOLAR;
 
 
-	ExtADC_ConfigChannel(BATTERYC, &config);
+	// ExtADC_ConfigChannel(BATTERYC, &config);
 
 	fsm_t* fsm_lora = fsm_new(trans_table, &state_flags);
 

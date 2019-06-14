@@ -223,7 +223,29 @@ void i2c_init(){
 };
 
 
+void MCP9808_DeInit(){
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
 
+  
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+
+    /**I2C1 GPIO Configuration    
+    PB8     ------> I2C1_SCL
+    PB9     ------> I2C1_SDA 
+    */
+
+    GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
+
+
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, GPIO_PIN_RESET);
+   
+}
 
 void MCP9808_WriteConfReg(){
 
